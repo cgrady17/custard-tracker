@@ -1,0 +1,18 @@
+
+{
+  "short_name": "MKE Scoop",
+  "name": "MKE Scoop - Custard Tracker",
+  "description": "Daily flavors for Milwaukee's frozen custard stands.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#f97316",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

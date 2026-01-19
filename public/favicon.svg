@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <linearGradient id="scoopGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fb923c" />
+      <stop offset="100%" style="stop-color:#f97316" />
+    </linearGradient>
+    <linearGradient id="coneGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#e7bc91" />
+      <stop offset="100%" style="stop-color:#bc8a5f" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Cone -->
+  <path d="M16 30L8 14h16L16 30z" fill="url(#coneGradient)"/>
+  <path d="M16 30L8 14h1.5L16 27l6.5-13H24L16 30z" fill="#000" fill-opacity="0.05"/>
+  
+  <!-- Scoop -->
+  <circle cx="16" cy="11" r="9" fill="url(#scoopGradient)"/>
+  
+  <!-- Subtle Scoop Detail (Bottom Melt) -->
+  <path d="M7 11c0 2.5 2 4.5 4.5 4.5.5 0 1-.1 1.5-.3.5.2 1 .3 1.5.3s1-.1 1.5-.3c.5.2 1 .3 1.5.3s1-.1 1.5-.3c.5.2 1 .3 1.5.3 2.5 0 4.5-2 4.5-4.5h-18z" fill="url(#scoopGradient)"/>
+  
+  <!-- Highlight -->
+  <path d="M13 6c-1.1 0-2 .9-2 2 0 .3.1.5.2.8.5-1.1 1.5-1.8 2.8-1.8.3 0 .5-.1.5-.2s-.2-.8-1.1-.8z" fill="#fff" fill-opacity="0.3"/>
+</svg>
