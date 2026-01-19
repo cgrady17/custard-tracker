@@ -1,0 +1,7 @@
+{
+  "name": "MKE Scoop",
+  "description": "The ultimate guide to Milwaukee's frozen custard 'Flavor of the Day'. Stay up to date with your favorite local stands in the custard capital of the world.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
