@@ -1,7 +1,5 @@
-const CACHE_NAME = 'mke-scoop-v2';
+const CACHE_NAME = 'mke-scoop-v3';
 const ASSETS_TO_CACHE = [
-  '/',
-  '/index.html',
   'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css',
   'https://unpkg.com/leaflet@1.9.4/dist/leaflet.css',
   'https://unpkg.com/leaflet@1.9.4/dist/leaflet.js'
@@ -30,15 +28,23 @@ self.addEventListener('activate', (event) => {
 self.addEventListener('fetch', (event) => {
   const url = new URL(event.request.url);
 
-  // Network-First strategy for custard data to ensure freshness
-  if (url.pathname.endsWith('data.json')) {
+  // 1. Skip tracking and external APIs
+  if (url.hostname.includes('google-analytics') || url.hostname.includes('googletagmanager')) {
+    return;
+  }
+
+  // 2. Network-First strategy for HTML and Data
+  // This ensures users always get the latest build hashes and flavor data
+  if (event.request.mode === 'navigate' || url.pathname.endsWith('data.json') || url.pathname === '/') {
     event.respondWith(
       fetch(event.request)
         .then((response) => {
-          const clone = response.clone();
-          caches.open(CACHE_NAME).then((cache) => {
-            cache.put(event.request, clone);
-          });
+          if (response.status === 200) {
+            const clone = response.clone();
+            caches.open(CACHE_NAME).then((cache) => {
+              cache.put(event.request, clone);
+            });
+          }
           return response;
         })
         .catch(() => caches.match(event.request))
@@ -46,10 +52,13 @@ self.addEventListener('fetch', (event) => {
     return;
   }
 
-  // Cache-First for static assets
+  // 3. Cache-First for static assets (CSS, JS, Fonts, Images)
   event.respondWith(
     caches.match(event.request).then((response) => {
-      return response || fetch(event.request);
+      return response || fetch(event.request).catch(() => {
+        // Fallback for failed fetches (e.g. offline and not cached)
+        return new Response('Network error occurred', { status: 408, headers: { 'Content-Type': 'text/plain' } });
+      });
     })
   );
 });
