@@ -2,6 +2,7 @@ import React, { useState, useRef, useLayoutEffect, Suspense, lazy } from 'react'
 import { createPortal } from 'react-dom';
 import { CustardShop, FlavorStatus, FlavorDetail } from '../types';
 import { trackEvent } from '../services/analytics';
+import { getShopStatus } from '../services/dataService';
 
 const ScheduleModal = lazy(() => import('./ScheduleModal'));
 
@@ -182,6 +183,8 @@ const ShopCard: React.FC<ShopCardProps> = ({
   const [selectedDateISO, setSelectedDateISO] = useState<string>('today');
   const [showSchedule, setShowSchedule] = useState(false);
   
+  const { isOpen, statusMessage } = getShopStatus(shop);
+
   const directionsUrl = `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(shop.address)}`;
   
   const hasFlavors = status?.flavors && status.flavors.length > 0;
@@ -202,17 +205,17 @@ const ShopCard: React.FC<ShopCardProps> = ({
 
   if (compact) {
     return (
-      <div className="flex-shrink-0 w-64 bg-white dark:bg-mke-blue/40 rounded-3xl p-4 shadow-sm border border-stone-100 dark:border-white/10 mr-3 transition-all active:scale-95">
+      <div className="flex-shrink-0 w-64 bg-white dark:bg-mke-blue/40 rounded-3xl p-4 shadow-sm border border-stone-100 dark:border-white/10 mr-3 transition-[transform,background-color] active:scale-[0.98] touch-pan-y">
         <div className="flex justify-between items-start mb-2">
           <div className="flex-1 truncate pr-2">
             <div className="flex items-center gap-1.5 mb-0.5">
                <h3 className="text-sm font-bold text-stone-800 dark:text-stone-100 truncate">{shop.name}</h3>
-               {status && !status.isLoading && typeof status.isOpen !== 'undefined' && (
-                 <div className={`w-2 h-2 rounded-full ${status.isOpen ? 'bg-green-500' : 'bg-red-500'}`} />
+               {typeof isOpen !== 'undefined' && (
+                 <div className={`w-2 h-2 rounded-full ${isOpen ? 'bg-green-500' : 'bg-red-500'}`} />
                )}
             </div>
-            {status?.statusMessage && (
-              <p className="text-[9px] text-stone-500 dark:text-stone-400 font-bold uppercase tracking-tight truncate">{status.statusMessage}</p>
+            {statusMessage && (
+              <p className="text-[9px] text-stone-500 dark:text-stone-400 font-bold uppercase tracking-tight truncate">{statusMessage}</p>
             )}
           </div>
           <button 
@@ -240,7 +243,7 @@ const ShopCard: React.FC<ShopCardProps> = ({
       isFavorite 
         ? 'border-brick-red/20 dark:border-brick-red/40 shadow-brick-red/5 dark:neon-glow-red' 
         : 'border-stone-100 dark:border-toasted-cream/20'
-    } ${status?.isOpen ? 'dark:neon-glow-gold' : ''}`}>
+    } ${isOpen ? 'dark:neon-glow-gold' : ''}`}>
       <div className="flex justify-between items-start mb-4">
         <div className="flex-1 min-w-0">
           <div className="flex items-center gap-2 mb-1">
@@ -274,12 +277,12 @@ const ShopCard: React.FC<ShopCardProps> = ({
           <p className="text-xs sm:text-sm text-stone-500 dark:text-stone-400 mb-2 leading-tight truncate">{shop.address}</p>
           
           <div className="flex items-center gap-2">
-            {status && !status.isLoading && status.statusMessage ? (
-              <div className={`flex items-center gap-2 px-2.5 py-1 rounded-full border ${status.isOpen ? 'bg-green-50 dark:bg-green-900/10 border-green-100 dark:border-green-900/30 text-green-700 dark:text-green-400' : 'bg-red-50 dark:bg-red-900/10 border-red-100 dark:border-red-900/30 text-red-700 dark:text-red-400'}`}>
-                <div className={`w-1.5 h-1.5 rounded-full ${status.isOpen ? 'bg-green-500 animate-pulse' : 'bg-red-500'}`} />
-                <span className="text-[10px] font-black uppercase tracking-wider truncate">{status.statusMessage}</span>
+            {statusMessage ? (
+              <div className={`flex items-center gap-2 px-2.5 py-1 rounded-full border ${isOpen ? 'bg-green-50 dark:bg-green-900/10 border-green-100 dark:border-green-900/30 text-green-700 dark:text-green-400' : 'bg-red-50 dark:bg-red-900/10 border-red-100 dark:border-red-900/30 text-red-700 dark:text-red-400'}`}>
+                <div className={`w-1.5 h-1.5 rounded-full ${isOpen ? 'bg-green-500 animate-pulse' : 'bg-red-500'}`} />
+                <span className="text-[10px] font-black uppercase tracking-wider truncate">{statusMessage}</span>
               </div>
-            ) : !status?.isLoading && (
+            ) : (
                <div className="text-[9px] font-bold text-stone-500 dark:text-stone-400 uppercase tracking-widest italic">Hours unavailable</div>
             )}
           </div>
@@ -322,13 +325,13 @@ const ShopCard: React.FC<ShopCardProps> = ({
         </div>
 
         {hasUpcoming && (
-          <div className="flex flex-wrap gap-1.5 mb-4 pb-1">
+          <div className="flex flex-wrap gap-1.5 mb-4 pb-1 scroll-smooth snap-x snap-mandatory">
             <button 
               onClick={() => {
                 setSelectedDateISO('today');
                 trackEvent('select_flavor_date', { shop_id: shop.id, date: 'today' });
               }}
-              className={`px-3 py-1.5 rounded-full text-[9px] font-black uppercase tracking-tighter transition-all flex-shrink-0 ${selectedDateISO === 'today' ? 'bg-sunrise-gold text-mke-blue shadow-sm' : 'bg-white dark:bg-stone-800 text-mke-blue/40 dark:text-stone-500 border border-stone-100 dark:border-stone-700'}`}
+              className={`px-3 py-1.5 rounded-full text-[9px] font-black uppercase tracking-tighter transition-all flex-shrink-0 snap-start ${selectedDateISO === 'today' ? 'bg-sunrise-gold text-mke-blue shadow-sm' : 'bg-white dark:bg-stone-800 text-mke-blue/40 dark:text-stone-500 border border-stone-100 dark:border-stone-700'}`}
             >
               Today
             </button>
@@ -339,7 +342,7 @@ const ShopCard: React.FC<ShopCardProps> = ({
                   setSelectedDateISO(day.date);
                   trackEvent('select_flavor_date', { shop_id: shop.id, date: day.date });
                 }}
-                className={`px-3 py-1.5 rounded-full text-[9px] font-black uppercase tracking-tighter transition-all flex-shrink-0 ${selectedDateISO === day.date ? 'bg-sunrise-gold text-mke-blue shadow-sm' : 'bg-white dark:bg-stone-800 text-mke-blue/40 dark:text-stone-500 border border-stone-100 dark:border-stone-700'}`}
+                className={`px-3 py-1.5 rounded-full text-[9px] font-black uppercase tracking-tighter transition-all flex-shrink-0 snap-start ${selectedDateISO === day.date ? 'bg-sunrise-gold text-mke-blue shadow-sm' : 'bg-white dark:bg-stone-800 text-mke-blue/40 dark:text-stone-500 border border-stone-100 dark:border-stone-700'}`}
               >
                 {new Date(day.date + 'T12:00:00').toLocaleDateString([], { weekday: 'short' })}
               </button>

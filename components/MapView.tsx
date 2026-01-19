@@ -1,6 +1,7 @@
 
 import React, { useEffect, useRef, useState } from 'react';
 import { CustardShop, FlavorStatus } from '../types';
+import { getShopStatus } from '../services/dataService';
 
 interface MapViewProps {
   shops: CustardShop[];
@@ -73,14 +74,15 @@ const MapView: React.FC<MapViewProps> = ({ shops, flavors, onRefresh, isDarkMode
       const status = flavors[shop.id];
       const hasFlavors = status?.flavors && status.flavors.length > 0;
       
+      const { isOpen, statusMessage } = getShopStatus(shop);
+      
       const dailyFlavors = hasFlavors ? status.flavors.filter(f => !f.type || f.type === 'daily') : [];
       const monthlyFlavors = hasFlavors ? status.flavors.filter(f => f.type && f.type !== 'daily') : [];
       const firstFlavor = dailyFlavors.length > 0 ? dailyFlavors[0] : null;
       
       const isLoading = status?.isLoading;
-      const statusMessage = status?.statusMessage || (status?.isOpen ? 'Open' : (status?.isOpen === false ? 'Closed' : ''));
-      const statusColor = status?.isOpen ? 'text-green-600 dark:text-green-400' : 'text-red-600 dark:text-red-400';
-      const statusBg = status?.isOpen ? 'bg-green-100 dark:bg-green-900/30' : 'bg-red-100 dark:bg-red-900/30';
+      const statusColor = isOpen ? 'text-green-600 dark:text-green-400' : 'text-red-600 dark:text-red-400';
+      const statusBg = isOpen ? 'bg-green-100 dark:bg-green-900/30' : 'bg-red-100 dark:bg-red-900/30';
 
       const markerColor = shop.brandColor || '#ffb703';
       

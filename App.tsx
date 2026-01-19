@@ -14,7 +14,8 @@ const App: React.FC = () => {
   const [isDarkMode, setIsDarkMode] = useState<boolean>(() => {
     const saved = localStorage.getItem('mke_custard_theme');
     if (saved) return saved === 'dark';
-    return window.matchMedia('(prefers-color-scheme: dark)').matches;
+    // Default to Light Mode (Cream City) regardless of system preference
+    return false;
   });
 
   const [favorites, setFavorites] = useState<string[]>(() => {
@@ -39,32 +40,12 @@ const App: React.FC = () => {
 
   const [isOffline, setIsOffline] = useState(!navigator.onLine);
   const [userLocation, setUserLocation] = useState<{ lat: number; lng: number } | null>(null);
-  const [isLocating, setIsLocating] = useState(!!navigator.geolocation);
+  const [isLocating, setIsLocating] = useState(false);
 
   const [pullDistance, setPullDistance] = useState(0);
+  const [showScrollTop, setShowScrollTop] = useState(false);
   const startY = useRef<number | null>(null);
   const mainRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    if (navigator.geolocation) {
-      navigator.geolocation.getCurrentPosition(
-        (position) => {
-          setUserLocation({
-            lat: position.coords.latitude,
-            lng: position.coords.longitude
-          });
-          setIsLocating(false);
-        },
-        (error) => {
-          console.log('Location access denied or error:', error);
-          setIsLocating(false);
-        },
-        { timeout: 10000 }
-      );
-    } else {
-      setIsLocating(false);
-    }
-  }, []);
 
   // Theme effect
   useEffect(() => {
@@ -104,15 +85,24 @@ const App: React.FC = () => {
   const displayedShops = useMemo(() => {
     let filtered = MILWAUKEE_SHOPS.filter(shop => {
       const status = flavors[shop.id];
-      const matchesSearch = shop.name.toLowerCase().includes(searchQuery.toLowerCase()) || 
-                           shop.address.toLowerCase().includes(searchQuery.toLowerCase());
+      const searchLower = searchQuery.toLowerCase();
+      
+      const matchesShop = shop.name.toLowerCase().includes(searchLower) || 
+                         shop.address.toLowerCase().includes(searchLower);
+      
+      // Deep search into flavors (daily and monthly)
+      const matchesFlavors = status?.flavors?.some(f => 
+        f.name.toLowerCase().includes(searchLower) || 
+        f.description?.toLowerCase().includes(searchLower)
+      ) ?? false;
+
       const matchesChain = selectedChain ? shop.chain === selectedChain : true;
       const matchesFavorites = (showOnlyFavorites || view === 'favorites') ? favorites.includes(shop.id) : true;
       
       // If we don't have status data yet, don't filter out 'Closed' shops
       const matchesOpen = showOpenOnly ? (status?.isOpen ?? true) : true;
       
-      return matchesSearch && matchesChain && matchesFavorites && matchesOpen;
+      return (matchesShop || matchesFlavors) && matchesChain && matchesFavorites && matchesOpen;
     });
 
     if (userLocation) {
@@ -187,16 +177,40 @@ const App: React.FC = () => {
 
     const onTouchEnd = () => handleTouchEnd();
 
+    const onScroll = () => {
+      const scrollPos = main.scrollTop || window.scrollY;
+      if (scrollPos > 400) {
+        setShowScrollTop(true);
+      } else {
+        setShowScrollTop(false);
+      }
+    };
+
+    window.addEventListener('scroll', onScroll, { passive: true });
     main.addEventListener('touchstart', onTouchStart, { passive: true });
     main.addEventListener('touchmove', onTouchMove, { passive: false });
     main.addEventListener('touchend', onTouchEnd, { passive: true });
+    main.addEventListener('scroll', onScroll, { passive: true });
 
     return () => {
+      window.removeEventListener('scroll', onScroll);
       main.removeEventListener('touchstart', onTouchStart);
       main.removeEventListener('touchmove', onTouchMove);
       main.removeEventListener('touchend', onTouchEnd);
+      main.removeEventListener('scroll', onScroll);
     };
   }, [syncMeta.isSyncing, pullDistance]);
+
+  useEffect(() => {
+    // Check if location permission was already granted
+    if (navigator.permissions && navigator.permissions.query) {
+      navigator.permissions.query({ name: 'geolocation' }).then((result) => {
+        if (result.state === 'granted') {
+          requestLocation();
+        }
+      });
+    }
+  }, []);
 
   useEffect(() => {
     const checkFreshness = async () => {
@@ -251,6 +265,11 @@ const App: React.FC = () => {
 
   const toggleTheme = () => setIsDarkMode(!isDarkMode);
 
+  const scrollToTop = () => {
+    mainRef.current?.scrollTo({ top: 0, behavior: 'smooth' });
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   const chains = useMemo(() => {
     const chainSet = new Set<string>();
     MILWAUKEE_SHOPS.forEach(shop => {
@@ -258,6 +277,34 @@ const App: React.FC = () => {
     });
     return Array.from(chainSet).sort();
   }, []);
+
+  const requestLocation = () => {
+    if (!navigator.geolocation) {
+      alert('Geolocation is not supported by your browser');
+      return;
+    }
+
+    setIsLocating(true);
+    navigator.geolocation.getCurrentPosition(
+      (position) => {
+        setUserLocation({
+          lat: position.coords.latitude,
+          lng: position.coords.longitude
+        });
+        setIsLocating(false);
+        trackEvent('location_access', { status: 'granted' });
+      },
+      (error) => {
+        console.log('Location access denied or error:', error);
+        setIsLocating(false);
+        trackEvent('location_access', { status: 'denied', error: error.message });
+        if (error.code === 1) {
+          alert('Location access was denied. Please enable it in your browser settings to sort by proximity.');
+        }
+      },
+      { timeout: 10000 }
+    );
+  };
 
   useEffect(() => {
     trackPageView(view);
@@ -352,7 +399,7 @@ const App: React.FC = () => {
                   setShowOpenOnly(!showOpenOnly);
                   trackEvent('filter_toggle', { filter: 'open_only', value: !showOpenOnly });
                 }}
-                className={`flex-shrink-0 px-4 py-2 rounded-full text-xs font-black transition-all flex items-center gap-1.5 border-2 ${showOpenOnly ? 'bg-white border-white text-lake-blue' : 'bg-transparent border-white/20 text-white/80'}`}
+                className={`flex-shrink-0 px-4 py-2 rounded-full text-xs font-black transition-all flex items-center gap-1.5 border-2 min-w-[110px] justify-center ${showOpenOnly ? 'bg-white border-white text-lake-blue' : 'bg-transparent border-white/20 text-white/80'}`}
               >
                 <i className="fas fa-clock"></i>
                 Open Now
@@ -363,7 +410,7 @@ const App: React.FC = () => {
                   setShowOnlyFavorites(!showOnlyFavorites);
                   trackEvent('filter_toggle', { filter: 'favorites_only', value: !showOnlyFavorites });
                 }}
-                className={`flex-shrink-0 px-4 py-2 rounded-full text-xs font-black transition-all flex items-center gap-1.5 border-2 ${showOnlyFavorites ? 'bg-brick-red border-brick-red text-white' : 'bg-transparent border-white/20 text-white/80'}`}
+                className={`flex-shrink-0 px-4 py-2 rounded-full text-xs font-black transition-all flex items-center gap-1.5 border-2 min-w-[90px] justify-center ${showOnlyFavorites ? 'bg-brick-red border-brick-red text-white' : 'bg-transparent border-white/20 text-white/80'}`}
               >
                 <i className="fas fa-heart"></i>
                 Favs
@@ -371,7 +418,7 @@ const App: React.FC = () => {
 
               <button 
                 onClick={() => setSelectedChain(null)}
-                className={`flex-shrink-0 px-5 py-2 rounded-full text-xs font-black transition-all border-2 ${selectedChain === null ? 'bg-mke-blue border-mke-blue text-white' : 'bg-transparent border-white/20 text-white/80'}`}
+                className={`flex-shrink-0 px-5 py-2 rounded-full text-xs font-black transition-all border-2 min-w-[70px] justify-center ${selectedChain === null ? 'bg-mke-blue border-mke-blue text-white' : 'bg-transparent border-white/20 text-white/80'}`}
               >
                 All
               </button>
@@ -430,9 +477,18 @@ const App: React.FC = () => {
                   )}
                   {userLocation && !isLocating && (
                     <div className="flex items-center gap-1">
-                      <i className="fas fa-location-arrow text-[8px] text-green-500"></i>
-                      <span className="text-[9px] font-bold uppercase tracking-tighter text-stone-500 dark:text-stone-400">Sorted by proximity</span>
+                      <i className="fas fa-location-arrow text-[8px] text-lake-blue"></i>
+                      <span className="text-[9px] font-black uppercase tracking-tighter text-mke-blue/60 dark:text-stone-500">Nearby First</span>
                     </div>
+                  )}
+                  {!userLocation && !isLocating && (
+                    <button 
+                      onClick={requestLocation}
+                      className="flex items-center gap-1.5 px-3 py-1 rounded-full bg-lake-blue/10 hover:bg-lake-blue/20 text-lake-blue transition-colors group"
+                    >
+                      <i className="fas fa-location-arrow text-[8px] group-hover:animate-bounce"></i>
+                      <span className="text-[9px] font-black uppercase tracking-tighter">Near Me</span>
+                    </button>
                   )}
                 </div>
               </div>
@@ -513,6 +569,16 @@ const App: React.FC = () => {
           </div>
         )}
       </main>
+
+      {showScrollTop && (
+        <button 
+          onClick={scrollToTop}
+          className="fixed bottom-28 right-6 w-12 h-12 rounded-full bg-sunrise-gold text-mke-blue shadow-2xl flex items-center justify-center animate-in fade-in zoom-in slide-in-from-bottom-4 duration-300 z-30 active:scale-90 transition-transform"
+          aria-label="Scroll to top"
+        >
+          <i className="fas fa-arrow-up text-lg"></i>
+        </button>
+      )}
 
       <footer className="max-w-7xl mx-auto w-full px-4 sm:px-6 py-16 text-center border-t border-stone-200 dark:border-stone-800 transition-colors">
         <div className="mb-6 flex justify-center gap-4 opacity-20 grayscale">

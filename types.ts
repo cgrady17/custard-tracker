@@ -1,4 +1,9 @@
 
+export interface OperatingHours {
+  open: string;  // "HH:mm" (24h format)
+  close: string; // "HH:mm" (24h format)
+}
+
 export interface CustardShop {
   id: string;
   name: string;
@@ -10,6 +15,8 @@ export interface CustardShop {
   brandColor?: string;
   chain?: string;
   logoUrl?: string;
+  hours?: Record<number, OperatingHours>; // 0 (Sun) - 6 (Sat)
+  temporaryClosure?: string; // Message to display if shop is closed indefinitely
 }
 
 export interface FlavorDetail {

@@ -161,6 +161,10 @@ resource "google_cloud_run_v2_service" "frontend" {
   ingress  = "INGRESS_TRAFFIC_ALL"
 
   template {
+    max_instance_request_concurrency = 80
+    scaling {
+      max_instance_count = 10
+    }
     containers {
       image = "us-docker.pkg.dev/cloudrun/container/hello" # Placeholder
       ports {
