@@ -15,8 +15,7 @@ export default defineConfig(({ mode }) => {
         tailwindcss(),
       ],
       define: {
-        'process.env.API_KEY': JSON.stringify(env.GEMINI_API_KEY),
-        'process.env.GEMINI_API_KEY': JSON.stringify(env.GEMINI_API_KEY)
+        '__GA_ID__': JSON.stringify(env.VITE_GA_ID)
       },
       resolve: {
         alias: {

@@ -9,10 +9,10 @@
     "test": "node local-run.js"
   },
   "dependencies": {
-    "@google-cloud/functions-framework": "^3.0.0",
-    "@google-cloud/storage": "^7.0.0",
     "axios": "^1.6.0",
     "cheerio": "^1.0.0-rc.12",
-    "date-fns": "^3.0.0"
+    "@google-cloud/storage": "^7.0.0",
+    "date-fns": "^3.0.0",
+    "firebase-admin": "^12.0.0"
   }
 }

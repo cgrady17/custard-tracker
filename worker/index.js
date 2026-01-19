@@ -5,11 +5,23 @@ import { scrapeOscars } from './scrapers/oscars.js';
 import { scrapeLeons } from './scrapers/leons.js';
 import { Storage } from '@google-cloud/storage';
 import * as fs from 'fs';
+import admin from 'firebase-admin';
+
+// Initialize Firebase Admin (uses default service account in GCP)
+if (process.env.GCP_PROJECT) {
+  admin.initializeApp();
+}
+
+const sanitize = (str) => {
+  if (!str) return "";
+  // Strip HTML tags and limit length
+  return str.replace(/<[^>]*>?/gm, '').substring(0, 500).trim();
+};
 
 const storage = new Storage();
 const BUCKET_NAME = process.env.GCP_BUCKET_NAME || 'mke-custard-data';
 
-const SHOPS = [
+export const SHOPS = [
   { id: 'kopps-greenfield', chain: "Kopp's", url: "https://kopps.com/flavor-preview" },
   { id: 'kopps-glendale', chain: "Kopp's", url: "https://kopps.com/flavor-preview" },
   { id: 'kopps-brookfield', chain: "Kopp's", url: "https://kopps.com/flavor-preview" },
@@ -94,8 +106,23 @@ export const scrapeCustard = async (req, res) => {
           data = { shopId: shop.id, flavors: [], error: "Update failed" };
       }
 
+      // Use current time for individual update timestamp
       if (data) {
-          // Use current time for individual update timestamp
+          data.flavors = data.flavors.map(f => ({
+            ...f,
+            name: sanitize(f.name),
+            description: sanitize(f.description)
+          }));
+          if (data.upcoming) {
+            data.upcoming = data.upcoming.map(day => ({
+              ...day,
+              flavors: day.flavors.map(f => ({
+                ...f,
+                name: sanitize(f.name),
+                description: sanitize(f.description)
+              }))
+            }));
+          }
           data.lastUpdated = new Date().toISOString();
           results[shop.id] = data;
       }
@@ -103,15 +130,172 @@ export const scrapeCustard = async (req, res) => {
 
   await Promise.all(tasks);
 
+  // 3. Check for matching subscriptions and notify
+  if (process.env.GCP_PROJECT) {
+    try {
+      const db = admin.firestore();
+      const messaging = admin.messaging();
+
+      // Maintenance: Delete subscriptions older than 90 days
+      try {
+        const ninetyDaysAgo = new Date();
+        ninetyDaysAgo.setDate(ninetyDaysAgo.getDate() - 90);
+        const expiredQuery = await db.collection('subscriptions')
+          .where('createdAt', '<', ninetyDaysAgo.toISOString())
+          .limit(50)
+          .get();
+        
+        if (!expiredQuery.empty) {
+          const batch = db.batch();
+          expiredQuery.forEach(doc => batch.delete(doc.ref));
+          await batch.commit();
+          console.log(`Cleaned up ${expiredQuery.size} expired subscriptions.`);
+        }
+      } catch (cleanupErr) {
+        console.warn("Cleanup phase minor failure:", cleanupErr.message);
+      }
+      
+      // 1. Map flavors to their shops
+      const flavorToShops = {};
+      Object.values(results).forEach(shopData => {
+        const shopInfo = SHOPS.find(s => s.id === shopData.shopId);
+        let shopName = "a local stand";
+        
+        if (shopInfo) {
+          if (shopInfo.chain && shopInfo.chain !== "Other") {
+            shopName = shopInfo.chain;
+          } else if (shopInfo.name) {
+            shopName = shopInfo.name.split(' - ')[0];
+          }
+        }
+
+        shopData.flavors.forEach(f => {
+          if (f.type === 'daily' || !f.type) {
+            const name = sanitize(f.name).toLowerCase();
+            if (!flavorToShops[name]) flavorToShops[name] = new Set();
+            flavorToShops[name].add(shopName);
+          }
+        });
+      });
+
+      const todayStr = new Date().toISOString().split('T')[0];
+      const userMatches = {}; // { token: [{ flavor, shops }] }
+
+      // 2. Find all matches and group by user
+      for (const [flavor, shopSet] of Object.entries(flavorToShops)) {
+        const subsQuery = await db.collection('subscriptions').where('flavorName', '==', flavor).get();
+        subsQuery.forEach(doc => {
+          const data = doc.data();
+          // Skip if already notified today
+          if (data.lastNotifiedDate === todayStr) return;
+
+          if (!userMatches[data.token]) userMatches[data.token] = [];
+          userMatches[data.token].push({ 
+            flavor: flavor.toUpperCase(), 
+            shops: Array.from(shopSet).join(" and "),
+            docId: doc.id
+          });
+        });
+      }
+
+      // 3. Send consolidated notifications
+      const tokens = Object.keys(userMatches);
+      console.log(`Sending consolidated notifications to ${tokens.length} users...`);
+
+      for (const token of tokens) {
+        const matches = userMatches[token];
+        let title = "Flavor Alert! 🍦";
+        let body = "";
+
+        if (matches.length === 1) {
+          title = `${matches[0].flavor} is Churning!`;
+          body = `Your favorite "${matches[0].flavor}" is available today at ${matches[0].shops}.`;
+        } else {
+          const flavorList = matches.map(m => m.flavor).join(", ");
+          title = `${matches.length} Flavors Found!`;
+          body = `Today's picks: ${flavorList}. Tap to see where!`;
+        }
+
+        try {
+          await messaging.send({
+            token,
+            notification: { title, body },
+            webpush: { fcmOptions: { link: 'https://mkescoop.com' } }
+          });
+
+          // Mark as notified today
+          const batch = db.batch();
+          matches.forEach(m => {
+            batch.update(db.collection('subscriptions').doc(m.docId), { lastNotifiedDate: todayStr });
+          });
+          await batch.commit();
+        } catch (e) {
+          console.error(`Failed to notify token: ${e.message}`);
+        }
+      }
+    } catch (e) {
+      console.error(`[SCRAPER_ERROR] Notification phase failed: ${e.message}`);
+    }
+  }
+
   const finalJson = JSON.stringify(results, null, 2);
+
+  // 4. Update Metadata (Master Flavor List)
+  const allUniqueFlavors = new Set();
+  const blackList = ["closed", "refresh", "none", "unknown", "see website"];
+  
+  Object.values(results).forEach(shopData => {
+    shopData.flavors.forEach(f => {
+      const sanitized = sanitize(f.name);
+      if (sanitized && !blackList.some(b => sanitized.toLowerCase().includes(b))) {
+        allUniqueFlavors.add(sanitized);
+      }
+    });
+    if (shopData.upcoming) {
+      shopData.upcoming.forEach(day => {
+        day.flavors.forEach(f => {
+          const sanitized = sanitize(f.name);
+          if (sanitized && !blackList.some(b => sanitized.toLowerCase().includes(b))) {
+            allUniqueFlavors.add(sanitized);
+          }
+        });
+      });
+    }
+  });
 
   if (process.env.GCP_PROJECT) {
       try {
-        await storage.bucket(BUCKET_NAME).file('data.json').save(finalJson, {
+        const bucket = storage.bucket(BUCKET_NAME);
+        
+        // Try to get existing metadata to merge
+        let masterList = Array.from(allUniqueFlavors);
+        try {
+          const [metadataContent] = await bucket.file('metadata.json').download();
+          const existing = JSON.parse(metadataContent.toString());
+          if (existing.flavors) {
+            const merged = new Set([...existing.flavors, ...masterList]);
+            masterList = Array.from(merged).sort();
+          }
+        } catch (downloadErr) {
+          console.log("No existing metadata found, creating new.");
+        }
+
+        const metadataJson = JSON.stringify({ 
+          flavors: masterList,
+          lastUpdated: new Date().toISOString()
+        }, null, 2);
+
+        await bucket.file('data.json').save(finalJson, {
             contentType: 'application/json',
             metadata: { cacheControl: 'public, max-age=300' }
         });
-        console.log("Uploaded to GCS.");
+
+        await bucket.file('metadata.json').save(metadataJson, {
+          contentType: 'application/json',
+          metadata: { cacheControl: 'public, max-age=3600' }
+        });
+
+        console.log("Uploaded data.json and metadata.json to GCS.");
         if (res) res.status(200).send('Scrape complete');
       } catch (e) {
           console.error(`[SCRAPER_CRITICAL] GCS Upload failed: ${e.message}`);
@@ -120,6 +304,7 @@ export const scrapeCustard = async (req, res) => {
   } else {
       console.log("Local run detected. Saving to ../public/data.json");
       fs.writeFileSync('../public/data.json', finalJson);
+      fs.writeFileSync('../public/metadata.json', JSON.stringify({ flavors: Array.from(allUniqueFlavors).sort() }));
       if (res) res.status(200).send('Local save complete');
   }
 };

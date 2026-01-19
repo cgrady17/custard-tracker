@@ -62,3 +62,41 @@ self.addEventListener('fetch', (event) => {
     })
   );
 });
+
+// 4. Background Push Notifications
+self.addEventListener('push', (event) => {
+  if (!event.data) return;
+
+  try {
+    const data = event.data.json();
+    const title = data.notification?.title || 'MKE Scoop Alert! 🍦';
+    const options = {
+      body: data.notification?.body || 'Your favorite flavor is churning!',
+      icon: '/favicon.svg',
+      badge: '/favicon.svg',
+      data: {
+        url: data.fcmOptions?.link || '/'
+      }
+    };
+
+    event.waitUntil(self.registration.showNotification(title, options));
+  } catch (e) {
+    console.error('Push handling failed', e);
+  }
+});
+
+self.addEventListener('notificationclick', (event) => {
+  event.notification.close();
+  event.waitUntil(
+    clients.matchAll({ type: 'window', includeUncontrolled: true }).then((windowClients) => {
+      for (const client of windowClients) {
+        if (client.url === event.notification.data.url && 'focus' in client) {
+          return client.focus();
+        }
+      }
+      if (clients.openWindow) {
+        return clients.openWindow(event.notification.data.url);
+      }
+    })
+  );
+});
