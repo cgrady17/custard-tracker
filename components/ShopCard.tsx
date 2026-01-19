@@ -1,8 +1,9 @@
-import React, { useState, useRef, useLayoutEffect, Suspense, lazy } from 'react';
+import React, { useState, useRef, useLayoutEffect, useEffect, Suspense, lazy } from 'react';
 import { createPortal } from 'react-dom';
 import { CustardShop, FlavorStatus, FlavorDetail } from '../types';
 import { trackEvent } from '../services/analytics';
 import { getShopStatus } from '../services/dataService';
+import { subscribeToFlavor, unsubscribeFromFlavor, getSubscribedFlavors } from '../services/notificationService';
 
 const ScheduleModal = lazy(() => import('./ScheduleModal'));
 
@@ -56,8 +57,48 @@ const ImageModal: React.FC<{ src: string; alt: string; name: string; description
 const FlavorItem: React.FC<{ flavor: FlavorDetail; isSingle: boolean; index: number; isPriority: boolean }> = ({ flavor, isSingle, index, isPriority }) => {
   const [showDesc, setShowDesc] = useState(false);
   const [showModal, setShowModal] = useState(false);
+  const [isSubscribed, setIsSubscribed] = useState(false);
   const [isOverflowing, setIsOverflowing] = useState(false);
   const descriptionRef = useRef<HTMLParagraphElement>(null);
+
+  useEffect(() => {
+    const checkSub = () => {
+      getSubscribedFlavors().then(subs => {
+        if (subs.includes(flavor.name.toLowerCase())) {
+          setIsSubscribed(true);
+        } else {
+          setIsSubscribed(false);
+        }
+      }).catch(() => {});
+    };
+
+    // Initial check with delay for environment ready
+    const timer = setTimeout(checkSub, 1500);
+
+    // Listen for updates from other cards
+    window.addEventListener('watchlist-updated', checkSub);
+
+    return () => {
+      clearTimeout(timer);
+      window.removeEventListener('watchlist-updated', checkSub);
+    };
+  }, [flavor.name]);
+
+  const handleToggleSubscribe = async (e: React.MouseEvent) => {
+    e.stopPropagation();
+    try {
+      if (isSubscribed) {
+        await unsubscribeFromFlavor(flavor.name);
+        setIsSubscribed(false);
+      } else {
+        await subscribeToFlavor(flavor.name);
+        setIsSubscribed(true);
+      }
+      window.dispatchEvent(new CustomEvent('watchlist-updated'));
+    } catch (err) {
+      console.error("Subscription failed", err);
+    }
+  };
 
   useLayoutEffect(() => {
     const element = descriptionRef.current;
@@ -92,7 +133,16 @@ const FlavorItem: React.FC<{ flavor: FlavorDetail; isSingle: boolean; index: num
         )}
         <div className="p-3 flex flex-col justify-between flex-1">
           <div>
-            <h4 className="text-sm font-black text-stone-900 dark:text-stone-100 leading-tight mb-1">{flavor.name}</h4>
+            <div className="flex justify-between items-start mb-1">
+              <h4 className="text-sm font-black text-stone-900 dark:text-stone-100 leading-tight pr-2">{flavor.name}</h4>
+              <button 
+                onClick={handleToggleSubscribe}
+                className={`flex-shrink-0 transition-colors ${isSubscribed ? 'text-sunrise-gold' : 'text-stone-300 dark:text-stone-700 hover:text-stone-400'}`}
+                aria-label={isSubscribed ? "Unsubscribe from flavor" : "Notify me when this flavor is available"}
+              >
+                <i className={`${isSubscribed ? 'fas' : 'far'} fa-bell text-[10px]`}></i>
+              </button>
+            </div>
             {flavor.description && (
               <div className="relative">
                 <p 

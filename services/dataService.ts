@@ -61,3 +61,17 @@ export async function fetchAllFlavors(): Promise<Record<string, FlavorStatus>> {
     return {};
   }
 }
+
+export async function fetchMetadata(): Promise<{ flavors: string[] }> {
+  const url = import.meta.env.PROD 
+    ? 'https://storage.googleapis.com/mke-custard-data-manifest-sum/metadata.json' 
+    : '/metadata.json';
+  
+  try {
+    const response = await fetch(url);
+    if (!response.ok) return { flavors: [] };
+    return response.json();
+  } catch {
+    return { flavors: [] };
+  }
+}

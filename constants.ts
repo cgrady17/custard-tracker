@@ -1,3 +1,4 @@
+
 import { CustardShop, OperatingHours } from './types';
 
 const KOPPS_HOURS: Record<number, OperatingHours> = {
