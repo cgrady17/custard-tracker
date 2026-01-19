@@ -2,8 +2,6 @@
 
 **MKE Scoop** is a modern Progressive Web Application (PWA) that aggregates and displays the "Flavor of the Day" from famous frozen custard shops in Milwaukee, Wisconsin (including Kopp's, Culver's, Gilles, Leon's, and Oscar's).
 
-![MKE Scoop Banner](https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6)
-
 ## Features
 
 - **Live Flavor Tracking**: Real-time "Flavor of the Day" for all locations.
