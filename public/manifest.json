@@ -5,8 +5,8 @@
   "description": "Daily flavors for Milwaukee's frozen custard stands.",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#ffffff",
-  "theme_color": "#f97316",
+  "background_color": "#fdf5e6",
+  "theme_color": "#ffb703",
   "icons": [
     {
       "src": "/favicon.svg",
