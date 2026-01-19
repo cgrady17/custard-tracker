@@ -524,7 +524,12 @@ const App: React.FC = () => {
           © {new Date().getFullYear()} Connor Grady • Milwaukee, WI
         </p>
         <p className="text-[10px] text-mke-blue/60 dark:text-stone-700 italic font-bold uppercase tracking-widest">
-          The Real Cream City
+          Made with ❤️ and Custard in The Real Cream City
+        </p>
+        <p className="text-[10px] text-mke-blue/60 dark:text-stone-700 italic tracking-widest">
+        MKEScoop.com is an independent, unofficial enthusiast website and is not affiliated with, endorsed by, sponsored by, or maintaining any commercial relationship with Culver’s Franchising System, Inc., Kopp’s Frozen Custard, Leon's Frozen Custard, or any other entities listed.
+        <br /><br />
+        All trademarks, service marks, and company names are the property of their respective owners. The flavor data presented here is aggregated from public sources for informational purposes only. While we aim for accuracy, menus are subject to change by the vendors without notice. Please verify availability directly with the shop.
         </p>
       </footer>
 
