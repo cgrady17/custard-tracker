@@ -247,11 +247,16 @@ const App: React.FC = () => {
           return;
       }
 
-      const isNewDay = lastSync.getDate() !== now.getDate() || lastSync.getMonth() !== now.getMonth();
-      const isStale = (now.getTime() - lastSync.getTime() > 6 * 60 * 60 * 1000); 
+      // Strict check: Is the last sync from a different calendar day?
+      const isDifferentDay = lastSync.getDate() !== now.getDate() || 
+                            lastSync.getMonth() !== now.getMonth() || 
+                            lastSync.getFullYear() !== now.getFullYear();
+                            
+      // Or has it been more than 4 hours?
+      const isStale = (now.getTime() - lastSync.getTime() > 4 * 60 * 60 * 1000); 
 
-      if (isNewDay || isStale) {
-        console.log("Auto-refreshing stale data...");
+      if (isDifferentDay || isStale) {
+        console.log("Data is stale (new day or timeout). Refreshing...");
         await performGlobalSync();
       }
     };
