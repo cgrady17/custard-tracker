@@ -793,6 +793,14 @@ const App: React.FC = () => {
         <br /><br />
         All trademarks, service marks, and company names are the property of their respective owners. The flavor data presented here is aggregated from public sources for informational purposes only. While we aim for accuracy, menus are subject to change by the vendors without notice. Please verify availability directly with the shop.
         </p>
+        <div className="mt-8 pt-4 border-t border-stone-200 dark:border-stone-800 flex flex-col items-center gap-1 opacity-60 hover:opacity-100 transition-opacity">
+          <p className="text-[9px] font-mono font-bold text-stone-500 dark:text-stone-400">
+            v{__APP_VERSION__} • {__COMMIT_HASH__}
+          </p>
+          <p className="text-[8px] font-mono text-stone-400 dark:text-stone-500">
+            Built: {new Date(__BUILD_TIME__).toLocaleString()}
+          </p>
+        </div>
       </footer>
 
       {showFollowHint && (
