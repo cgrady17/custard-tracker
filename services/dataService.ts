@@ -49,17 +49,11 @@ export function getShopStatus(shop: CustardShop) {
 }
 
 export async function fetchAllFlavors(): Promise<Record<string, FlavorStatus>> {
-  try {
-    const response = await fetch(DATA_URL);
-    if (!response.ok) {
-      throw new Error('Failed to load flavor data');
-    }
-    const data = await response.json();
-    return data;
-  } catch (error) {
-    console.error("Error fetching flavor data:", error);
-    return {};
-  }
+  // Add a timestamp to bust the cache (ensure we get fresh data)
+  const bustedUrl = `${DATA_URL}?t=${new Date().getTime()}`;
+  const response = await fetch(bustedUrl);
+  if (!response.ok) throw new Error('Failed to fetch flavors');
+  return response.json();
 }
 
 export async function fetchMetadata(): Promise<{ flavors: string[] }> {

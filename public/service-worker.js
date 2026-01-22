@@ -33,9 +33,9 @@ self.addEventListener('fetch', (event) => {
     return;
   }
 
-  // 2. Network-First strategy for HTML and Data
-  // This ensures users always get the latest build hashes and flavor data
-  if (event.request.mode === 'navigate' || url.pathname.endsWith('data.json') || url.pathname === '/') {
+  // 2. Network-Only (with Offline Fallback) for Data
+  // We want the freshest data possible. Only use cache if network fails.
+  if (url.pathname.endsWith('data.json')) {
     event.respondWith(
       fetch(event.request)
         .then((response) => {
@@ -48,6 +48,22 @@ self.addEventListener('fetch', (event) => {
           return response;
         })
         .catch(() => caches.match(event.request))
+    );
+    return;
+  }
+
+  // 3. Stale-While-Revalidate for HTML/App Shell
+  if (event.request.mode === 'navigate' || url.pathname === '/') {
+    event.respondWith(
+      caches.match(event.request).then((cachedResponse) => {
+        const fetchPromise = fetch(event.request).then((networkResponse) => {
+          caches.open(CACHE_NAME).then((cache) => {
+            cache.put(event.request, networkResponse.clone());
+          });
+          return networkResponse;
+        });
+        return cachedResponse || fetchPromise;
+      })
     );
     return;
   }
