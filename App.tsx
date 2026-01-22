@@ -124,6 +124,20 @@ const App: React.FC = () => {
     return filtered;
   }, [searchQuery, selectedChain, showOnlyFavorites, favorites, view, userLocation, flavors, showOpenOnly]);
 
+  // Check if data is "stale" (from a previous day)
+  const isDataStale = useMemo(() => {
+    // Check the first shop that has data
+    const shopWithData = Object.values(flavors).find(f => f.lastUpdated);
+    if (!shopWithData) return false;
+
+    const lastUpdate = new Date(shopWithData.lastUpdated);
+    const now = new Date();
+    
+    return lastUpdate.getDate() !== now.getDate() || 
+           lastUpdate.getMonth() !== now.getMonth() || 
+           lastUpdate.getFullYear() !== now.getFullYear();
+  }, [flavors]);
+
   const performGlobalSync = async () => {
     if (!navigator.onLine || syncMeta.isSyncing) return;
 
@@ -548,6 +562,20 @@ const App: React.FC = () => {
             <div className="flex justify-center py-4 animate-in fade-in zoom-in duration-300 h-16">
               <div className="w-8 h-8 rounded-full bg-sunrise-gold/20 flex items-center justify-center">
                  <i className="fas fa-sync-alt animate-spin text-sunrise-gold"></i>
+              </div>
+            </div>
+          )}
+
+          {isDataStale && !syncMeta.isSyncing && (
+            <div className="mb-6 px-4 py-3 bg-midnight-lake/5 dark:bg-sunrise-gold/10 border border-midnight-lake/10 dark:border-sunrise-gold/20 rounded-2xl flex items-center gap-3 animate-in slide-in-from-top-2 duration-500">
+              <div className="w-8 h-8 rounded-full bg-midnight-lake/10 dark:bg-sunrise-gold/20 flex items-center justify-center flex-shrink-0 text-midnight-lake dark:text-sunrise-gold">
+                <i className="fas fa-clock text-xs"></i>
+              </div>
+              <div className="flex-1">
+                <p className="text-[10px] font-black uppercase tracking-widest text-midnight-lake/60 dark:text-sunrise-gold/80 mb-0.5">Early Bird?</p>
+                <p className="text-xs font-bold text-midnight-lake dark:text-stone-200 leading-tight">
+                  Menus update around 10:30 AM. These are likely yesterday's flavors.
+                </p>
               </div>
             </div>
           )}
