@@ -2,8 +2,8 @@ name: Deploy to Cloud Run
 
 on:
   push:
-    branches:
-      - main
+    tags:
+      - 'v*'
 
 env:
   PROJECT_ID: manifest-sum-484719-f4
