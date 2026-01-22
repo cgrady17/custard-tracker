@@ -15,7 +15,7 @@ export interface CustardShop {
   brandColor?: string;
   chain?: string;
   logoUrl?: string;
-  hours?: Record<number, OperatingHours>; // 0 (Sun) - 6 (Sat)
+  hours?: Record<number, OperatingHours | null>; // 0 (Sun) - 6 (Sat)
   temporaryClosure?: string; // Message to display if shop is closed indefinitely
 }
 

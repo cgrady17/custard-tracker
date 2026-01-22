@@ -3,6 +3,7 @@ import { scrapeCulvers } from './scrapers/culvers.js';
 import { scrapeGilles } from './scrapers/gilles.js';
 import { scrapeOscars } from './scrapers/oscars.js';
 import { scrapeLeons } from './scrapers/leons.js';
+import { scrapeLeducs } from './scrapers/leducs.js';
 import { Storage } from '@google-cloud/storage';
 import * as fs from 'fs';
 import admin from 'firebase-admin';
@@ -54,7 +55,8 @@ export const SHOPS = [
   { id: 'oscars-west-allis', chain: "Oscar's", url: "https://oscarscustard.com/index.php/flavors/" },
   { id: 'oscars-franklin', chain: "Oscar's", url: "https://oscarscustard.com/index.php/flavors/" },
   { id: 'oscars-waukesha', chain: "Oscar's", url: "https://oscarscustard.com/index.php/flavors/" },
-  { id: 'leons', chain: "Leon's", url: "https://leonsfrozencustard.us" }
+  { id: 'leons', chain: "Leon's", url: "https://leonsfrozencustard.us" },
+  { id: 'leducs', chain: "LeDuc's", url: "https://leducscustard.com/custard-calendar/" }
 ];
 
 export const scrapeCustard = async (req, res) => {
@@ -63,11 +65,12 @@ export const scrapeCustard = async (req, res) => {
   
   // 1. Fetch shared data in parallel
   console.log("Fetching shared chain data...");
-  const [koppsData, gillesData, oscarsData, leonsData] = await Promise.all([
+  const [koppsData, gillesData, oscarsData, leonsData, leducsData] = await Promise.all([
       scrapeKopps().catch(e => { console.error(`[SCRAPER_ERROR] Kopps failed: ${e.message}`); return { error: e.message, flavors: [] }; }),
       scrapeGilles().catch(e => { console.error(`[SCRAPER_ERROR] Gilles failed: ${e.message}`); return { error: e.message, flavors: [] }; }),
       scrapeOscars().catch(e => { console.error(`[SCRAPER_ERROR] Oscars failed: ${e.message}`); return { error: e.message, flavors: [] }; }),
-      scrapeLeons().catch(e => { console.error(`[SCRAPER_ERROR] Leons failed: ${e.message}`); return { error: e.message, flavors: [] }; })
+      scrapeLeons().catch(e => { console.error(`[SCRAPER_ERROR] Leons failed: ${e.message}`); return { error: e.message, flavors: [] }; }),
+      scrapeLeducs().catch(e => { console.error(`[SCRAPER_ERROR] LeDucs failed: ${e.message}`); return { error: e.message, flavors: [] }; })
   ]);
 
   // 2. Process all shops in parallel
@@ -92,6 +95,8 @@ export const scrapeCustard = async (req, res) => {
               }
           } else if (shop.chain === "Leon's") {
               data = { ...leonsData, shopId: shop.id };
+          } else if (shop.chain === "LeDuc's") {
+              data = { ...leducsData, shopId: shop.id };
           } else if (shop.chain === "Culver's") {
               // Culver's requires individual API calls per location
               try {

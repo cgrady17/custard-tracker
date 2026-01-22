@@ -2,7 +2,7 @@ import React, { useState, useEffect, useMemo, useRef } from 'react';
 import { MILWAUKEE_SHOPS } from './constants';
 import { ViewType, FlavorStatus, SyncMetadata } from './types';
 import ShopCard from './components/ShopCard';
-import { fetchAllFlavors } from './services/dataService';
+import { fetchAllFlavors, fetchMetadata } from './services/dataService';
 import { trackEvent, trackPageView } from './services/analytics';
 
 const MapView = React.lazy(() => import('./components/MapView'));
@@ -127,7 +127,7 @@ const App: React.FC = () => {
   // Check if data is "stale" (from a previous day)
   const isDataStale = useMemo(() => {
     // Check the first shop that has data
-    const shopWithData = Object.values(flavors).find(f => f.lastUpdated);
+    const shopWithData = Object.values(flavors).find((f: FlavorStatus) => f.lastUpdated) as FlavorStatus | undefined;
     if (!shopWithData) return false;
 
     const lastUpdate = new Date(shopWithData.lastUpdated);
@@ -401,9 +401,7 @@ const App: React.FC = () => {
     if (view === 'favorites') {
       refreshWatchlist();
       // Fetch master list for suggestions
-      import('./services/dataService').then(mod => {
-        mod.fetchMetadata().then(meta => setAllFlavors(meta.flavors)).catch(() => {});
-      });
+      fetchMetadata().then(meta => setAllFlavors(meta.flavors)).catch(() => {});
     }
 
     window.addEventListener('watchlist-updated', refreshWatchlist);

@@ -3,7 +3,6 @@ import { createPortal } from 'react-dom';
 import { CustardShop, FlavorStatus, FlavorDetail } from '../types';
 import { trackEvent } from '../services/analytics';
 import { getShopStatus } from '../services/dataService';
-import { subscribeToFlavor, unsubscribeFromFlavor, getSubscribedFlavors } from '../services/notificationService';
 
 const ScheduleModal = lazy(() => import('./ScheduleModal'));
 
@@ -63,13 +62,15 @@ const FlavorItem: React.FC<{ flavor: FlavorDetail; isSingle: boolean; index: num
 
   useEffect(() => {
     const checkSub = () => {
-      getSubscribedFlavors().then(subs => {
-        if (subs.includes(flavor.name.toLowerCase())) {
-          setIsSubscribed(true);
-        } else {
-          setIsSubscribed(false);
-        }
-      }).catch(() => {});
+      import('../services/notificationService').then(mod => {
+        mod.getSubscribedFlavors().then(subs => {
+          if (subs.includes(flavor.name.toLowerCase())) {
+            setIsSubscribed(true);
+          } else {
+            setIsSubscribed(false);
+          }
+        }).catch(() => {});
+      });
     };
 
     // Initial check with delay for environment ready
@@ -87,6 +88,7 @@ const FlavorItem: React.FC<{ flavor: FlavorDetail; isSingle: boolean; index: num
   const handleToggleSubscribe = async (e: React.MouseEvent) => {
     e.stopPropagation();
     try {
+      const { subscribeToFlavor, unsubscribeFromFlavor } = await import('../services/notificationService');
       if (isSubscribed) {
         await unsubscribeFromFlavor(flavor.name);
         setIsSubscribed(false);
