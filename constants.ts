@@ -41,6 +41,16 @@ const OSCARS_HOURS: Record<number, OperatingHours> = {
   6: { open: "10:30", close: "24:00" },
 };
 
+const LEDUCS_HOURS: Record<number, OperatingHours | null> = {
+  0: { open: "11:00", close: "21:00" },
+  1: null, // Monday: Closed
+  2: { open: "11:00", close: "21:00" },
+  3: { open: "11:00", close: "21:00" },
+  4: { open: "11:00", close: "21:00" },
+  5: { open: "11:00", close: "21:00" },
+  6: { open: "11:00", close: "21:00" },
+};
+
 const CULVERS_HOURS_10: Record<number, OperatingHours> = {
   0: { open: "10:00", close: "22:00" },
   1: { open: "10:00", close: "22:00" },
@@ -163,6 +173,18 @@ export const MILWAUKEE_SHOPS: CustardShop[] = [
     logoUrl: "https://www.google.com/s2/favicons?domain=oscarscustard.com&sz=64",
     hours: OSCARS_HOURS,
     temporaryClosure: "Temporarily Closed (Fire)"
+  },
+  {
+    id: 'leducs',
+    name: "LeDuc's Frozen Custard",
+    address: "240 W Summit Ave, Wales, WI 53183",
+    lat: 43.0076,
+    lng: -88.3752,
+    website: "https://leducscustard.com",
+    brandColor: "#d93025",
+    chain: "LeDuc's",
+    logoUrl: "https://www.google.com/s2/favicons?domain=leducscustard.com&sz=64",
+    hours: LEDUCS_HOURS
   },
 
   // --- CULVER'S ---

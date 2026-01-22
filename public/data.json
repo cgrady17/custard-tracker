@@ -2,15 +2,15 @@
   "kopps-greenfield": {
     "flavors": [
       {
-        "name": "Chocolate Chip Cookie Dough",
-        "imageUrl": "https://kopps.com/wp-content/uploads/2022/07/Cookie-Dough.jpg",
-        "description": "Tastes like chocolate chip cookie dough!  Made with Hershey’s chocolate chips and cookie dough chunks",
+        "name": "Twix-Tac-Dough",
+        "imageUrl": "https://kopps.com/wp-content/uploads/2025/10/Twix-Tac-Doughedit-e1760120813444.jpg",
+        "description": "Cookie Dough Custard + Caramel + Chocolate Flakes + Shortbread Cookies + Chocolate Chip Cookie Dough",
         "type": "daily"
       },
       {
-        "name": "Caramel Pecan Silk",
+        "name": "Rum & Coca-Cola",
         "imageUrl": "https://kopps.com/wp-content/uploads/2023/01/flavor-placeholder-300x300.png",
-        "description": "See website for details.",
+        "description": "You’ve just got to try this!  Real rum!  Real Coke!  It’s a classic!",
         "type": "daily"
       },
       {
@@ -25,40 +25,6 @@
       }
     ],
     "upcoming": [
-      {
-        "date": "2026-01-20",
-        "flavors": [
-          {
-            "name": "Mr Fudgie",
-            "imageUrl": "https://kopps.com/wp-content/uploads/2023/01/flavor-placeholder-300x300.png",
-            "description": "Mint custard, Oreo® cookies and plenty of fudge",
-            "type": "daily"
-          },
-          {
-            "name": "Butter Brickle",
-            "imageUrl": "https://kopps.com/wp-content/uploads/2022/07/ButterBrickle.jpg",
-            "description": "To an old-fashioned custard flavor of butterscotch, we sprinkle in a crunchy brickle, rich with real butter, brown sugar and almonds",
-            "type": "daily"
-          }
-        ]
-      },
-      {
-        "date": "2026-01-21",
-        "flavors": [
-          {
-            "name": "Twix-Tac-Dough",
-            "imageUrl": "https://kopps.com/wp-content/uploads/2025/10/Twix-Tac-Doughedit-e1760120813444.jpg",
-            "description": "Cookie Dough Custard + Caramel + Chocolate Flakes + Shortbread Cookies + Chocolate Chip Cookie Dough",
-            "type": "daily"
-          },
-          {
-            "name": "Rum & Coca-Cola",
-            "imageUrl": "https://kopps.com/wp-content/uploads/2023/01/flavor-placeholder-300x300.png",
-            "description": "You’ve just got to try this!  Real rum!  Real Coke!  It’s a classic!",
-            "type": "daily"
-          }
-        ]
-      },
       {
         "date": "2026-01-22",
         "flavors": [
@@ -230,23 +196,23 @@
         ]
       }
     ],
-    "isOpen": true,
-    "statusMessage": "Open until 10:00 PM",
+    "isOpen": false,
+    "statusMessage": "Closed • Opens 10:30 AM",
     "shopId": "kopps-greenfield",
-    "lastUpdated": "2026-01-19T22:17:09.897Z"
+    "lastUpdated": "2026-01-22T04:47:56.612Z"
   },
   "kopps-glendale": {
     "flavors": [
       {
-        "name": "Chocolate Chip Cookie Dough",
-        "imageUrl": "https://kopps.com/wp-content/uploads/2022/07/Cookie-Dough.jpg",
-        "description": "Tastes like chocolate chip cookie dough!  Made with Hershey’s chocolate chips and cookie dough chunks",
+        "name": "Twix-Tac-Dough",
+        "imageUrl": "https://kopps.com/wp-content/uploads/2025/10/Twix-Tac-Doughedit-e1760120813444.jpg",
+        "description": "Cookie Dough Custard + Caramel + Chocolate Flakes + Shortbread Cookies + Chocolate Chip Cookie Dough",
         "type": "daily"
       },
       {
-        "name": "Caramel Pecan Silk",
+        "name": "Rum & Coca-Cola",
         "imageUrl": "https://kopps.com/wp-content/uploads/2023/01/flavor-placeholder-300x300.png",
-        "description": "See website for details.",
+        "description": "You’ve just got to try this!  Real rum!  Real Coke!  It’s a classic!",
         "type": "daily"
       },
       {
@@ -261,40 +227,6 @@
       }
     ],
     "upcoming": [
-      {
-        "date": "2026-01-20",
-        "flavors": [
-          {
-            "name": "Mr Fudgie",
-            "imageUrl": "https://kopps.com/wp-content/uploads/2023/01/flavor-placeholder-300x300.png",
-            "description": "Mint custard, Oreo® cookies and plenty of fudge",
-            "type": "daily"
-          },
-          {
-            "name": "Butter Brickle",
-            "imageUrl": "https://kopps.com/wp-content/uploads/2022/07/ButterBrickle.jpg",
-            "description": "To an old-fashioned custard flavor of butterscotch, we sprinkle in a crunchy brickle, rich with real butter, brown sugar and almonds",
-            "type": "daily"
-          }
-        ]
-      },
-      {
-        "date": "2026-01-21",
-        "flavors": [
-          {
-            "name": "Twix-Tac-Dough",
-            "imageUrl": "https://kopps.com/wp-content/uploads/2025/10/Twix-Tac-Doughedit-e1760120813444.jpg",
-            "description": "Cookie Dough Custard + Caramel + Chocolate Flakes + Shortbread Cookies + Chocolate Chip Cookie Dough",
-            "type": "daily"
-          },
-          {
-            "name": "Rum & Coca-Cola",
-            "imageUrl": "https://kopps.com/wp-content/uploads/2023/01/flavor-placeholder-300x300.png",
-            "description": "You’ve just got to try this!  Real rum!  Real Coke!  It’s a classic!",
-            "type": "daily"
-          }
-        ]
-      },
       {
         "date": "2026-01-22",
         "flavors": [
@@ -466,23 +398,23 @@
         ]
       }
     ],
-    "isOpen": true,
-    "statusMessage": "Open until 10:00 PM",
+    "isOpen": false,
+    "statusMessage": "Closed • Opens 10:30 AM",
     "shopId": "kopps-glendale",
-    "lastUpdated": "2026-01-19T22:17:09.897Z"
+    "lastUpdated": "2026-01-22T04:47:56.612Z"
   },
   "kopps-brookfield": {
     "flavors": [
       {
-        "name": "Chocolate Chip Cookie Dough",
-        "imageUrl": "https://kopps.com/wp-content/uploads/2022/07/Cookie-Dough.jpg",
-        "description": "Tastes like chocolate chip cookie dough!  Made with Hershey’s chocolate chips and cookie dough chunks",
+        "name": "Twix-Tac-Dough",
+        "imageUrl": "https://kopps.com/wp-content/uploads/2025/10/Twix-Tac-Doughedit-e1760120813444.jpg",
+        "description": "Cookie Dough Custard + Caramel + Chocolate Flakes + Shortbread Cookies + Chocolate Chip Cookie Dough",
         "type": "daily"
       },
       {
-        "name": "Caramel Pecan Silk",
+        "name": "Rum & Coca-Cola",
         "imageUrl": "https://kopps.com/wp-content/uploads/2023/01/flavor-placeholder-300x300.png",
-        "description": "See website for details.",
+        "description": "You’ve just got to try this!  Real rum!  Real Coke!  It’s a classic!",
         "type": "daily"
       },
       {
@@ -497,40 +429,6 @@
       }
     ],
     "upcoming": [
-      {
-        "date": "2026-01-20",
-        "flavors": [
-          {
-            "name": "Mr Fudgie",
-            "imageUrl": "https://kopps.com/wp-content/uploads/2023/01/flavor-placeholder-300x300.png",
-            "description": "Mint custard, Oreo® cookies and plenty of fudge",
-            "type": "daily"
-          },
-          {
-            "name": "Butter Brickle",
-            "imageUrl": "https://kopps.com/wp-content/uploads/2022/07/ButterBrickle.jpg",
-            "description": "To an old-fashioned custard flavor of butterscotch, we sprinkle in a crunchy brickle, rich with real butter, brown sugar and almonds",
-            "type": "daily"
-          }
-        ]
-      },
-      {
-        "date": "2026-01-21",
-        "flavors": [
-          {
-            "name": "Twix-Tac-Dough",
-            "imageUrl": "https://kopps.com/wp-content/uploads/2025/10/Twix-Tac-Doughedit-e1760120813444.jpg",
-            "description": "Cookie Dough Custard + Caramel + Chocolate Flakes + Shortbread Cookies + Chocolate Chip Cookie Dough",
-            "type": "daily"
-          },
-          {
-            "name": "Rum & Coca-Cola",
-            "imageUrl": "https://kopps.com/wp-content/uploads/2023/01/flavor-placeholder-300x300.png",
-            "description": "You’ve just got to try this!  Real rum!  Real Coke!  It’s a classic!",
-            "type": "daily"
-          }
-        ]
-      },
       {
         "date": "2026-01-22",
         "flavors": [
@@ -702,10 +600,10 @@
         ]
       }
     ],
-    "isOpen": true,
-    "statusMessage": "Open until 10:00 PM",
+    "isOpen": false,
+    "statusMessage": "Closed • Opens 10:30 AM",
     "shopId": "kopps-brookfield",
-    "lastUpdated": "2026-01-19T22:17:09.897Z"
+    "lastUpdated": "2026-01-22T04:47:56.612Z"
   },
   "gilles": {
     "flavors": [
@@ -723,7 +621,62 @@
     ],
     "upcoming": [
       {
-        "date": "2026-01-20",
+        "date": "2026-01-22",
+        "flavors": [
+          {
+            "name": "Chocolate Oreo",
+            "imageUrl": "https://gillesfrozencustard.com/sites/default/files/styles/calendar/public/flavor/Chocolate%20Oreo.jpg?itok=5lNMN3Q9",
+            "description": "Rich chocolate custard with Oreo cookie pieces.",
+            "type": "daily"
+          }
+        ]
+      },
+      {
+        "date": "2026-01-23",
+        "flavors": [
+          {
+            "name": "Chocolate Oreo",
+            "imageUrl": "https://gillesfrozencustard.com/sites/default/files/styles/calendar/public/flavor/Chocolate%20Oreo.jpg?itok=5lNMN3Q9",
+            "description": "Rich chocolate custard with Oreo cookie pieces.",
+            "type": "daily"
+          }
+        ]
+      },
+      {
+        "date": "2026-01-24",
+        "flavors": [
+          {
+            "name": "Chocolate Oreo",
+            "imageUrl": "https://gillesfrozencustard.com/sites/default/files/styles/calendar/public/flavor/Chocolate%20Oreo.jpg?itok=5lNMN3Q9",
+            "description": "Rich chocolate custard with Oreo cookie pieces.",
+            "type": "daily"
+          }
+        ]
+      },
+      {
+        "date": "2026-01-25",
+        "flavors": [
+          {
+            "name": "Chocolate Oreo",
+            "imageUrl": "https://gillesfrozencustard.com/sites/default/files/styles/calendar/public/flavor/Chocolate%20Oreo.jpg?itok=5lNMN3Q9",
+            "description": "Rich chocolate custard with Oreo cookie pieces.",
+            "type": "daily"
+          }
+        ]
+      },
+      {
+        "date": "2026-01-26",
+        "flavors": [
+          {
+            "name": "Chocolate Oreo",
+            "imageUrl": "https://gillesfrozencustard.com/sites/default/files/styles/calendar/public/flavor/Chocolate%20Oreo.jpg?itok=5lNMN3Q9",
+            "description": "Rich chocolate custard with Oreo cookie pieces.",
+            "type": "daily"
+          }
+        ]
+      },
+      {
+        "date": "2026-01-27",
         "flavors": [
           {
             "name": "Closed",
@@ -734,62 +687,7 @@
         ]
       },
       {
-        "date": "2026-01-21",
-        "flavors": [
-          {
-            "name": "Chocolate Oreo",
-            "imageUrl": "https://gillesfrozencustard.com/sites/default/files/styles/calendar/public/flavor/Chocolate%20Oreo.jpg?itok=5lNMN3Q9",
-            "description": "Rich chocolate custard with Oreo cookie pieces.",
-            "type": "daily"
-          }
-        ]
-      },
-      {
-        "date": "2026-01-22",
-        "flavors": [
-          {
-            "name": "Chocolate Oreo",
-            "imageUrl": "https://gillesfrozencustard.com/sites/default/files/styles/calendar/public/flavor/Chocolate%20Oreo.jpg?itok=5lNMN3Q9",
-            "description": "Rich chocolate custard with Oreo cookie pieces.",
-            "type": "daily"
-          }
-        ]
-      },
-      {
-        "date": "2026-01-23",
-        "flavors": [
-          {
-            "name": "Chocolate Oreo",
-            "imageUrl": "https://gillesfrozencustard.com/sites/default/files/styles/calendar/public/flavor/Chocolate%20Oreo.jpg?itok=5lNMN3Q9",
-            "description": "Rich chocolate custard with Oreo cookie pieces.",
-            "type": "daily"
-          }
-        ]
-      },
-      {
-        "date": "2026-01-24",
-        "flavors": [
-          {
-            "name": "Chocolate Oreo",
-            "imageUrl": "https://gillesfrozencustard.com/sites/default/files/styles/calendar/public/flavor/Chocolate%20Oreo.jpg?itok=5lNMN3Q9",
-            "description": "Rich chocolate custard with Oreo cookie pieces.",
-            "type": "daily"
-          }
-        ]
-      },
-      {
-        "date": "2026-01-25",
-        "flavors": [
-          {
-            "name": "Chocolate Oreo",
-            "imageUrl": "https://gillesfrozencustard.com/sites/default/files/styles/calendar/public/flavor/Chocolate%20Oreo.jpg?itok=5lNMN3Q9",
-            "description": "Rich chocolate custard with Oreo cookie pieces.",
-            "type": "daily"
-          }
-        ]
-      },
-      {
-        "date": "2026-01-26",
+        "date": "2026-01-28",
         "flavors": [
           {
             "name": "Chocolate Oreo",
@@ -800,17 +698,17 @@
         ]
       }
     ],
-    "isOpen": true,
-    "statusMessage": "Open until 10:00 PM",
+    "isOpen": false,
+    "statusMessage": "Closed • Opens 11:00 AM",
     "shopId": "gilles",
-    "lastUpdated": "2026-01-19T22:17:09.908Z"
+    "lastUpdated": "2026-01-22T04:47:56.623Z"
   },
   "oscars-west-allis": {
     "flavors": [
       {
-        "name": "GERMAN SWEET CHOCOLATE CAKE",
-        "imageUrl": "https://www.oscarscustard.com/wp-content/uploads/2019/07/germansweet.jpg",
-        "description": "Fudge bits, coconut shavings, walnuts, and swirls of caramel mixed into chocolate custard.",
+        "name": "MUDD PIE",
+        "imageUrl": "https://www.oscarscustard.com/wp-content/uploads/2023/10/mudpie.jpg",
+        "description": "A chocolatey mocha custard blended with swirls of fudge & chocolate pie crust.",
         "type": "daily"
       },
       {
@@ -825,34 +723,6 @@
       }
     ],
     "upcoming": [
-      {
-        "date": "2026-01-20",
-        "flavors": [
-          {
-            "name": "RED RASPBERRY",
-            "imageUrl": "https://www.oscarscustard.com/wp-content/uploads/2023/10/redrasp2LR.jpg",
-            "description": "Delicious fresh red raspberry custard.",
-            "type": "daily"
-          },
-          {
-            "name": "CHOCOLATE CHIP",
-            "imageUrl": "https://www.oscarscustard.com/wp-content/uploads/2020/01/chocochip.jpg",
-            "description": "Chocolate chips blended with our creamy custard.",
-            "type": "daily"
-          }
-        ]
-      },
-      {
-        "date": "2026-01-21",
-        "flavors": [
-          {
-            "name": "MUDD PIE",
-            "imageUrl": "https://www.oscarscustard.com/wp-content/uploads/2023/10/mudpie.jpg",
-            "description": "A chocolatey mocha custard blended with swirls of fudge & chocolate pie crust.",
-            "type": "daily"
-          }
-        ]
-      },
       {
         "date": "2026-01-22",
         "flavors": [
@@ -970,17 +840,17 @@
         ]
       }
     ],
-    "isOpen": true,
-    "statusMessage": "Open until 10:00 PM",
+    "isOpen": false,
+    "statusMessage": "Closed • Opens 10:30 AM",
     "shopId": "oscars-west-allis",
-    "lastUpdated": "2026-01-19T22:17:09.908Z"
+    "lastUpdated": "2026-01-22T04:47:56.623Z"
   },
   "oscars-franklin": {
     "flavors": [
       {
-        "name": "GERMAN SWEET CHOCOLATE CAKE",
-        "imageUrl": "https://www.oscarscustard.com/wp-content/uploads/2019/07/germansweet.jpg",
-        "description": "Fudge bits, coconut shavings, walnuts, and swirls of caramel mixed into chocolate custard.",
+        "name": "MUDD PIE",
+        "imageUrl": "https://www.oscarscustard.com/wp-content/uploads/2023/10/mudpie.jpg",
+        "description": "A chocolatey mocha custard blended with swirls of fudge & chocolate pie crust.",
         "type": "daily"
       },
       {
@@ -995,34 +865,6 @@
       }
     ],
     "upcoming": [
-      {
-        "date": "2026-01-20",
-        "flavors": [
-          {
-            "name": "RED RASPBERRY",
-            "imageUrl": "https://www.oscarscustard.com/wp-content/uploads/2023/10/redrasp2LR.jpg",
-            "description": "Delicious fresh red raspberry custard.",
-            "type": "daily"
-          },
-          {
-            "name": "CHOCOLATE CHIP",
-            "imageUrl": "https://www.oscarscustard.com/wp-content/uploads/2020/01/chocochip.jpg",
-            "description": "Chocolate chips blended with our creamy custard.",
-            "type": "daily"
-          }
-        ]
-      },
-      {
-        "date": "2026-01-21",
-        "flavors": [
-          {
-            "name": "MUDD PIE",
-            "imageUrl": "https://www.oscarscustard.com/wp-content/uploads/2023/10/mudpie.jpg",
-            "description": "A chocolatey mocha custard blended with swirls of fudge & chocolate pie crust.",
-            "type": "daily"
-          }
-        ]
-      },
       {
         "date": "2026-01-22",
         "flavors": [
@@ -1140,17 +982,17 @@
         ]
       }
     ],
-    "isOpen": true,
-    "statusMessage": "Open until 10:00 PM",
+    "isOpen": false,
+    "statusMessage": "Closed • Opens 10:30 AM",
     "shopId": "oscars-franklin",
-    "lastUpdated": "2026-01-19T22:17:09.908Z"
+    "lastUpdated": "2026-01-22T04:47:56.623Z"
   },
   "oscars-waukesha": {
     "shopId": "oscars-waukesha",
     "flavors": [],
     "isOpen": false,
     "statusMessage": "Temporarily Closed (Fire)",
-    "lastUpdated": "2026-01-19T22:17:09.908Z"
+    "lastUpdated": "2026-01-22T04:47:56.623Z"
   },
   "leons": {
     "flavors": [
@@ -1168,87 +1010,20 @@
     "isOpen": true,
     "statusMessage": "Call to confirm special",
     "shopId": "leons",
-    "lastUpdated": "2026-01-19T22:17:09.908Z"
+    "lastUpdated": "2026-01-22T04:47:56.623Z"
   },
-  "culvers-menomonee-falls": {
+  "leducs": {
     "flavors": [
       {
-        "name": "Chocolate Caramel Twist",
-        "description": "Chocolate and Vanilla Fresh Frozen Custard swirled together with ribbons of old fashioned salted caramel and chopped Dove® Chocolate pieces.",
-        "imageUrl": "https://cdn.culvers.com/menu-item-detail/img-Chocolate-Caramel-Twist2.png"
+        "name": "Black Raspberry",
+        "type": "daily",
+        "description": ""
       }
     ],
-    "isOpen": true,
-    "statusMessage": "Open until 10:00 PM",
-    "shopId": "culvers-menomonee-falls",
-    "lastUpdated": "2026-01-19T22:17:10.157Z"
-  },
-  "culvers-muskego": {
-    "flavors": [
-      {
-        "name": "Mint Cookie",
-        "description": "Our specially blended Mint Fresh Frozen Custard with OREO® Cookies for a refreshing treat.",
-        "imageUrl": "https://cdn.culvers.com/menu-item-detail/img-Mint-Oreo-updated.png"
-      }
-    ],
-    "isOpen": true,
-    "statusMessage": "Open until 10:00 PM",
-    "shopId": "culvers-muskego",
-    "lastUpdated": "2026-01-19T22:17:10.159Z"
-  },
-  "culvers-waukesha-hwy-164": {
-    "flavors": [
-      {
-        "name": "Butter Pecan",
-        "description": "Culver's Classic! This one still knocks our socks off. Specially blended Butter Pecan Fresh Frozen Custard with toasted pecan pieces.",
-        "imageUrl": "https://cdn.culvers.com/menu-item-detail/img-Butter-Pecan-New.png"
-      }
-    ],
-    "isOpen": true,
-    "statusMessage": "Open until 10:00 PM",
-    "shopId": "culvers-waukesha-hwy-164",
-    "lastUpdated": "2026-01-19T22:17:10.165Z"
-  },
-  "culvers-racine-wi-douglas-ave": {
-    "flavors": [
-      {
-        "name": "Turtle",
-        "description": "A Culver's Classic! We begin with creamy Vanilla Fresh Frozen Custard and swirl in ribbons of old fashioned salted caramel, novelty chocolate, and toasted pecan pieces.",
-        "imageUrl": "https://cdn.culvers.com/menu-item-detail/img-Turtle.png"
-      }
-    ],
-    "isOpen": true,
-    "statusMessage": "Open until 10:00 PM",
-    "shopId": "culvers-racine-wi-douglas-ave",
-    "lastUpdated": "2026-01-19T22:17:10.169Z"
-  },
-  "culvers-grafton": {
-    "flavors": [
-      {
-        "name": "Turtle Cheesecake",
-        "description": "Creamy Cheesecake Fresh Frozen Custard swirled with ribbons of old fashioned salted caramel, chopped Dove® Chocolate pieces, toasted pecan pieces and rich cheesecake pieces.",
-        "imageUrl": "https://cdn.culvers.com/menu-item-detail/img-Turtle-Cheesecake.Cake-Cone2.png"
-      }
-    ],
-    "isOpen": true,
-    "statusMessage": "Open until 12:00 AM",
-    "shopId": "culvers-grafton",
-    "lastUpdated": "2026-01-19T22:17:10.200Z"
+    "shopId": "leducs",
+    "lastUpdated": "2026-01-22T04:47:56.623Z"
   },
   "culvers-milwaukee-layton": {
-    "flavors": [
-      {
-        "name": "OREO® Cookie Cheesecake",
-        "description": "Creamy Cheesecake Fresh Frozen Custard with rich cheesecake pieces and OREO® Cookie pieces swirled in.",
-        "imageUrl": "https://cdn.culvers.com/menu-item-detail/img-Oreo-Cheesecake.Waffle-Cone1.png"
-      }
-    ],
-    "isOpen": true,
-    "statusMessage": "Open until 11:00 PM",
-    "shopId": "culvers-milwaukee-layton",
-    "lastUpdated": "2026-01-19T22:17:10.200Z"
-  },
-  "culvers-franklin": {
     "flavors": [
       {
         "name": "Mint Explosion",
@@ -1257,154 +1032,11 @@
       }
     ],
     "isOpen": true,
-    "statusMessage": "Open until 10:00 PM",
-    "shopId": "culvers-franklin",
-    "lastUpdated": "2026-01-19T22:17:10.205Z"
-  },
-  "culvers-hales-corners": {
-    "flavors": [
-      {
-        "name": "Chocolate Covered Strawberry",
-        "description": "Our creamy Vanilla Fresh Frozen Custard complemented with plump strawberries and novelty chocolate.",
-        "imageUrl": "https://cdn.culvers.com/menu-item-detail/img-Chocolate-Covered-Strawberry1.png"
-      }
-    ],
-    "isOpen": true,
-    "statusMessage": "Open until 10:00 PM",
-    "shopId": "culvers-hales-corners",
-    "lastUpdated": "2026-01-19T22:17:10.207Z"
-  },
-  "culvers-brookfield-capitol": {
-    "flavors": [
-      {
-        "name": "Caramel Cashew",
-        "description": "Culver’s Classic! Our creamy Vanilla Fresh Frozen Custard swirled with ribbons of old fashioned salted caramel and loaded with lightly salted cashew pieces.",
-        "imageUrl": "https://cdn.culvers.com/menu-item-detail/img-Caramel-Cashew.png"
-      }
-    ],
-    "isOpen": true,
-    "statusMessage": "Open until 10:00 PM",
-    "shopId": "culvers-brookfield-capitol",
-    "lastUpdated": "2026-01-19T22:17:10.223Z"
-  },
-  "culvers-milwaukee-good-hope": {
-    "flavors": [
-      {
-        "name": "Turtle",
-        "description": "A Culver's Classic! We begin with creamy Vanilla Fresh Frozen Custard and swirl in ribbons of old fashioned salted caramel, novelty chocolate, and toasted pecan pieces.",
-        "imageUrl": "https://cdn.culvers.com/menu-item-detail/img-Turtle.png"
-      }
-    ],
-    "isOpen": true,
-    "statusMessage": "Open until 10:00 PM",
-    "shopId": "culvers-milwaukee-good-hope",
-    "lastUpdated": "2026-01-19T22:17:10.228Z"
+    "statusMessage": "Open until 11:00 PM",
+    "shopId": "culvers-milwaukee-layton",
+    "lastUpdated": "2026-01-22T04:47:56.892Z"
   },
   "culvers-west-allis": {
-    "flavors": [
-      {
-        "name": "Georgia Peach",
-        "description": "Our specially blended Peach Fresh Frozen Custard swirled with sweet peaches for a light, refreshing treat.",
-        "imageUrl": "https://cdn.culvers.com/menu-item-detail/img-Georgia-Peach1.png"
-      }
-    ],
-    "isOpen": true,
-    "statusMessage": "Open until 10:00 PM",
-    "shopId": "culvers-west-allis",
-    "lastUpdated": "2026-01-19T22:17:10.231Z"
-  },
-  "culvers-glendale-wi-bayside-dr": {
-    "flavors": [
-      {
-        "name": "Caramel Pecan",
-        "description": "Ribbons of old fashioned salted caramel swirled with our creamy Vanilla Fresh Frozen Custard and toasted pecan pieces. Taste why it's one of out most popular treats!",
-        "imageUrl": "https://cdn.culvers.com/menu-item-detail/img-Caramel-Pecan.png"
-      }
-    ],
-    "isOpen": true,
-    "statusMessage": "Open until 10:30 PM",
-    "shopId": "culvers-glendale-wi-bayside-dr",
-    "lastUpdated": "2026-01-19T22:17:10.296Z"
-  },
-  "culvers-west-milwaukee": {
-    "flavors": [
-      {
-        "name": "Turtle Dove",
-        "description": "Creamy Vanilla Fresh Frozen Custard swirled with ribbons of old fashioned salted caramel, marshmallow creme, toasted pecan pieces and chopped Dove® Chocolate pieces.",
-        "imageUrl": "https://cdn.culvers.com/menu-item-detail/turtle-dove.png"
-      }
-    ],
-    "isOpen": true,
-    "statusMessage": "Open until 11:00 PM",
-    "shopId": "culvers-west-milwaukee",
-    "lastUpdated": "2026-01-19T22:17:10.308Z"
-  },
-  "culvers-milwaukee-fond-du-lac": {
-    "flavors": [
-      {
-        "name": "Chocolate Covered Strawberry",
-        "description": "Our creamy Vanilla Fresh Frozen Custard complemented with plump strawberries and novelty chocolate.",
-        "imageUrl": "https://cdn.culvers.com/menu-item-detail/img-Chocolate-Covered-Strawberry1.png"
-      }
-    ],
-    "isOpen": true,
-    "statusMessage": "Open until 11:00 PM",
-    "shopId": "culvers-milwaukee-fond-du-lac",
-    "lastUpdated": "2026-01-19T22:17:10.316Z"
-  },
-  "culvers-oak-creek": {
-    "flavors": [
-      {
-        "name": "Dark Chocolate Decadence",
-        "description": "Premium blend of cocoas for the ultimate chocolate experience.",
-        "imageUrl": "https://cdn.culvers.com/menu-item-detail/img-Dark-Chocolate-Decadence1.png"
-      }
-    ],
-    "isOpen": true,
-    "statusMessage": "Open until 10:00 PM",
-    "shopId": "culvers-oak-creek",
-    "lastUpdated": "2026-01-19T22:17:10.341Z"
-  },
-  "culvers-shorewood": {
-    "flavors": [
-      {
-        "name": "OREO® Cookie Cheesecake",
-        "description": "Creamy Cheesecake Fresh Frozen Custard with rich cheesecake pieces and OREO® Cookie pieces swirled in.",
-        "imageUrl": "https://cdn.culvers.com/menu-item-detail/img-Oreo-Cheesecake.Waffle-Cone1.png"
-      }
-    ],
-    "isOpen": true,
-    "statusMessage": "Open until 11:00 PM",
-    "shopId": "culvers-shorewood",
-    "lastUpdated": "2026-01-19T22:17:10.422Z"
-  },
-  "culvers-greenfield-wi-layton-ave": {
-    "flavors": [
-      {
-        "name": "Caramel Fudge Cookie Dough",
-        "description": "A rich, indulgent cookie dough treat with ribbons of old fashioned salted caramel and thick fudge swirled in creamy Vanilla Fresh Frozen Custard.",
-        "imageUrl": "https://cdn.culvers.com/menu-item-detail/img-Caramel-Fudge-CookieDough.png"
-      }
-    ],
-    "isOpen": true,
-    "statusMessage": "Open until 11:00 PM",
-    "shopId": "culvers-greenfield-wi-layton-ave",
-    "lastUpdated": "2026-01-19T22:17:10.458Z"
-  },
-  "culvers-new-berlin": {
-    "flavors": [
-      {
-        "name": "Crazy for Cookie Dough",
-        "description": "Our creamy Vanilla and Chocolate Fresh Frozen Custard swirled together and mixed with thick fudge, ribbons of old fashioned salted caramel and cookie dough pieces.",
-        "imageUrl": "https://cdn.culvers.com/menu-item-detail/img-Crazy-for-Cookie-Dough.Waffle-Cone1.png"
-      }
-    ],
-    "isOpen": true,
-    "statusMessage": "Open until 10:00 PM",
-    "shopId": "culvers-new-berlin",
-    "lastUpdated": "2026-01-19T22:17:10.477Z"
-  },
-  "culvers-elm-grove-wi": {
     "flavors": [
       {
         "name": "Raspberry Cheesecake",
@@ -1414,10 +1046,153 @@
     ],
     "isOpen": true,
     "statusMessage": "Open until 10:00 PM",
-    "shopId": "culvers-elm-grove-wi",
-    "lastUpdated": "2026-01-19T22:17:10.541Z"
+    "shopId": "culvers-west-allis",
+    "lastUpdated": "2026-01-22T04:47:56.912Z"
   },
-  "culvers-sussex": {
+  "culvers-racine-wi-douglas-ave": {
+    "flavors": [
+      {
+        "name": "Really Reese's",
+        "description": "Reese’s Peanut Butter Cups become a special treat when stirred in our delicious Chocolate Fresh Frozen Custard.",
+        "imageUrl": "https://cdn.culvers.com/menu-item-detail/img-Really-Reeses.Cake-Cone.png"
+      }
+    ],
+    "isOpen": true,
+    "statusMessage": "Open until 10:00 PM",
+    "shopId": "culvers-racine-wi-douglas-ave",
+    "lastUpdated": "2026-01-22T04:47:56.958Z"
+  },
+  "culvers-glendale-wi-bayside-dr": {
+    "flavors": [
+      {
+        "name": "Snickers Swirl",
+        "description": "Chocolate and Vanilla Fresh Frozen Custard swirled together with chewy pieces of Snickers.",
+        "imageUrl": "https://cdn.culvers.com/menu-item-detail/img-Snicker-Swirl.png"
+      }
+    ],
+    "isOpen": false,
+    "statusMessage": "Closed",
+    "shopId": "culvers-glendale-wi-bayside-dr",
+    "lastUpdated": "2026-01-22T04:47:56.966Z"
+  },
+  "culvers-waukesha-grandview": {
+    "flavors": [
+      {
+        "name": "Really Reese's",
+        "description": "Reese’s Peanut Butter Cups become a special treat when stirred in our delicious Chocolate Fresh Frozen Custard.",
+        "imageUrl": "https://cdn.culvers.com/menu-item-detail/img-Really-Reeses.Cake-Cone.png"
+      }
+    ],
+    "isOpen": false,
+    "statusMessage": "Closed",
+    "shopId": "culvers-waukesha-grandview",
+    "lastUpdated": "2026-01-22T04:47:56.990Z"
+  },
+  "culvers-new-berlin": {
+    "flavors": [
+      {
+        "name": "Chocolate Caramel Twist",
+        "description": "Chocolate and Vanilla Fresh Frozen Custard swirled together with ribbons of old fashioned salted caramel and chopped Dove® Chocolate pieces.",
+        "imageUrl": "https://cdn.culvers.com/menu-item-detail/img-Chocolate-Caramel-Twist2.png"
+      }
+    ],
+    "isOpen": false,
+    "statusMessage": "Closed",
+    "shopId": "culvers-new-berlin",
+    "lastUpdated": "2026-01-22T04:47:56.994Z"
+  },
+  "culvers-oak-creek": {
+    "flavors": [
+      {
+        "name": "OREO® Cookie Overload",
+        "description": "Our delicious Chocolate Fresh Frozen Custard loaded with OREO® Cookies and streams of chocolate syrup.",
+        "imageUrl": "https://cdn.culvers.com/menu-item-detail/oreo-cookie-overload.png"
+      }
+    ],
+    "isOpen": false,
+    "statusMessage": "Closed",
+    "shopId": "culvers-oak-creek",
+    "lastUpdated": "2026-01-22T04:47:57.031Z"
+  },
+  "culvers-shorewood": {
+    "flavors": [
+      {
+        "name": "Turtle",
+        "description": "A Culver's Classic! We begin with creamy Vanilla Fresh Frozen Custard and swirl in ribbons of old fashioned salted caramel, novelty chocolate, and toasted pecan pieces.",
+        "imageUrl": "https://cdn.culvers.com/menu-item-detail/img-Turtle.png"
+      }
+    ],
+    "isOpen": true,
+    "statusMessage": "Open until 11:00 PM",
+    "shopId": "culvers-shorewood",
+    "lastUpdated": "2026-01-22T04:47:57.203Z"
+  },
+  "culvers-mequon": {
+    "flavors": [
+      {
+        "name": "Butter Pecan",
+        "description": "Culver's Classic! This one still knocks our socks off. Specially blended Butter Pecan Fresh Frozen Custard with toasted pecan pieces.",
+        "imageUrl": "https://cdn.culvers.com/menu-item-detail/img-Butter-Pecan-New.png"
+      }
+    ],
+    "isOpen": false,
+    "statusMessage": "Closed",
+    "shopId": "culvers-mequon",
+    "lastUpdated": "2026-01-22T04:47:57.349Z"
+  },
+  "culvers-waukesha-hwy-164": {
+    "flavors": [
+      {
+        "name": "Raspberry Cheesecake",
+        "description": "Creamy Cheesecake Fresh Frozen Custard with rich cheesecake pieces and sweet raspberries for an indulgent treat.",
+        "imageUrl": "https://cdn.culvers.com/menu-item-detail/img-Raspberry-Cheesecake.Waffle-Cone.png"
+      }
+    ],
+    "isOpen": false,
+    "statusMessage": "Closed",
+    "shopId": "culvers-waukesha-hwy-164",
+    "lastUpdated": "2026-01-22T04:47:57.370Z"
+  },
+  "culvers-brookfield-124th": {
+    "flavors": [
+      {
+        "name": "Butter Pecan",
+        "description": "Culver's Classic! This one still knocks our socks off. Specially blended Butter Pecan Fresh Frozen Custard with toasted pecan pieces.",
+        "imageUrl": "https://cdn.culvers.com/menu-item-detail/img-Butter-Pecan-New.png"
+      }
+    ],
+    "isOpen": false,
+    "statusMessage": "Closed",
+    "shopId": "culvers-brookfield-124th",
+    "lastUpdated": "2026-01-22T04:47:57.383Z"
+  },
+  "culvers-brown-deer": {
+    "flavors": [
+      {
+        "name": "Butter Pecan",
+        "description": "Culver's Classic! This one still knocks our socks off. Specially blended Butter Pecan Fresh Frozen Custard with toasted pecan pieces.",
+        "imageUrl": "https://cdn.culvers.com/menu-item-detail/img-Butter-Pecan-New.png"
+      }
+    ],
+    "isOpen": false,
+    "statusMessage": "Closed",
+    "shopId": "culvers-brown-deer",
+    "lastUpdated": "2026-01-22T04:47:57.390Z"
+  },
+  "culvers-menomonee-falls": {
+    "flavors": [
+      {
+        "name": "Caramel Fudge Cookie Dough",
+        "description": "A rich, indulgent cookie dough treat with ribbons of old fashioned salted caramel and thick fudge swirled in creamy Vanilla Fresh Frozen Custard.",
+        "imageUrl": "https://cdn.culvers.com/menu-item-detail/img-Caramel-Fudge-CookieDough.png"
+      }
+    ],
+    "isOpen": false,
+    "statusMessage": "Closed",
+    "shopId": "culvers-menomonee-falls",
+    "lastUpdated": "2026-01-22T04:47:57.429Z"
+  },
+  "culvers-brookfield-capitol": {
     "flavors": [
       {
         "name": "Chocolate Volcano",
@@ -1425,12 +1200,103 @@
         "imageUrl": "https://cdn.culvers.com/menu-item-detail/img-Chocolate-Volcano2.png"
       }
     ],
+    "isOpen": false,
+    "statusMessage": "Closed",
+    "shopId": "culvers-brookfield-capitol",
+    "lastUpdated": "2026-01-22T04:47:57.435Z"
+  },
+  "culvers-sussex": {
+    "flavors": [
+      {
+        "name": "Chocolate Caramel Twist",
+        "description": "Chocolate and Vanilla Fresh Frozen Custard swirled together with ribbons of old fashioned salted caramel and chopped Dove® Chocolate pieces.",
+        "imageUrl": "https://cdn.culvers.com/menu-item-detail/img-Chocolate-Caramel-Twist2.png"
+      }
+    ],
     "isOpen": true,
     "statusMessage": "Open until 11:00 PM",
     "shopId": "culvers-sussex",
-    "lastUpdated": "2026-01-19T22:17:10.574Z"
+    "lastUpdated": "2026-01-22T04:47:57.445Z"
+  },
+  "culvers-elm-grove-wi": {
+    "flavors": [
+      {
+        "name": "Devil's Food Cake",
+        "description": "Dark Chocolate Fresh Frozen Custard swirled with chocolate cake and novelty chocolate.",
+        "imageUrl": "https://cdn.culvers.com/menu-item-detail/img-Devils-Food-Cake.png"
+      }
+    ],
+    "isOpen": false,
+    "statusMessage": "Closed",
+    "shopId": "culvers-elm-grove-wi",
+    "lastUpdated": "2026-01-22T04:47:57.786Z"
+  },
+  "culvers-hales-corners": {
+    "flavors": [
+      {
+        "name": "Georgia Peach",
+        "description": "Our specially blended Peach Fresh Frozen Custard swirled with sweet peaches for a light, refreshing treat.",
+        "imageUrl": "https://cdn.culvers.com/menu-item-detail/img-Georgia-Peach1.png"
+      }
+    ],
+    "isOpen": false,
+    "statusMessage": "Closed",
+    "shopId": "culvers-hales-corners",
+    "lastUpdated": "2026-01-22T04:47:57.791Z"
   },
   "culvers-waukesha-sunset": {
+    "flavors": [
+      {
+        "name": "Caramel Pecan",
+        "description": "Ribbons of old fashioned salted caramel swirled with our creamy Vanilla Fresh Frozen Custard and toasted pecan pieces. Taste why it's one of out most popular treats!",
+        "imageUrl": "https://cdn.culvers.com/menu-item-detail/img-Caramel-Pecan.png"
+      }
+    ],
+    "isOpen": false,
+    "statusMessage": "Closed",
+    "shopId": "culvers-waukesha-sunset",
+    "lastUpdated": "2026-01-22T04:47:57.795Z"
+  },
+  "culvers-muskego": {
+    "flavors": [
+      {
+        "name": "Turtle Dove",
+        "description": "Creamy Vanilla Fresh Frozen Custard swirled with ribbons of old fashioned salted caramel, marshmallow creme, toasted pecan pieces and chopped Dove® Chocolate pieces.",
+        "imageUrl": "https://cdn.culvers.com/menu-item-detail/turtle-dove.png"
+      }
+    ],
+    "isOpen": false,
+    "statusMessage": "Closed",
+    "shopId": "culvers-muskego",
+    "lastUpdated": "2026-01-22T04:47:57.795Z"
+  },
+  "culvers-milwaukee-fond-du-lac": {
+    "flavors": [
+      {
+        "name": "Caramel Cashew",
+        "description": "Culver’s Classic! Our creamy Vanilla Fresh Frozen Custard swirled with ribbons of old fashioned salted caramel and loaded with lightly salted cashew pieces.",
+        "imageUrl": "https://cdn.culvers.com/menu-item-detail/img-Caramel-Cashew.png"
+      }
+    ],
+    "isOpen": true,
+    "statusMessage": "Open until 11:00 PM",
+    "shopId": "culvers-milwaukee-fond-du-lac",
+    "lastUpdated": "2026-01-22T04:47:57.828Z"
+  },
+  "culvers-west-milwaukee": {
+    "flavors": [
+      {
+        "name": "Caramel Chocolate Pecan",
+        "description": "Delicious Chocolate Fresh Frozen Custard enhanced with ribbons of old fashioned salted caramel, toasted pecan pieces and chopped Dove® Chocolate pieces.",
+        "imageUrl": "https://cdn.culvers.com/menu-item-detail/img-Caramel-Chocolate-Pecan3.png"
+      }
+    ],
+    "isOpen": true,
+    "statusMessage": "Open until 11:00 PM",
+    "shopId": "culvers-west-milwaukee",
+    "lastUpdated": "2026-01-22T04:47:57.828Z"
+  },
+  "culvers-franklin": {
     "flavors": [
       {
         "name": "Dark Chocolate Decadence",
@@ -1438,12 +1304,25 @@
         "imageUrl": "https://cdn.culvers.com/menu-item-detail/img-Dark-Chocolate-Decadence1.png"
       }
     ],
-    "isOpen": true,
-    "statusMessage": "Open until 10:00 PM",
-    "shopId": "culvers-waukesha-sunset",
-    "lastUpdated": "2026-01-19T22:17:10.608Z"
+    "isOpen": false,
+    "statusMessage": "Closed",
+    "shopId": "culvers-franklin",
+    "lastUpdated": "2026-01-22T04:47:57.857Z"
   },
-  "culvers-waukesha-grandview": {
+  "culvers-milwaukee-good-hope": {
+    "flavors": [
+      {
+        "name": "Butter Pecan",
+        "description": "Culver's Classic! This one still knocks our socks off. Specially blended Butter Pecan Fresh Frozen Custard with toasted pecan pieces.",
+        "imageUrl": "https://cdn.culvers.com/menu-item-detail/img-Butter-Pecan-New.png"
+      }
+    ],
+    "isOpen": false,
+    "statusMessage": "Closed",
+    "shopId": "culvers-milwaukee-good-hope",
+    "lastUpdated": "2026-01-22T04:47:57.863Z"
+  },
+  "culvers-greenfield-wi-layton-ave": {
     "flavors": [
       {
         "name": "OREO® Cookie Cheesecake",
@@ -1452,47 +1331,21 @@
       }
     ],
     "isOpen": true,
-    "statusMessage": "Open until 10:00 PM",
-    "shopId": "culvers-waukesha-grandview",
-    "lastUpdated": "2026-01-19T22:17:10.618Z"
+    "statusMessage": "Open until 11:00 PM",
+    "shopId": "culvers-greenfield-wi-layton-ave",
+    "lastUpdated": "2026-01-22T04:47:57.896Z"
   },
-  "culvers-brookfield-124th": {
+  "culvers-grafton": {
     "flavors": [
       {
-        "name": "Chocolate Volcano",
-        "description": "Our delicious Chocolate Fresh Frozen Custard explodes with OREO® Cookie pieces, chopped Dove® Chocolate pieces, mini M&Ms and streams of chocolate syrup.",
-        "imageUrl": "https://cdn.culvers.com/menu-item-detail/img-Chocolate-Volcano2.png"
+        "name": "Dark Chocolate Decadence",
+        "description": "Premium blend of cocoas for the ultimate chocolate experience.",
+        "imageUrl": "https://cdn.culvers.com/menu-item-detail/img-Dark-Chocolate-Decadence1.png"
       }
     ],
     "isOpen": true,
-    "statusMessage": "Open until 10:00 PM",
-    "shopId": "culvers-brookfield-124th",
-    "lastUpdated": "2026-01-19T22:17:10.630Z"
-  },
-  "culvers-mequon": {
-    "flavors": [
-      {
-        "name": "Turtle",
-        "description": "A Culver's Classic! We begin with creamy Vanilla Fresh Frozen Custard and swirl in ribbons of old fashioned salted caramel, novelty chocolate, and toasted pecan pieces.",
-        "imageUrl": "https://cdn.culvers.com/menu-item-detail/img-Turtle.png"
-      }
-    ],
-    "isOpen": true,
-    "statusMessage": "Open until 10:00 PM",
-    "shopId": "culvers-mequon",
-    "lastUpdated": "2026-01-19T22:17:10.807Z"
-  },
-  "culvers-brown-deer": {
-    "flavors": [
-      {
-        "name": "Turtle",
-        "description": "A Culver's Classic! We begin with creamy Vanilla Fresh Frozen Custard and swirl in ribbons of old fashioned salted caramel, novelty chocolate, and toasted pecan pieces.",
-        "imageUrl": "https://cdn.culvers.com/menu-item-detail/img-Turtle.png"
-      }
-    ],
-    "isOpen": true,
-    "statusMessage": "Open until 10:00 PM",
-    "shopId": "culvers-brown-deer",
-    "lastUpdated": "2026-01-19T22:17:10.811Z"
+    "statusMessage": "Open until 12:00 AM",
+    "shopId": "culvers-grafton",
+    "lastUpdated": "2026-01-22T04:47:58.304Z"
   }
 }
