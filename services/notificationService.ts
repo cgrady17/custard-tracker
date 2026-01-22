@@ -18,6 +18,24 @@ const getOrInitApp = () => {
   return initializeApp(config);
 };
 
+// Helper to consistently get the token with the correct SW scope
+const getStableToken = async (messaging: any) => {
+  try {
+    const registration = await navigator.serviceWorker.getRegistration();
+    if (!registration) {
+      console.warn("No SW registration found during token fetch");
+      return null;
+    }
+    return await getToken(messaging, { 
+      vapidKey: import.meta.env.VITE_FIREBASE_VAPID_KEY,
+      serviceWorkerRegistration: registration
+    });
+  } catch (e) {
+    console.error("Token retrieval failed:", e);
+    return null;
+  }
+};
+
 export const requestNotificationPermission = async () => {
   const permission = await Notification.requestPermission();
   if (permission === 'granted') {
@@ -25,21 +43,20 @@ export const requestNotificationPermission = async () => {
     if (!app) return null;
 
     const messaging = getMessaging(app);
-    const registration = await navigator.serviceWorker.getRegistration();
-    return await getToken(messaging, { 
-      vapidKey: import.meta.env.VITE_FIREBASE_VAPID_KEY,
-      serviceWorkerRegistration: registration
-    });
+    return await getStableToken(messaging);
   }
   return null;
 };
 
 export const subscribeToFlavor = async (flavorName: string) => {
-  const token = await requestNotificationPermission();
-  if (!token) throw new Error('Permission denied or config missing');
-
   const app = getOrInitApp();
   if (!app) throw new Error('App init failed');
+  const messaging = getMessaging(app);
+  
+  // Use helper to ensure consistency
+  const token = await getStableToken(messaging);
+  if (!token) throw new Error('Permission denied or config missing');
+
   const db = getFirestore(app);
 
   const subId = `${token.substring(0, 20)}_${flavorName.replace(/\s+/g, '_').toLowerCase()}`;
@@ -57,7 +74,7 @@ export const unsubscribeFromFlavor = async (flavorName: string) => {
   if (!app) return;
 
   const messaging = getMessaging(app);
-  const token = await getToken(messaging, { vapidKey: import.meta.env.VITE_FIREBASE_VAPID_KEY });
+  const token = await getStableToken(messaging);
   if (!token) return;
 
   const db = getFirestore(app);
@@ -75,7 +92,7 @@ export const getSubscribedFlavors = async () => {
     if (!app) return [];
 
     const messaging = getMessaging(app);
-    const token = await getToken(messaging, { vapidKey: import.meta.env.VITE_FIREBASE_VAPID_KEY });
+    const token = await getStableToken(messaging);
     if (!token) return [];
 
     const db = getFirestore(app);
