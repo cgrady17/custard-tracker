@@ -138,6 +138,14 @@ const App: React.FC = () => {
            lastUpdate.getFullYear() !== now.getFullYear();
   }, [flavors]);
 
+  // Calculate the most recent data update time
+  const lastDataUpdate = useMemo(() => {
+    if (Object.keys(flavors).length === 0) return null;
+    const timestamps = Object.values(flavors).map((f: FlavorStatus) => f.lastUpdated ? new Date(f.lastUpdated).getTime() : 0);
+    const maxTime = Math.max(...timestamps);
+    return maxTime > 0 ? new Date(maxTime).toLocaleString() : null;
+  }, [flavors]);
+
   const performGlobalSync = async () => {
     if (!navigator.onLine || syncMeta.isSyncing) return;
 
@@ -794,6 +802,11 @@ const App: React.FC = () => {
         All trademarks, service marks, and company names are the property of their respective owners. The flavor data presented here is aggregated from public sources for informational purposes only. While we aim for accuracy, menus are subject to change by the vendors without notice. Please verify availability directly with the shop.
         </p>
         <div className="mt-8 pt-4 border-t border-stone-200 dark:border-stone-800 flex flex-col items-center gap-1 opacity-60 hover:opacity-100 transition-opacity">
+          {lastDataUpdate && (
+            <p className="text-[10px] font-bold text-lake-blue dark:text-sunrise-gold mb-1">
+              Data Updated: {lastDataUpdate}
+            </p>
+          )}
           <p className="text-[9px] font-mono font-bold text-stone-500 dark:text-stone-400">
             v{__APP_VERSION__} • {__COMMIT_HASH__}
           </p>
