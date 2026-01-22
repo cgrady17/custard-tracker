@@ -46,7 +46,7 @@ body {
     font-family: 'Fredoka', sans-serif;
     -webkit-tap-highlight-color: transparent;
 }
----
+
 /* Smooth theme transition */
 html, body, #root {
     transition: background-color 0.3s ease, color 0.3s ease;
