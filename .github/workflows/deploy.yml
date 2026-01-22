@@ -23,8 +23,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      # Authenticate to Google Cloud
-      # Ideally use Workload Identity Federation, but SA Key is easier for quick setup
       - name: Google Auth
         uses: google-github-actions/auth@v2
         with:
@@ -36,14 +34,29 @@ jobs:
       - name: Configure Docker
         run: gcloud auth configure-docker
 
-      # Build and Push Container using Cloud Build Config
+      # Build Async to avoid log streaming permission errors
       - name: Build and Push
         run: |
-          gcloud builds submit --config cloudbuild.yaml \
+          BUILD_ID=$(gcloud builds submit --config cloudbuild.yaml \
             --substitutions=_VITE_FIREBASE_API_KEY="${{ secrets.VITE_FIREBASE_API_KEY }}",_VITE_FIREBASE_AUTH_DOMAIN="${{ secrets.VITE_FIREBASE_AUTH_DOMAIN }}",_VITE_FIREBASE_PROJECT_ID="${{ secrets.VITE_FIREBASE_PROJECT_ID }}",_VITE_FIREBASE_STORAGE_BUCKET="${{ secrets.VITE_FIREBASE_STORAGE_BUCKET }}",_VITE_FIREBASE_MESSAGING_SENDER_ID="${{ secrets.VITE_FIREBASE_MESSAGING_SENDER_ID }}",_VITE_FIREBASE_APP_ID="${{ secrets.VITE_FIREBASE_APP_ID }}",_VITE_FIREBASE_VAPID_KEY="${{ secrets.VITE_FIREBASE_VAPID_KEY }}",_VITE_GA_ID="${{ secrets.VITE_GA_ID }}" \
-            .
+            --async --format="value(id)" .)
+          
+          echo "Build started with ID: $BUILD_ID"
+          
+          # Poll for completion
+          while true; do
+            STATUS=$(gcloud builds describe $BUILD_ID --format="value(status)")
+            echo "Build Status: $STATUS"
+            if [[ "$STATUS" == "SUCCESS" ]]; then
+              echo "Build Succeeded!"
+              break
+            elif [[ "$STATUS" == "FAILURE" || "$STATUS" == "INTERNAL_ERROR" || "$STATUS" == "TIMEOUT" || "$STATUS" == "CANCELLED" ]]; then
+              echo "Build Failed!"
+              exit 1
+            fi
+            sleep 10
+          done
 
-      # Deploy to Cloud Run
       - name: Deploy to Cloud Run
         uses: google-github-actions/deploy-cloudrun@v2
         with:
