@@ -3,8 +3,10 @@ import { createPortal } from 'react-dom';
 import { CustardShop, FlavorStatus, FlavorDetail } from '../types';
 import { trackEvent } from '../services/analytics';
 import { getShopStatus } from '../services/dataService';
+import { isIOS, isStandalone } from '../utils/device';
 
 const ScheduleModal = lazy(() => import('./ScheduleModal'));
+const InstallPromptModal = lazy(() => import('./InstallPromptModal'));
 
 interface ShopCardProps {
   shop: CustardShop;
@@ -56,6 +58,7 @@ const ImageModal: React.FC<{ src: string; alt: string; name: string; description
 const FlavorItem: React.FC<{ flavor: FlavorDetail; isSingle: boolean; index: number; isPriority: boolean }> = ({ flavor, isSingle, index, isPriority }) => {
   const [showDesc, setShowDesc] = useState(false);
   const [showModal, setShowModal] = useState(false);
+  const [showInstallPrompt, setShowInstallPrompt] = useState(false);
   const [isSubscribed, setIsSubscribed] = useState(false);
   const [isOverflowing, setIsOverflowing] = useState(false);
   const descriptionRef = useRef<HTMLParagraphElement>(null);
@@ -66,8 +69,6 @@ const FlavorItem: React.FC<{ flavor: FlavorDetail; isSingle: boolean; index: num
         mod.getSubscribedFlavors().then(subs => {
           if (subs.includes(flavor.name.toLowerCase())) {
             setIsSubscribed(true);
-          } else {
-            setIsSubscribed(false);
           }
         }).catch(() => {});
       });
@@ -87,6 +88,13 @@ const FlavorItem: React.FC<{ flavor: FlavorDetail; isSingle: boolean; index: num
 
   const handleToggleSubscribe = async (e: React.MouseEvent) => {
     e.stopPropagation();
+
+    // Check for iOS Browser limitations
+    if (isIOS() && !isStandalone()) {
+      setShowInstallPrompt(true);
+      return;
+    }
+
     try {
       const { subscribeToFlavor, unsubscribeFromFlavor } = await import('../services/notificationService');
       if (isSubscribed) {
@@ -106,7 +114,7 @@ const FlavorItem: React.FC<{ flavor: FlavorDetail; isSingle: boolean; index: num
     const element = descriptionRef.current;
     if (element) {
       setIsOverflowing(element.scrollHeight > element.offsetHeight);
-    }
+    } 
   }, [flavor.description]);
 
   return (
@@ -175,10 +183,14 @@ const FlavorItem: React.FC<{ flavor: FlavorDetail; isSingle: boolean; index: num
           onClose={() => setShowModal(false)} 
         />
       )}
+      {showInstallPrompt && (
+        <Suspense fallback={null}>
+          <InstallPromptModal onClose={() => setShowInstallPrompt(false)} />
+        </Suspense>
+      )}
     </>
   );
 };
-
 const MonthlyFeatureItem: React.FC<{ feature: FlavorDetail }> = ({ feature }) => {
   const [showDesc, setShowDesc] = useState(false);
   const [isOverflowing, setIsOverflowing] = useState(false);

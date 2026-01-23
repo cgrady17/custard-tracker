@@ -51,6 +51,66 @@ const LEDUCS_HOURS: Record<number, OperatingHours | null> = {
   6: { open: "11:00", close: "21:00" },
 };
 
+const STANDARD_1030_9_HOURS: Record<number, OperatingHours> = {
+  0: { open: "10:30", close: "21:00" },
+  1: { open: "10:30", close: "21:00" },
+  2: { open: "10:30", close: "21:00" },
+  3: { open: "10:30", close: "21:00" },
+  4: { open: "10:30", close: "21:00" },
+  5: { open: "10:30", close: "21:00" },
+  6: { open: "10:30", close: "21:00" },
+};
+
+const ROBERTS_HOURS: Record<number, OperatingHours> = {
+  0: { open: "10:30", close: "21:00" }, // Sun
+  1: { open: "10:30", close: "21:00" },
+  2: { open: "10:30", close: "21:00" },
+  3: { open: "10:30", close: "21:00" },
+  4: { open: "10:30", close: "21:00" },
+  5: { open: "10:30", close: "22:00" }, // Fri
+  6: { open: "10:30", close: "22:00" }, // Sat
+};
+
+const HEFNERS_HOURS: Record<number, OperatingHours> = {
+  0: { open: "11:00", close: "20:00" }, // Sun
+  1: { open: "11:00", close: "20:00" },
+  2: { open: "11:00", close: "20:00" },
+  3: { open: "11:00", close: "20:00" },
+  4: { open: "11:00", close: "20:00" },
+  5: { open: "11:00", close: "21:00" }, // Fri
+  6: { open: "11:00", close: "21:00" }, // Sat
+};
+
+const GEORGIE_HOURS: Record<number, OperatingHours | null> = {
+  0: null, // Sun: Closed
+  1: { open: "10:30", close: "21:00" },
+  2: { open: "10:30", close: "21:00" },
+  3: { open: "10:30", close: "21:00" },
+  4: { open: "10:30", close: "21:00" },
+  5: { open: "10:30", close: "22:00" }, // Fri
+  6: { open: "10:30", close: "22:00" }, // Sat
+};
+
+const MURFS_HOURS: Record<number, OperatingHours | null> = {
+  0: { open: "10:30", close: "20:00" }, // Sun
+  1: null, // Mon: Closed
+  2: { open: "10:30", close: "20:00" },
+  3: { open: "10:30", close: "20:00" },
+  4: { open: "10:30", close: "20:00" },
+  5: { open: "10:30", close: "21:00" }, // Fri
+  6: { open: "10:30", close: "20:00" }, // Sat
+};
+
+const KRAVERZ_HOURS: Record<number, OperatingHours | null> = {
+  0: null, // Sun: Closed
+  1: { open: "10:00", close: "21:00" },
+  2: { open: "10:00", close: "21:00" },
+  3: { open: "10:00", close: "21:00" },
+  4: { open: "10:00", close: "21:00" },
+  5: { open: "10:00", close: "22:00" }, // Fri
+  6: { open: "10:00", close: "21:00" }, // Sat
+};
+
 const CULVERS_HOURS_10: Record<number, OperatingHours> = {
   0: { open: "10:00", close: "22:00" },
   1: { open: "10:00", close: "22:00" },
@@ -185,6 +245,66 @@ export const MILWAUKEE_SHOPS: CustardShop[] = [
     chain: "LeDuc's",
     logoUrl: "https://www.google.com/s2/favicons?domain=leducscustard.com&sz=64",
     hours: LEDUCS_HOURS
+  },
+  {
+    id: 'hefners',
+    name: "Hefner's Frozen Custard",
+    address: "N71W5184 Columbia Rd, Cedarburg, WI 53012",
+    lat: 43.2965,
+    lng: -87.9876,
+    website: "https://www.hefnerscustard.com",
+    brandColor: "#d32f2f",
+    chain: "Hefner's",
+    logoUrl: "https://www.google.com/s2/favicons?domain=hefnerscustard.com&sz=64",
+    hours: HEFNERS_HOURS
+  },
+  {
+    id: 'georgie-porgies',
+    name: "Georgie Porgie's",
+    address: "9555 S Howell Ave, Oak Creek, WI 53154",
+    lat: 42.8794,
+    lng: -87.9134,
+    website: "https://georgieporgies.com",
+    brandColor: "#ffcc00",
+    chain: "Georgie Porgie's",
+    logoUrl: "https://www.google.com/s2/favicons?domain=georgieporgies.com&sz=64",
+    hours: STANDARD_1030_9_HOURS
+  },
+  {
+    id: 'murfs',
+    name: "Murf's Frozen Custard",
+    address: "12505 W Burleigh Rd, Brookfield, WI 53005",
+    lat: 43.0756,
+    lng: -88.0682,
+    website: "https://www.murfsfrozencustard.com",
+    brandColor: "#003366",
+    chain: "Murf's",
+    logoUrl: "https://www.google.com/s2/favicons?domain=murfsfrozencustard.com&sz=64",
+    hours: STANDARD_1030_9_HOURS
+  },
+  {
+    id: 'roberts',
+    name: "Robert's Frozen Custard",
+    address: "N112W16040 Mequon Rd, Germantown, WI 53022",
+    lat: 43.2311,
+    lng: -88.1070,
+    website: "https://robertsfrozencustard.com",
+    brandColor: "#000000",
+    chain: "Robert's",
+    logoUrl: "https://www.google.com/s2/favicons?domain=robertsfrozencustard.com&sz=64",
+    hours: ROBERTS_HOURS
+  },
+  {
+    id: 'kraverz',
+    name: "Kraverz Frozen Custard",
+    address: "N88 W16747 Main St, Menomonee Falls, WI 53051",
+    lat: 43.1789,
+    lng: -88.1156,
+    website: "https://www.kraverzcustard.com",
+    brandColor: "#cc0000",
+    chain: "Kraverz",
+    logoUrl: "https://www.google.com/s2/favicons?domain=kraverzcustard.com&sz=64",
+    hours: KRAVERZ_HOURS
   },
 
   // --- CULVER'S ---
