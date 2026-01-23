@@ -45,6 +45,9 @@ const App: React.FC = () => {
   const [allFlavors, setAllFlavors] = useState<string[]>([]);
   const [flavorSearch, setFlavorSearch] = useState('');
   const [showFlavorSuggestions, setShowFlavorSuggestions] = useState(false);
+  const [showChainDropdown, setShowChainDropdown] = useState(false);
+  const [dropdownPos, setDropdownPos] = useState({ top: 0, right: 0 });
+  const chainButtonRef = useRef<HTMLButtonElement>(null);
 
   const [isOffline, setIsOffline] = useState(!navigator.onLine);
   const [userLocation, setUserLocation] = useState<{ lat: number; lng: number } | null>(null);
@@ -273,12 +276,22 @@ const App: React.FC = () => {
       const isDifferentDay = lastSync.getDate() !== now.getDate() || 
                             lastSync.getMonth() !== now.getMonth() || 
                             lastSync.getFullYear() !== now.getFullYear();
+      
+      // Check for the 10:30 AM update window
+      // If it's past 10:30 AM today, but our data is from before 10:30 AM today, we need to refresh.
+      let missedMorningUpdate = false;
+      const tenThirtyToday = new Date();
+      tenThirtyToday.setHours(10, 30, 0, 0);
+      
+      if (!isDifferentDay && now > tenThirtyToday && lastSync < tenThirtyToday) {
+        missedMorningUpdate = true;
+      }
                             
       // Or has it been more than 4 hours?
       const isStale = (now.getTime() - lastSync.getTime() > 4 * 60 * 60 * 1000); 
 
-      if (isDifferentDay || isStale) {
-        console.log("Data is stale (new day or timeout). Refreshing...");
+      if (isDifferentDay || missedMorningUpdate || isStale) {
+        console.log("Data is stale (new day, missed 10:30 update, or timeout). Refreshing...");
         await performGlobalSync();
       }
     };
@@ -439,9 +452,9 @@ const App: React.FC = () => {
         </div>
       )}
 
-      <header className="px-4 sm:px-6 pt-8 pb-4 bg-lake-blue dark:bg-mke-blue sticky top-0 z-30 shadow-lg transition-colors overflow-hidden">
+      <header className="px-4 sm:px-6 pt-8 pb-4 bg-lake-blue dark:bg-mke-blue sticky top-0 z-30 shadow-lg transition-colors">
         {/* Flag Sunrise Element */}
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-64 h-24 bg-white/10 dark:bg-sunrise-gold/5 rounded-b-full -translate-y-12 blur-2xl pointer-events-none"></div>
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-64 h-24 bg-white/10 dark:bg-sunrise-gold/5 rounded-b-full -translate-y-12 blur-2xl pointer-events-none overflow-hidden"></div>
         
         <div className="max-w-7xl mx-auto w-full relative">
           <div className="flex justify-between items-center mb-6">
@@ -526,22 +539,46 @@ const App: React.FC = () => {
                 Favs
               </button>
 
-              <button 
-                onClick={() => setSelectedChain(null)}
-                className={`flex-shrink-0 px-5 py-2 rounded-full text-xs font-black transition-all border-2 min-w-[70px] justify-center ${selectedChain === null ? 'bg-mke-blue border-mke-blue text-white' : 'bg-transparent border-white/20 text-white/80'}`}
-              >
-                All
-              </button>
-
-              {chains.map(chain => (
+              {/* Chain Dropdown */}
+              <div className="relative chain-dropdown-container">
                 <button 
-                  key={chain}
-                  onClick={() => setSelectedChain(selectedChain === chain ? null : chain)}
-                  className={`flex-shrink-0 px-5 py-2 rounded-full text-xs font-black transition-all border-2 ${selectedChain === chain ? 'bg-sunrise-gold border-sunrise-gold text-mke-blue' : 'bg-transparent border-white/20 text-white/80'}`}
+                  ref={chainButtonRef}
+                  onClick={() => {
+                    if (!showChainDropdown && chainButtonRef.current) {
+                      const rect = chainButtonRef.current.getBoundingClientRect();
+                      setDropdownPos({ top: rect.bottom + 8, right: window.innerWidth - rect.right });
+                    }
+                    setShowChainDropdown(!showChainDropdown);
+                  }}
+                  className={`flex-shrink-0 px-4 py-2 rounded-full text-xs font-black transition-all border-2 flex items-center gap-2 min-w-[120px] justify-between ${selectedChain ? 'bg-sunrise-gold border-sunrise-gold text-mke-blue' : 'bg-transparent border-white/20 text-white/80'}`}
                 >
-                  {chain}
+                  <span className="truncate max-w-[100px]">{selectedChain || 'All Chains'}</span>
+                  <i className={`fas fa-chevron-down transition-transform ${showChainDropdown ? 'rotate-180' : ''}`}></i>
                 </button>
-              ))}
+
+                {showChainDropdown && (
+                  <div 
+                    className="fixed w-48 bg-white dark:bg-stone-800 border-2 border-stone-100 dark:border-white/10 rounded-2xl shadow-xl overflow-hidden z-[100] animate-in fade-in zoom-in-95 duration-200 max-h-64 overflow-y-auto"
+                    style={{ top: dropdownPos.top, right: dropdownPos.right }}
+                  >
+                    <button 
+                      onClick={() => { setSelectedChain(null); setShowChainDropdown(false); }}
+                      className={`w-full text-left px-4 py-3 text-xs font-black uppercase tracking-widest transition-colors ${selectedChain === null ? 'bg-sunrise-gold/10 text-lake-blue dark:text-sunrise-gold' : 'text-stone-600 dark:text-stone-300 hover:bg-stone-50 dark:hover:bg-white/5'}`}
+                    >
+                      All Chains
+                    </button>
+                    {chains.map(chain => (
+                      <button 
+                        key={chain}
+                        onClick={() => { setSelectedChain(chain); setShowChainDropdown(false); }}
+                        className={`w-full text-left px-4 py-3 text-xs font-bold border-t border-stone-50 dark:border-white/5 transition-colors ${selectedChain === chain ? 'bg-sunrise-gold text-mke-blue' : 'text-stone-600 dark:text-stone-300 hover:bg-stone-50 dark:hover:bg-white/5'}`}
+                      >
+                        {chain}
+                      </button>
+                    ))}
+                  </div>
+                )}
+              </div>
             </div>
           </div>
         </div>
