@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.2.0](https://github.com/cgrady17/custard-tracker/compare/v1.1.4...v1.2.0) (2026-01-23)
+
+
+### Features
+
+* run scraper with notifications optionally ([b498701](https://github.com/cgrady17/custard-tracker/commit/b498701536725e2a3e000d5b28b23e39ba13562a))
+
 ### [1.1.4](https://github.com/cgrady17/custard-tracker/compare/v1.1.3...v1.1.4) (2026-01-23)
 
 
