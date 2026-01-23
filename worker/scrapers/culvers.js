@@ -1,5 +1,6 @@
 import axios from 'axios';
 import { format } from 'date-fns';
+import { getMilwaukeeDate } from '../utils/date.js';
 
 export async function scrapeCulvers(oloID) {
   const url = `https://www.culvers.com/api/restaurants/getDetails?oloID=${oloID}`;
@@ -16,7 +17,7 @@ export async function scrapeCulvers(oloID) {
     }
 
     const details = data.data.restaurant.getRestaurantDetails;
-    const todayStr = format(new Date(), 'yyyy-MM-dd');
+    const todayStr = format(getMilwaukeeDate(), 'yyyy-MM-dd');
     
     // Calculate Status Message
     let statusMessage = details.isOpenNow ? "Open" : "Closed";
@@ -24,9 +25,9 @@ export async function scrapeCulvers(oloID) {
     try {
         if (details.isOpenNow && details.currentTimes && details.currentTimes.dineInTimes) {
             const dayNames = ["SUNDAY", "MONDAY", "TUESDAY", "WEDNESDAY", "THURSDAY", "FRIDAY", "SATURDAY"];
-            const now = new Date();
-            const centralTime = new Date(now.toLocaleString('en-US', { timeZone: 'America/Chicago' }));
-            const dayName = dayNames[centralTime.getDay()];
+            // getMilwaukeeDate returns a Date object representing current time in MKE
+            const nowMke = getMilwaukeeDate();
+            const dayName = dayNames[nowMke.getDay()];
             
             const todayHours = details.currentTimes.dineInTimes.find(t => t.dayOfWeek === dayName);
             if (todayHours) {

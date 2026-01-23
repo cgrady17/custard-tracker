@@ -1,6 +1,7 @@
 import axios from 'axios';
 import * as cheerio from 'cheerio';
 import { format } from 'date-fns';
+import { getMilwaukeeDate } from '../utils/date.js';
 
 export const scrapeLeducs = async () => {
   const url = "https://leducscustard.com/custard-calendar/";
@@ -17,7 +18,7 @@ export const scrapeLeducs = async () => {
     
     // LeDuc's format: "Jan 21" or "Jan 01"
     // Note: The HTML debug showed "Wednesday, Jan 21"
-    const today = new Date();
+    const today = getMilwaukeeDate();
     const datePattern = format(today, 'MMM dd'); // e.g. "Jan 21"
     
     // Find the container with the list

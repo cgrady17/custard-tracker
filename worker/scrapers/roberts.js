@@ -1,6 +1,7 @@
 import axios from 'axios';
 import * as cheerio from 'cheerio';
 import { format } from 'date-fns';
+import { getMilwaukeeDate } from '../utils/date.js';
 
 export const scrapeRoberts = async () => {
   const url = "https://robertsfrozencustard.com/flavor.html";
@@ -13,7 +14,7 @@ export const scrapeRoberts = async () => {
     
     const $ = cheerio.load(data);
     const flavors = [];
-    const today = new Date();
+    const today = getMilwaukeeDate();
     // Format: "Fri, January 23, 2026"
     const dateStr = format(today, 'EEE, MMMM d, yyyy');
     

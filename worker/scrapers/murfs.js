@@ -1,6 +1,7 @@
 import axios from 'axios';
 import * as cheerio from 'cheerio';
 import { format } from 'date-fns';
+import { getMilwaukeeDate } from '../utils/date.js';
 
 export const scrapeMurfs = async () => {
   const url = "https://www.murfsfrozencustard.com/";
@@ -15,7 +16,7 @@ export const scrapeMurfs = async () => {
     const flavors = [];
     const upcoming = [];
     const seen = new Set();
-    const today = new Date();
+    const today = getMilwaukeeDate();
     // Normalize today for comparison
     today.setHours(0, 0, 0, 0);
     

@@ -1,6 +1,7 @@
 import axios from 'axios';
 import * as cheerio from 'cheerio';
 import { format, addDays } from 'date-fns';
+import { getMilwaukeeDate } from '../utils/date.js';
 
 export const scrapeKraverz = async () => {
   const url = "https://www.kraverzcustard.com/FlavorSchedule";
@@ -14,7 +15,7 @@ export const scrapeKraverz = async () => {
     const $ = cheerio.load(data);
     const flavors = [];
     const upcoming = [];
-    const today = new Date();
+    const today = getMilwaukeeDate();
     
     // Check today + next 7 days
     for (let i = 0; i < 8; i++) {

@@ -182,7 +182,7 @@
     "isOpen": true,
     "statusMessage": "Open until 10:00 PM",
     "shopId": "kopps-greenfield",
-    "lastUpdated": "2026-01-23T02:11:48.636Z"
+    "lastUpdated": "2026-01-23T03:12:16.223Z"
   },
   "kopps-glendale": {
     "flavors": [
@@ -367,7 +367,7 @@
     "isOpen": true,
     "statusMessage": "Open until 10:00 PM",
     "shopId": "kopps-glendale",
-    "lastUpdated": "2026-01-23T02:11:48.636Z"
+    "lastUpdated": "2026-01-23T03:12:16.224Z"
   },
   "kopps-brookfield": {
     "flavors": [
@@ -552,7 +552,7 @@
     "isOpen": true,
     "statusMessage": "Open until 10:00 PM",
     "shopId": "kopps-brookfield",
-    "lastUpdated": "2026-01-23T02:11:48.636Z"
+    "lastUpdated": "2026-01-23T03:12:16.224Z"
   },
   "gilles": {
     "flavors": [
@@ -660,7 +660,7 @@
       }
     ],
     "shopId": "gilles",
-    "lastUpdated": "2026-01-23T02:11:48.646Z"
+    "lastUpdated": "2026-01-23T03:12:16.234Z"
   },
   "oscars-west-allis": {
     "flavors": [
@@ -791,7 +791,7 @@
     "isOpen": true,
     "statusMessage": "Open until 10:00 PM",
     "shopId": "oscars-west-allis",
-    "lastUpdated": "2026-01-23T02:11:48.646Z"
+    "lastUpdated": "2026-01-23T03:12:16.235Z"
   },
   "oscars-franklin": {
     "flavors": [
@@ -922,14 +922,14 @@
     "isOpen": true,
     "statusMessage": "Open until 10:00 PM",
     "shopId": "oscars-franklin",
-    "lastUpdated": "2026-01-23T02:11:48.646Z"
+    "lastUpdated": "2026-01-23T03:12:16.235Z"
   },
   "oscars-waukesha": {
     "shopId": "oscars-waukesha",
     "flavors": [],
     "isOpen": false,
     "statusMessage": "Temporarily Closed (Fire)",
-    "lastUpdated": "2026-01-23T02:11:48.647Z"
+    "lastUpdated": "2026-01-23T03:12:16.235Z"
   },
   "leons": {
     "flavors": [
@@ -947,7 +947,7 @@
     "isOpen": true,
     "statusMessage": "Call to confirm special",
     "shopId": "leons",
-    "lastUpdated": "2026-01-23T02:11:48.647Z"
+    "lastUpdated": "2026-01-23T03:12:16.235Z"
   },
   "leducs": {
     "flavors": [
@@ -958,7 +958,7 @@
       }
     ],
     "shopId": "leducs",
-    "lastUpdated": "2026-01-23T02:11:48.647Z"
+    "lastUpdated": "2026-01-23T03:12:16.235Z"
   },
   "hefners": {
     "flavors": [
@@ -969,7 +969,7 @@
       }
     ],
     "shopId": "hefners",
-    "lastUpdated": "2026-01-23T02:11:48.647Z"
+    "lastUpdated": "2026-01-23T03:12:16.236Z"
   },
   "georgie-porgies": {
     "flavors": [
@@ -985,7 +985,7 @@
       }
     ],
     "shopId": "georgie-porgies",
-    "lastUpdated": "2026-01-23T02:11:48.647Z"
+    "lastUpdated": "2026-01-23T03:12:16.236Z"
   },
   "murfs": {
     "flavors": [
@@ -1058,7 +1058,7 @@
       }
     ],
     "shopId": "murfs",
-    "lastUpdated": "2026-01-23T02:11:48.647Z"
+    "lastUpdated": "2026-01-23T03:12:16.236Z"
   },
   "roberts": {
     "flavors": [
@@ -1161,7 +1161,7 @@
       }
     ],
     "shopId": "roberts",
-    "lastUpdated": "2026-01-23T02:11:48.647Z"
+    "lastUpdated": "2026-01-23T03:12:16.236Z"
   },
   "kraverz": {
     "flavors": [
@@ -1244,189 +1244,7 @@
       }
     ],
     "shopId": "kraverz",
-    "lastUpdated": "2026-01-23T02:11:48.647Z"
-  },
-  "culvers-oak-creek": {
-    "flavors": [
-      {
-        "name": "Caramel Pecan",
-        "description": "Ribbons of old fashioned salted caramel swirled with our creamy Vanilla Fresh Frozen Custard and toasted pecan pieces. Taste why it's one of out most popular treats!",
-        "imageUrl": "https://cdn.culvers.com/menu-item-detail/img-Caramel-Pecan.png"
-      }
-    ],
-    "isOpen": true,
-    "statusMessage": "Open until 10:00 PM",
-    "shopId": "culvers-oak-creek",
-    "lastUpdated": "2026-01-23T02:11:48.931Z"
-  },
-  "culvers-hales-corners": {
-    "flavors": [
-      {
-        "name": "Really Reese's",
-        "description": "Reese’s Peanut Butter Cups become a special treat when stirred in our delicious Chocolate Fresh Frozen Custard.",
-        "imageUrl": "https://cdn.culvers.com/menu-item-detail/img-Really-Reeses.Cake-Cone.png"
-      }
-    ],
-    "isOpen": true,
-    "statusMessage": "Open until 10:00 PM",
-    "shopId": "culvers-hales-corners",
-    "lastUpdated": "2026-01-23T02:11:48.938Z"
-  },
-  "culvers-west-milwaukee": {
-    "flavors": [
-      {
-        "name": "Crazy for Cookie Dough",
-        "description": "Our creamy Vanilla and Chocolate Fresh Frozen Custard swirled together and mixed with thick fudge, ribbons of old fashioned salted caramel and cookie dough pieces.",
-        "imageUrl": "https://cdn.culvers.com/menu-item-detail/img-Crazy-for-Cookie-Dough.Waffle-Cone1.png"
-      }
-    ],
-    "isOpen": true,
-    "statusMessage": "Open until 11:00 PM",
-    "shopId": "culvers-west-milwaukee",
-    "lastUpdated": "2026-01-23T02:11:48.939Z"
-  },
-  "culvers-franklin": {
-    "flavors": [
-      {
-        "name": "Caramel Cashew",
-        "description": "Culver’s Classic! Our creamy Vanilla Fresh Frozen Custard swirled with ribbons of old fashioned salted caramel and loaded with lightly salted cashew pieces.",
-        "imageUrl": "https://cdn.culvers.com/menu-item-detail/img-Caramel-Cashew.png"
-      }
-    ],
-    "isOpen": true,
-    "statusMessage": "Open until 10:00 PM",
-    "shopId": "culvers-franklin",
-    "lastUpdated": "2026-01-23T02:11:48.947Z"
-  },
-  "culvers-milwaukee-layton": {
-    "flavors": [
-      {
-        "name": "Turtle Dove",
-        "description": "Creamy Vanilla Fresh Frozen Custard swirled with ribbons of old fashioned salted caramel, marshmallow creme, toasted pecan pieces and chopped Dove® Chocolate pieces.",
-        "imageUrl": "https://cdn.culvers.com/menu-item-detail/turtle-dove.png"
-      }
-    ],
-    "isOpen": true,
-    "statusMessage": "Open until 11:00 PM",
-    "shopId": "culvers-milwaukee-layton",
-    "lastUpdated": "2026-01-23T02:11:48.950Z"
-  },
-  "culvers-waukesha-sunset": {
-    "flavors": [
-      {
-        "name": "Devil's Food Cake",
-        "description": "Dark Chocolate Fresh Frozen Custard swirled with chocolate cake and novelty chocolate.",
-        "imageUrl": "https://cdn.culvers.com/menu-item-detail/img-Devils-Food-Cake.png"
-      }
-    ],
-    "isOpen": true,
-    "statusMessage": "Open until 10:00 PM",
-    "shopId": "culvers-waukesha-sunset",
-    "lastUpdated": "2026-01-23T02:11:48.955Z"
-  },
-  "culvers-shorewood": {
-    "flavors": [
-      {
-        "name": "Georgia Peach",
-        "description": "Our specially blended Peach Fresh Frozen Custard swirled with sweet peaches for a light, refreshing treat.",
-        "imageUrl": "https://cdn.culvers.com/menu-item-detail/img-Georgia-Peach1.png"
-      }
-    ],
-    "isOpen": true,
-    "statusMessage": "Open until 11:00 PM",
-    "shopId": "culvers-shorewood",
-    "lastUpdated": "2026-01-23T02:11:48.956Z"
-  },
-  "culvers-new-berlin": {
-    "flavors": [
-      {
-        "name": "Double Strawberry",
-        "description": "Our specially blended Strawberry Fresh Frozen Custard swirled with plump strawberries.",
-        "imageUrl": "https://cdn.culvers.com/menu-item-detail/img-Double-Strawberry.Waffle-Cone.png"
-      }
-    ],
-    "isOpen": true,
-    "statusMessage": "Open until 10:00 PM",
-    "shopId": "culvers-new-berlin",
-    "lastUpdated": "2026-01-23T02:11:48.957Z"
-  },
-  "culvers-elm-grove-wi": {
-    "flavors": [
-      {
-        "name": "Chocolate Volcano",
-        "description": "Our delicious Chocolate Fresh Frozen Custard explodes with OREO® Cookie pieces, chopped Dove® Chocolate pieces, mini M&Ms and streams of chocolate syrup.",
-        "imageUrl": "https://cdn.culvers.com/menu-item-detail/img-Chocolate-Volcano2.png"
-      }
-    ],
-    "isOpen": true,
-    "statusMessage": "Open until 10:00 PM",
-    "shopId": "culvers-elm-grove-wi",
-    "lastUpdated": "2026-01-23T02:11:48.972Z"
-  },
-  "culvers-glendale-wi-bayside-dr": {
-    "flavors": [
-      {
-        "name": "Crazy for Cookie Dough",
-        "description": "Our creamy Vanilla and Chocolate Fresh Frozen Custard swirled together and mixed with thick fudge, ribbons of old fashioned salted caramel and cookie dough pieces.",
-        "imageUrl": "https://cdn.culvers.com/menu-item-detail/img-Crazy-for-Cookie-Dough.Waffle-Cone1.png"
-      }
-    ],
-    "isOpen": true,
-    "statusMessage": "Open until 10:30 PM",
-    "shopId": "culvers-glendale-wi-bayside-dr",
-    "lastUpdated": "2026-01-23T02:11:48.974Z"
-  },
-  "culvers-brookfield-124th": {
-    "flavors": [
-      {
-        "name": "Dark Chocolate PB Crunch",
-        "description": "Dark Chocolate Fresh Frozen Custard swirled with a ribbon of peanut butter and crunchy Butterfinger pieces.",
-        "imageUrl": "https://cdn.culvers.com/menu-item-detail/img-Dark-Chocolate-PB-Crunch12.png"
-      }
-    ],
-    "isOpen": true,
-    "statusMessage": "Open until 10:00 PM",
-    "shopId": "culvers-brookfield-124th",
-    "lastUpdated": "2026-01-23T02:11:48.991Z"
-  },
-  "culvers-sussex": {
-    "flavors": [
-      {
-        "name": "Mint Cookie",
-        "description": "Our specially blended Mint Fresh Frozen Custard with OREO® Cookies for a refreshing treat.",
-        "imageUrl": "https://cdn.culvers.com/menu-item-detail/img-Mint-Oreo-updated.png"
-      }
-    ],
-    "isOpen": true,
-    "statusMessage": "Open until 11:00 PM",
-    "shopId": "culvers-sussex",
-    "lastUpdated": "2026-01-23T02:11:48.992Z"
-  },
-  "culvers-brookfield-capitol": {
-    "flavors": [
-      {
-        "name": "Mint Explosion",
-        "description": "Our specially blended Mint Fresh Frozen Custard exploding with OREO® Cookie pieces, Andes® candies and novelty chocolate.",
-        "imageUrl": "https://cdn.culvers.com/menu-item-detail/img-Mint-Explosion.Cake-Cone-updated.png"
-      }
-    ],
-    "isOpen": true,
-    "statusMessage": "Open until 10:00 PM",
-    "shopId": "culvers-brookfield-capitol",
-    "lastUpdated": "2026-01-23T02:11:49.018Z"
-  },
-  "culvers-brown-deer": {
-    "flavors": [
-      {
-        "name": "Mint Cookie",
-        "description": "Our specially blended Mint Fresh Frozen Custard with OREO® Cookies for a refreshing treat.",
-        "imageUrl": "https://cdn.culvers.com/menu-item-detail/img-Mint-Oreo-updated.png"
-      }
-    ],
-    "isOpen": true,
-    "statusMessage": "Open until 10:00 PM",
-    "shopId": "culvers-brown-deer",
-    "lastUpdated": "2026-01-23T02:11:49.036Z"
+    "lastUpdated": "2026-01-23T03:12:16.236Z"
   },
   "culvers-milwaukee-good-hope": {
     "flavors": [
@@ -1439,20 +1257,7 @@
     "isOpen": true,
     "statusMessage": "Open until 10:00 PM",
     "shopId": "culvers-milwaukee-good-hope",
-    "lastUpdated": "2026-01-23T02:11:49.183Z"
-  },
-  "culvers-waukesha-grandview": {
-    "flavors": [
-      {
-        "name": "Butter Pecan",
-        "description": "Culver's Classic! This one still knocks our socks off. Specially blended Butter Pecan Fresh Frozen Custard with toasted pecan pieces.",
-        "imageUrl": "https://cdn.culvers.com/menu-item-detail/img-Butter-Pecan-New.png"
-      }
-    ],
-    "isOpen": true,
-    "statusMessage": "Open until 10:00 PM",
-    "shopId": "culvers-waukesha-grandview",
-    "lastUpdated": "2026-01-23T02:11:49.247Z"
+    "lastUpdated": "2026-01-23T03:12:16.476Z"
   },
   "culvers-menomonee-falls": {
     "flavors": [
@@ -1465,59 +1270,20 @@
     "isOpen": true,
     "statusMessage": "Open until 10:00 PM",
     "shopId": "culvers-menomonee-falls",
-    "lastUpdated": "2026-01-23T02:11:49.320Z"
+    "lastUpdated": "2026-01-23T03:12:16.501Z"
   },
-  "culvers-waukesha-hwy-164": {
+  "culvers-new-berlin": {
     "flavors": [
       {
-        "name": "Chocolate Heath Crunch",
-        "description": "Our delicious Chocolate Fresh Frozen Custard with crunchy bits of Heath Bar. Kind of crunchy, kind of smooth, kind of incredible.",
-        "imageUrl": "https://cdn.culvers.com/menu-item-detail/img-Choc-Heath-Crunch.Cake-Cone.png"
+        "name": "Double Strawberry",
+        "description": "Our specially blended Strawberry Fresh Frozen Custard swirled with plump strawberries.",
+        "imageUrl": "https://cdn.culvers.com/menu-item-detail/img-Double-Strawberry.Waffle-Cone.png"
       }
     ],
     "isOpen": true,
     "statusMessage": "Open until 10:00 PM",
-    "shopId": "culvers-waukesha-hwy-164",
-    "lastUpdated": "2026-01-23T02:11:49.334Z"
-  },
-  "culvers-milwaukee-fond-du-lac": {
-    "flavors": [
-      {
-        "name": "Chocolate Volcano",
-        "description": "Our delicious Chocolate Fresh Frozen Custard explodes with OREO® Cookie pieces, chopped Dove® Chocolate pieces, mini M&Ms and streams of chocolate syrup.",
-        "imageUrl": "https://cdn.culvers.com/menu-item-detail/img-Chocolate-Volcano2.png"
-      }
-    ],
-    "isOpen": true,
-    "statusMessage": "Open until 11:00 PM",
-    "shopId": "culvers-milwaukee-fond-du-lac",
-    "lastUpdated": "2026-01-23T02:11:49.342Z"
-  },
-  "culvers-greenfield-wi-layton-ave": {
-    "flavors": [
-      {
-        "name": "Chocolate Covered Strawberry",
-        "description": "Our creamy Vanilla Fresh Frozen Custard complemented with plump strawberries and novelty chocolate.",
-        "imageUrl": "https://cdn.culvers.com/menu-item-detail/img-Chocolate-Covered-Strawberry1.png"
-      }
-    ],
-    "isOpen": true,
-    "statusMessage": "Open until 11:00 PM",
-    "shopId": "culvers-greenfield-wi-layton-ave",
-    "lastUpdated": "2026-01-23T02:11:49.350Z"
-  },
-  "culvers-mequon": {
-    "flavors": [
-      {
-        "name": "Mint Cookie",
-        "description": "Our specially blended Mint Fresh Frozen Custard with OREO® Cookies for a refreshing treat.",
-        "imageUrl": "https://cdn.culvers.com/menu-item-detail/img-Mint-Oreo-updated.png"
-      }
-    ],
-    "isOpen": true,
-    "statusMessage": "Open until 10:00 PM",
-    "shopId": "culvers-mequon",
-    "lastUpdated": "2026-01-23T02:11:49.408Z"
+    "shopId": "culvers-new-berlin",
+    "lastUpdated": "2026-01-23T03:12:16.523Z"
   },
   "culvers-racine-wi-douglas-ave": {
     "flavors": [
@@ -1530,22 +1296,9 @@
     "isOpen": true,
     "statusMessage": "Open until 10:00 PM",
     "shopId": "culvers-racine-wi-douglas-ave",
-    "lastUpdated": "2026-01-23T02:11:49.473Z"
+    "lastUpdated": "2026-01-23T03:12:16.523Z"
   },
-  "culvers-west-allis": {
-    "flavors": [
-      {
-        "name": "Chocolate Covered Strawberry",
-        "description": "Our creamy Vanilla Fresh Frozen Custard complemented with plump strawberries and novelty chocolate.",
-        "imageUrl": "https://cdn.culvers.com/menu-item-detail/img-Chocolate-Covered-Strawberry1.png"
-      }
-    ],
-    "isOpen": true,
-    "statusMessage": "Open until 10:00 PM",
-    "shopId": "culvers-west-allis",
-    "lastUpdated": "2026-01-23T02:11:49.496Z"
-  },
-  "culvers-grafton": {
+  "culvers-milwaukee-fond-du-lac": {
     "flavors": [
       {
         "name": "Chocolate Volcano",
@@ -1554,9 +1307,22 @@
       }
     ],
     "isOpen": true,
-    "statusMessage": "Open until 12:00 AM",
-    "shopId": "culvers-grafton",
-    "lastUpdated": "2026-01-23T02:11:49.509Z"
+    "statusMessage": "Open until 11:00 PM",
+    "shopId": "culvers-milwaukee-fond-du-lac",
+    "lastUpdated": "2026-01-23T03:12:16.524Z"
+  },
+  "culvers-greenfield-wi-layton-ave": {
+    "flavors": [
+      {
+        "name": "Chocolate Covered Strawberry",
+        "description": "Our creamy Vanilla Fresh Frozen Custard complemented with plump strawberries and novelty chocolate.",
+        "imageUrl": "https://cdn.culvers.com/menu-item-detail/img-Chocolate-Covered-Strawberry1.png"
+      }
+    ],
+    "isOpen": true,
+    "statusMessage": "Open until 11:00 PM",
+    "shopId": "culvers-greenfield-wi-layton-ave",
+    "lastUpdated": "2026-01-23T03:12:16.524Z"
   },
   "culvers-muskego": {
     "flavors": [
@@ -1569,6 +1335,240 @@
     "isOpen": true,
     "statusMessage": "Open until 10:00 PM",
     "shopId": "culvers-muskego",
-    "lastUpdated": "2026-01-23T02:11:49.513Z"
+    "lastUpdated": "2026-01-23T03:12:16.568Z"
+  },
+  "culvers-brown-deer": {
+    "flavors": [
+      {
+        "name": "Mint Cookie",
+        "description": "Our specially blended Mint Fresh Frozen Custard with OREO® Cookies for a refreshing treat.",
+        "imageUrl": "https://cdn.culvers.com/menu-item-detail/img-Mint-Oreo-updated.png"
+      }
+    ],
+    "isOpen": true,
+    "statusMessage": "Open until 10:00 PM",
+    "shopId": "culvers-brown-deer",
+    "lastUpdated": "2026-01-23T03:12:16.580Z"
+  },
+  "culvers-west-milwaukee": {
+    "flavors": [
+      {
+        "name": "Crazy for Cookie Dough",
+        "description": "Our creamy Vanilla and Chocolate Fresh Frozen Custard swirled together and mixed with thick fudge, ribbons of old fashioned salted caramel and cookie dough pieces.",
+        "imageUrl": "https://cdn.culvers.com/menu-item-detail/img-Crazy-for-Cookie-Dough.Waffle-Cone1.png"
+      }
+    ],
+    "isOpen": true,
+    "statusMessage": "Open until 11:00 PM",
+    "shopId": "culvers-west-milwaukee",
+    "lastUpdated": "2026-01-23T03:12:16.593Z"
+  },
+  "culvers-sussex": {
+    "flavors": [
+      {
+        "name": "Mint Cookie",
+        "description": "Our specially blended Mint Fresh Frozen Custard with OREO® Cookies for a refreshing treat.",
+        "imageUrl": "https://cdn.culvers.com/menu-item-detail/img-Mint-Oreo-updated.png"
+      }
+    ],
+    "isOpen": true,
+    "statusMessage": "Open until 11:00 PM",
+    "shopId": "culvers-sussex",
+    "lastUpdated": "2026-01-23T03:12:16.594Z"
+  },
+  "culvers-oak-creek": {
+    "flavors": [
+      {
+        "name": "Caramel Pecan",
+        "description": "Ribbons of old fashioned salted caramel swirled with our creamy Vanilla Fresh Frozen Custard and toasted pecan pieces. Taste why it's one of out most popular treats!",
+        "imageUrl": "https://cdn.culvers.com/menu-item-detail/img-Caramel-Pecan.png"
+      }
+    ],
+    "isOpen": true,
+    "statusMessage": "Open until 10:00 PM",
+    "shopId": "culvers-oak-creek",
+    "lastUpdated": "2026-01-23T03:12:16.599Z"
+  },
+  "culvers-franklin": {
+    "flavors": [
+      {
+        "name": "Caramel Cashew",
+        "description": "Culver’s Classic! Our creamy Vanilla Fresh Frozen Custard swirled with ribbons of old fashioned salted caramel and loaded with lightly salted cashew pieces.",
+        "imageUrl": "https://cdn.culvers.com/menu-item-detail/img-Caramel-Cashew.png"
+      }
+    ],
+    "isOpen": true,
+    "statusMessage": "Open until 10:00 PM",
+    "shopId": "culvers-franklin",
+    "lastUpdated": "2026-01-23T03:12:16.615Z"
+  },
+  "culvers-milwaukee-layton": {
+    "flavors": [
+      {
+        "name": "Turtle Dove",
+        "description": "Creamy Vanilla Fresh Frozen Custard swirled with ribbons of old fashioned salted caramel, marshmallow creme, toasted pecan pieces and chopped Dove® Chocolate pieces.",
+        "imageUrl": "https://cdn.culvers.com/menu-item-detail/turtle-dove.png"
+      }
+    ],
+    "isOpen": true,
+    "statusMessage": "Open until 11:00 PM",
+    "shopId": "culvers-milwaukee-layton",
+    "lastUpdated": "2026-01-23T03:12:16.623Z"
+  },
+  "culvers-brookfield-capitol": {
+    "flavors": [
+      {
+        "name": "Mint Explosion",
+        "description": "Our specially blended Mint Fresh Frozen Custard exploding with OREO® Cookie pieces, Andes® candies and novelty chocolate.",
+        "imageUrl": "https://cdn.culvers.com/menu-item-detail/img-Mint-Explosion.Cake-Cone-updated.png"
+      }
+    ],
+    "isOpen": true,
+    "statusMessage": "Open until 10:00 PM",
+    "shopId": "culvers-brookfield-capitol",
+    "lastUpdated": "2026-01-23T03:12:16.779Z"
+  },
+  "culvers-hales-corners": {
+    "flavors": [
+      {
+        "name": "Really Reese's",
+        "description": "Reese’s Peanut Butter Cups become a special treat when stirred in our delicious Chocolate Fresh Frozen Custard.",
+        "imageUrl": "https://cdn.culvers.com/menu-item-detail/img-Really-Reeses.Cake-Cone.png"
+      }
+    ],
+    "isOpen": true,
+    "statusMessage": "Open until 10:00 PM",
+    "shopId": "culvers-hales-corners",
+    "lastUpdated": "2026-01-23T03:12:16.786Z"
+  },
+  "culvers-brookfield-124th": {
+    "flavors": [
+      {
+        "name": "Dark Chocolate PB Crunch",
+        "description": "Dark Chocolate Fresh Frozen Custard swirled with a ribbon of peanut butter and crunchy Butterfinger pieces.",
+        "imageUrl": "https://cdn.culvers.com/menu-item-detail/img-Dark-Chocolate-PB-Crunch12.png"
+      }
+    ],
+    "isOpen": true,
+    "statusMessage": "Open until 10:00 PM",
+    "shopId": "culvers-brookfield-124th",
+    "lastUpdated": "2026-01-23T03:12:16.885Z"
+  },
+  "culvers-west-allis": {
+    "flavors": [
+      {
+        "name": "Chocolate Covered Strawberry",
+        "description": "Our creamy Vanilla Fresh Frozen Custard complemented with plump strawberries and novelty chocolate.",
+        "imageUrl": "https://cdn.culvers.com/menu-item-detail/img-Chocolate-Covered-Strawberry1.png"
+      }
+    ],
+    "isOpen": true,
+    "statusMessage": "Open until 10:00 PM",
+    "shopId": "culvers-west-allis",
+    "lastUpdated": "2026-01-23T03:12:16.915Z"
+  },
+  "culvers-glendale-wi-bayside-dr": {
+    "flavors": [
+      {
+        "name": "Crazy for Cookie Dough",
+        "description": "Our creamy Vanilla and Chocolate Fresh Frozen Custard swirled together and mixed with thick fudge, ribbons of old fashioned salted caramel and cookie dough pieces.",
+        "imageUrl": "https://cdn.culvers.com/menu-item-detail/img-Crazy-for-Cookie-Dough.Waffle-Cone1.png"
+      }
+    ],
+    "isOpen": true,
+    "statusMessage": "Open until 10:30 PM",
+    "shopId": "culvers-glendale-wi-bayside-dr",
+    "lastUpdated": "2026-01-23T03:12:16.943Z"
+  },
+  "culvers-waukesha-sunset": {
+    "flavors": [
+      {
+        "name": "Devil's Food Cake",
+        "description": "Dark Chocolate Fresh Frozen Custard swirled with chocolate cake and novelty chocolate.",
+        "imageUrl": "https://cdn.culvers.com/menu-item-detail/img-Devils-Food-Cake.png"
+      }
+    ],
+    "isOpen": true,
+    "statusMessage": "Open until 10:00 PM",
+    "shopId": "culvers-waukesha-sunset",
+    "lastUpdated": "2026-01-23T03:12:16.978Z"
+  },
+  "culvers-elm-grove-wi": {
+    "flavors": [
+      {
+        "name": "Chocolate Volcano",
+        "description": "Our delicious Chocolate Fresh Frozen Custard explodes with OREO® Cookie pieces, chopped Dove® Chocolate pieces, mini M&Ms and streams of chocolate syrup.",
+        "imageUrl": "https://cdn.culvers.com/menu-item-detail/img-Chocolate-Volcano2.png"
+      }
+    ],
+    "isOpen": true,
+    "statusMessage": "Open until 10:00 PM",
+    "shopId": "culvers-elm-grove-wi",
+    "lastUpdated": "2026-01-23T03:12:16.990Z"
+  },
+  "culvers-grafton": {
+    "flavors": [
+      {
+        "name": "Chocolate Volcano",
+        "description": "Our delicious Chocolate Fresh Frozen Custard explodes with OREO® Cookie pieces, chopped Dove® Chocolate pieces, mini M&Ms and streams of chocolate syrup.",
+        "imageUrl": "https://cdn.culvers.com/menu-item-detail/img-Chocolate-Volcano2.png"
+      }
+    ],
+    "isOpen": true,
+    "statusMessage": "Open until 12:00 AM",
+    "shopId": "culvers-grafton",
+    "lastUpdated": "2026-01-23T03:12:17.068Z"
+  },
+  "culvers-waukesha-hwy-164": {
+    "flavors": [
+      {
+        "name": "Chocolate Heath Crunch",
+        "description": "Our delicious Chocolate Fresh Frozen Custard with crunchy bits of Heath Bar. Kind of crunchy, kind of smooth, kind of incredible.",
+        "imageUrl": "https://cdn.culvers.com/menu-item-detail/img-Choc-Heath-Crunch.Cake-Cone.png"
+      }
+    ],
+    "isOpen": true,
+    "statusMessage": "Open until 10:00 PM",
+    "shopId": "culvers-waukesha-hwy-164",
+    "lastUpdated": "2026-01-23T03:12:17.139Z"
+  },
+  "culvers-shorewood": {
+    "flavors": [
+      {
+        "name": "Georgia Peach",
+        "description": "Our specially blended Peach Fresh Frozen Custard swirled with sweet peaches for a light, refreshing treat.",
+        "imageUrl": "https://cdn.culvers.com/menu-item-detail/img-Georgia-Peach1.png"
+      }
+    ],
+    "isOpen": true,
+    "statusMessage": "Open until 11:00 PM",
+    "shopId": "culvers-shorewood",
+    "lastUpdated": "2026-01-23T03:12:17.140Z"
+  },
+  "culvers-mequon": {
+    "flavors": [
+      {
+        "name": "Mint Cookie",
+        "description": "Our specially blended Mint Fresh Frozen Custard with OREO® Cookies for a refreshing treat.",
+        "imageUrl": "https://cdn.culvers.com/menu-item-detail/img-Mint-Oreo-updated.png"
+      }
+    ],
+    "isOpen": true,
+    "statusMessage": "Open until 10:00 PM",
+    "shopId": "culvers-mequon",
+    "lastUpdated": "2026-01-23T03:12:17.248Z"
+  },
+  "culvers-waukesha-grandview": {
+    "flavors": [
+      {
+        "name": "Butter Pecan",
+        "description": "Culver's Classic! This one still knocks our socks off. Specially blended Butter Pecan Fresh Frozen Custard with toasted pecan pieces.",
+        "imageUrl": "https://cdn.culvers.com/menu-item-detail/img-Butter-Pecan-New.png"
+      }
+    ],
+    "isOpen": true,
+    "statusMessage": "Open until 10:00 PM",
+    "shopId": "culvers-waukesha-grandview",
+    "lastUpdated": "2026-01-23T03:12:17.338Z"
   }
 }
