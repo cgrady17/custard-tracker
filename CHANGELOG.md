@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.4](https://github.com/cgrady17/custard-tracker/compare/v1.1.3...v1.1.4) (2026-01-23)
+
+
+### Bug Fixes
+
+* time-zone shift for scraper ([f99f50a](https://github.com/cgrady17/custard-tracker/commit/f99f50a2c5ca97fe430337ae533ea465feb8b968))
+
 ### [1.1.3](https://github.com/cgrady17/custard-tracker/compare/v1.1.2...v1.1.3) (2026-01-23)
 
 
