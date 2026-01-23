@@ -48,8 +48,43 @@ const App: React.FC = () => {
   const [showChainDropdown, setShowChainDropdown] = useState(false);
   const [dropdownPos, setDropdownPos] = useState({ top: 0, right: 0 });
   const chainButtonRef = useRef<HTMLButtonElement>(null);
+  const [swRegistration, setSwRegistration] = useState<ServiceWorkerRegistration | null>(null);
+  const [showUpdateToast, setShowUpdateToast] = useState(false);
 
   const [isOffline, setIsOffline] = useState(!navigator.onLine);
+
+  useEffect(() => {
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/service-worker.js').then(reg => {
+        setSwRegistration(reg);
+        if (reg.waiting) setShowUpdateToast(true);
+        reg.addEventListener('updatefound', () => {
+          const newWorker = reg.installing;
+          if (newWorker) {
+            newWorker.addEventListener('statechange', () => {
+              if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
+                setShowUpdateToast(true);
+              }
+            });
+          }
+        });
+      });
+      let refreshing = false;
+      navigator.serviceWorker.addEventListener('controllerchange', () => {
+        if (!refreshing) {
+          window.location.reload();
+          refreshing = true;
+        }
+      });
+    }
+  }, []);
+
+  const handleUpdateApp = () => {
+    if (swRegistration && swRegistration.waiting) {
+      swRegistration.waiting.postMessage({ type: 'SKIP_WAITING' });
+      setShowUpdateToast(false);
+    }
+  };
   const [userLocation, setUserLocation] = useState<{ lat: number; lng: number } | null>(null);
   const [isLocating, setIsLocating] = useState(false);
 
@@ -879,6 +914,21 @@ const App: React.FC = () => {
               <i className="fas fa-times text-xs"></i>
             </button>
           </div>
+        </div>
+      )}
+
+      {showUpdateToast && (
+        <div className="fixed bottom-24 left-1/2 -translate-x-1/2 z-50 animate-in slide-in-from-bottom-4 duration-300">
+          <button 
+            onClick={handleUpdateApp}
+            className="bg-mke-blue text-white px-6 py-3 rounded-full shadow-2xl flex items-center gap-3 border-2 border-sunrise-gold"
+          >
+            <i className="fas fa-sync-alt animate-spin-slow"></i>
+            <div className="text-left">
+              <p className="text-xs font-black uppercase tracking-widest">New Version Available</p>
+              <p className="text-[10px] opacity-80">Tap to refresh</p>
+            </div>
+          </button>
         </div>
       )}
 
