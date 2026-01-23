@@ -172,6 +172,10 @@ resource "google_cloud_scheduler_job" "daily_refresh" {
   http_target {
     http_method = "POST"
     uri         = google_cloudfunctions2_function.scraper.url
+    body        = base64encode("{\"notify\": true}")
+    headers = {
+      "Content-Type" = "application/json"
+    }
     oidc_token {
       service_account_email = google_service_account.scraper_sa.email
     }
