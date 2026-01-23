@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.3](https://github.com/cgrady17/custard-tracker/compare/v1.1.2...v1.1.3) (2026-01-23)
+
+
+### Bug Fixes
+
+* deploy workflow issue ([2375353](https://github.com/cgrady17/custard-tracker/commit/23753534b6866bb0421e83a2890c48d57324a0ee))
+
 ### [1.1.2](https://github.com/cgrady17/custard-tracker/compare/v1.1.1...v1.1.2) (2026-01-23)
 
 
