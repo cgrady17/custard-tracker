@@ -164,13 +164,16 @@ export const scrapeCustard = async (req, res) => {
   });
 
   await Promise.all(tasks);
-  console.log(`[SCRAPER_INFO] Scrape phase complete. Processed ${Object.keys(results).length} shops.`);
 
   // 3. Check for matching subscriptions and notify
-  if (process.env.GCP_PROJECT) {
+  // Only run if explicitly requested via payload (e.g., from Cloud Scheduler 10:30 AM job)
+  const shouldNotify = req.body && req.body.notify === true;
+  
+  if (process.env.GCP_PROJECT && shouldNotify) {
     try {
       const db = admin.firestore();
       const messaging = admin.messaging();
+      console.log("[SCRAPER_INFO] Notification phase started...");
 
       // Maintenance: Delete subscriptions older than 90 days
       try {
