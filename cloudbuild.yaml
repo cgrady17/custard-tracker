@@ -11,6 +11,7 @@ steps:
     '--build-arg', 'VITE_FIREBASE_APP_ID=$_VITE_FIREBASE_APP_ID',
     '--build-arg', 'VITE_FIREBASE_VAPID_KEY=$_VITE_FIREBASE_VAPID_KEY',
     '--build-arg', 'VITE_GA_ID=$_VITE_GA_ID',
+    '--build-arg', 'VITE_COMMIT_HASH=$_VITE_COMMIT_HASH',
     '.'
   ]
 images:

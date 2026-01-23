@@ -9,11 +9,13 @@ export default defineConfig(({ mode }) => {
     const env = loadEnv(mode, '.', '');
     
     // Get Git Hash and Build Time
-    let commitHash = 'unknown';
-    try {
-      commitHash = execSync('git rev-parse --short HEAD').toString().trim();
-    } catch (e) {
-      console.warn('Could not get git hash');
+    let commitHash = process.env.VITE_COMMIT_HASH || 'unknown';
+    if (commitHash === 'unknown') {
+        try {
+            commitHash = execSync('git rev-parse --short HEAD').toString().trim();
+        } catch (e) {
+            console.warn('Could not get git hash');
+        }
     }
     const buildTime = new Date().toISOString();
 
