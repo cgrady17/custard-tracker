@@ -62,23 +62,53 @@ const STANDARD_1030_9_HOURS: Record<number, OperatingHours> = {
 };
 
 const ROBERTS_HOURS: Record<number, OperatingHours> = {
-  0: { open: "10:30", close: "22:00" },
-  1: { open: "10:30", close: "22:00" },
-  2: { open: "10:30", close: "22:00" },
-  3: { open: "10:30", close: "22:00" },
-  4: { open: "10:30", close: "22:00" },
-  5: { open: "10:30", close: "22:00" },
-  6: { open: "10:30", close: "22:00" },
+  0: { open: "10:30", close: "21:00" }, // Sun
+  1: { open: "10:30", close: "21:00" },
+  2: { open: "10:30", close: "21:00" },
+  3: { open: "10:30", close: "21:00" },
+  4: { open: "10:30", close: "21:00" },
+  5: { open: "10:30", close: "22:00" }, // Fri
+  6: { open: "10:30", close: "22:00" }, // Sat
 };
 
 const HEFNERS_HOURS: Record<number, OperatingHours> = {
-  0: { open: "11:00", close: "21:00" },
-  1: { open: "11:00", close: "21:00" },
-  2: { open: "11:00", close: "21:00" },
-  3: { open: "11:00", close: "21:00" },
-  4: { open: "11:00", close: "21:00" },
-  5: { open: "11:00", close: "21:00" },
-  6: { open: "11:00", close: "21:00" },
+  0: { open: "11:00", close: "20:00" }, // Sun
+  1: { open: "11:00", close: "20:00" },
+  2: { open: "11:00", close: "20:00" },
+  3: { open: "11:00", close: "20:00" },
+  4: { open: "11:00", close: "20:00" },
+  5: { open: "11:00", close: "21:00" }, // Fri
+  6: { open: "11:00", close: "21:00" }, // Sat
+};
+
+const GEORGIE_HOURS: Record<number, OperatingHours | null> = {
+  0: null, // Sun: Closed
+  1: { open: "10:30", close: "21:00" },
+  2: { open: "10:30", close: "21:00" },
+  3: { open: "10:30", close: "21:00" },
+  4: { open: "10:30", close: "21:00" },
+  5: { open: "10:30", close: "22:00" }, // Fri
+  6: { open: "10:30", close: "22:00" }, // Sat
+};
+
+const MURFS_HOURS: Record<number, OperatingHours | null> = {
+  0: { open: "10:30", close: "20:00" }, // Sun
+  1: null, // Mon: Closed
+  2: { open: "10:30", close: "20:00" },
+  3: { open: "10:30", close: "20:00" },
+  4: { open: "10:30", close: "20:00" },
+  5: { open: "10:30", close: "21:00" }, // Fri
+  6: { open: "10:30", close: "20:00" }, // Sat
+};
+
+const KRAVERZ_HOURS: Record<number, OperatingHours | null> = {
+  0: null, // Sun: Closed
+  1: { open: "10:00", close: "21:00" },
+  2: { open: "10:00", close: "21:00" },
+  3: { open: "10:00", close: "21:00" },
+  4: { open: "10:00", close: "21:00" },
+  5: { open: "10:00", close: "22:00" }, // Fri
+  6: { open: "10:00", close: "21:00" }, // Sat
 };
 
 const CULVERS_HOURS_10: Record<number, OperatingHours> = {
@@ -274,7 +304,7 @@ export const MILWAUKEE_SHOPS: CustardShop[] = [
     brandColor: "#cc0000",
     chain: "Kraverz",
     logoUrl: "https://www.google.com/s2/favicons?domain=kraverzcustard.com&sz=64",
-    hours: STANDARD_1030_9_HOURS
+    hours: KRAVERZ_HOURS
   },
 
   // --- CULVER'S ---
