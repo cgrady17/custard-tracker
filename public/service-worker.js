@@ -6,12 +6,18 @@ const ASSETS_TO_CACHE = [
 ];
 
 self.addEventListener('install', (event) => {
-  self.skipWaiting();
+  // self.skipWaiting(); // Removed to allow manual control via UI
   event.waitUntil(
     caches.open(CACHE_NAME).then((cache) => {
       return cache.addAll(ASSETS_TO_CACHE);
     })
   );
+});
+
+self.addEventListener('message', (event) => {
+  if (event.data && event.data.type === 'SKIP_WAITING') {
+    self.skipWaiting();
+  }
 });
 
 self.addEventListener('activate', (event) => {
@@ -52,18 +58,27 @@ self.addEventListener('fetch', (event) => {
     return;
   }
 
-  // 3. Stale-While-Revalidate for HTML/App Shell
+  // 3. Network-First for HTML/App Shell
+  // Critical: Always try to get the latest HTML to ensure we point to valid JS/CSS assets.
+  // Stale-while-revalidate is dangerous here because old HTML points to deleted assets.
   if (event.request.mode === 'navigate' || url.pathname === '/') {
     event.respondWith(
-      caches.match(event.request).then((cachedResponse) => {
-        const fetchPromise = fetch(event.request).then((networkResponse) => {
-          caches.open(CACHE_NAME).then((cache) => {
-            cache.put(event.request, networkResponse.clone());
-          });
-          return networkResponse;
-        });
-        return cachedResponse || fetchPromise;
-      })
+      fetch(event.request)
+        .then((response) => {
+          // If valid response, clone and cache
+          if (response.status === 200) {
+            const clone = response.clone();
+            caches.open(CACHE_NAME).then((cache) => {
+              cache.put(event.request, clone);
+            });
+            return response;
+          }
+          return response;
+        })
+        .catch(() => {
+          // If network fails, try cache
+          return caches.match(event.request);
+        })
     );
     return;
   }
