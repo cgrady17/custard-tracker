@@ -45,84 +45,128 @@ export async function scrapeOscars() {
     const { data } = await axios.get(flavorsUrl, { headers });
     const $ = cheerio.load(data);
     const today = startOfDay(new Date());
-    const currentMonthStr = format(today, 'MMMM yyyy'); // e.g. "January 2026"
     
-    $('tr').each((i, row) => {
-        const cells = $(row).find('td');
-        if (cells.length >= 2) {
-            const dateCell = $(cells[0]);
-            const flavorCell = $(cells[1]);
-            const dateText = dateCell.text().trim();
-            
-            // Try to parse date from "1", "2", or "Sunday 1"
-            const dayMatch = dateText.match(/(\d+)$/);
-            if (dayMatch) {
-                const dayNum = dayMatch[1];
-                const flavorDate = parse(`${currentMonthStr} ${dayNum}`, 'MMMM yyyy d', new Date());
+    $('table').each((tIdx, table) => {
+        // Determine the month for this table
+        let currentMonthStr = format(today, 'MMMM yyyy');
+        
+        // Search for context (headers) above the table to find the month name
+        let context = "";
+        let curr = $(table);
+        while (curr.length && !context) {
+            // Check preceding siblings
+            let prev = curr.prev();
+            while (prev.length && !context) {
+                const text = $(prev).text().trim().toLowerCase();
+                if (text) context = text;
+                prev = prev.prev();
+            }
+            // Move up to parent
+            curr = curr.parent();
+            // Safety break to avoid infinite loop or too deep traversal
+            if (curr.is('body') || curr.is('html')) break;
+        }
+
+        const monthNames = ["january", "february", "march", "april", "may", "june", "july", "august", "september", "october", "november", "december"];
+        let foundMonthIdx = -1;
+        for (let m = 0; m < monthNames.length; m++) {
+            if (context.includes(monthNames[m])) {
+                foundMonthIdx = m;
+                break;
+            }
+        }
+
+        if (foundMonthIdx !== -1) {
+            let year = today.getFullYear();
+            // If we are in December and the month is January, it's next year
+            if (today.getMonth() === 11 && foundMonthIdx === 0) {
+                year++;
+            }
+            // Capitalize month name for parsing
+            const monthName = monthNames[foundMonthIdx].charAt(0).toUpperCase() + monthNames[foundMonthIdx].slice(1);
+            currentMonthStr = `${monthName} ${year}`;
+        }
+
+        $(table).find('tr').each((i, row) => {
+            const cells = $(row).find('td');
+            if (cells.length >= 2) {
+                const dateCell = $(cells[0]);
+                const flavorCell = $(cells[1]);
+                const dateText = dateCell.text().trim();
                 
-                if (!isNaN(flavorDate.getTime())) {
-                    const fullFlavorText = flavorCell.text().trim();
-                    if (!fullFlavorText) return;
+                // Try to parse date from "1", "2", or "Sunday 1"
+                const dayMatch = dateText.match(/(\d+)$/);
+                if (dayMatch) {
+                    const dayNum = dayMatch[1];
+                    const flavorDate = parse(`${currentMonthStr} ${dayNum}`, 'MMMM yyyy d', new Date());
+                    
+                    if (!isNaN(flavorDate.getTime())) {
+                        const fullFlavorText = flavorCell.text().trim();
+                        if (!fullFlavorText) return;
 
-                    // Split flavors by "-or-" or "&"
-                    const flavorNames = fullFlavorText.split(/\s+-or-\s+|\s+&\s+/i).map(n => n.trim());
-                    const dailyFlavors = [];
+                        // Split flavors by "-or-" or "&"
+                        const flavorNames = fullFlavorText.split(/\s+-or-\s+|\s+&\s+/i).map(n => n.trim());
+                        const dailyFlavors = [];
 
-                    flavorNames.forEach(flavorName => {
-                        let imageUrl = "";
-                        let description = "Flavor of the Day";
+                        flavorNames.forEach(flavorName => {
+                            let imageUrl = "";
+                            let description = "Flavor of the Day";
 
-                        // Try to find image and description in overlays by matching flavor name
-                        const links = flavorCell.find('a');
-                        links.each((j, linkEl) => {
-                            const $link = $(linkEl);
-                            if ($link.text().trim().toLowerCase() === flavorName.toLowerCase()) {
-                                const linkId = $link.attr('id');
-                                if (linkId && linkId.startsWith('overlay_unique_id_')) {
-                                    const id = linkId.replace('overlay_unique_id_', '');
-                                    const contentDiv = $(`#overlay-describedby-${id}`);
-                                    if (contentDiv.length) {
-                                        const img = contentDiv.find('.et_pb_image_wrap img');
-                                        if (img.length) imageUrl = img.attr('src');
-                                        
-                                        const textInner = contentDiv.find('.et_pb_text_inner');
-                                        if (textInner.length) {
-                                            let descText = textInner.text().replace(flavorName, '').trim();
-                                            if (descText) description = descText;
+                            // Try to find image and description in overlays by matching flavor name
+                            const links = flavorCell.find('a');
+                            links.each((j, linkEl) => {
+                                const $link = $(linkEl);
+                                if ($link.text().trim().toLowerCase() === flavorName.toLowerCase()) {
+                                    const linkId = $link.attr('id');
+                                    if (linkId && linkId.startsWith('overlay_unique_id_')) {
+                                        const id = linkId.replace('overlay_unique_id_', '');
+                                        const contentDiv = $(`#overlay-describedby-${id}`);
+                                        if (contentDiv.length) {
+                                            const img = contentDiv.find('.et_pb_image_wrap img');
+                                            if (img.length) imageUrl = img.attr('src');
+                                            
+                                            const textInner = contentDiv.find('.et_pb_text_inner');
+                                            if (textInner.length) {
+                                                let descText = textInner.text().replace(flavorName, '').trim();
+                                                if (descText) description = descText;
+                                            }
                                         }
                                     }
                                 }
+                            });
+
+                            // Fallback if no overlay link matched
+                            if (!imageUrl) {
+                                const img = flavorCell.find('img');
+                                if (img.length) imageUrl = img.attr('src');
                             }
+
+                            dailyFlavors.push({
+                                name: flavorName,
+                                imageUrl,
+                                description,
+                                type: 'daily'
+                            });
                         });
 
-                        // Fallback if no overlay link matched
-                        if (!imageUrl) {
-                            const img = flavorCell.find('img');
-                            if (img.length) imageUrl = img.attr('src');
+                        const dateISO = format(flavorDate, 'yyyy-MM-dd');
+                        const todayISO = format(today, 'yyyy-MM-dd');
+
+                        if (dateISO === todayISO) {
+                            flavors = dailyFlavors;
+                        } else if (!isBefore(flavorDate, today)) {
+                            // Check if already added (avoid duplicates if tables overlap or rows are repeated)
+                            if (!upcoming.some(u => u.date === dateISO)) {
+                                upcoming.push({
+                                    date: dateISO,
+                                    flavors: dailyFlavors
+                                });
+                            }
                         }
-
-                        dailyFlavors.push({
-                            name: flavorName,
-                            imageUrl,
-                            description,
-                            type: 'daily'
-                        });
-                    });
-
-                    const dateISO = format(flavorDate, 'yyyy-MM-dd');
-                    const todayISO = format(today, 'yyyy-MM-dd');
-
-                    if (dateISO === todayISO) {
-                        flavors = dailyFlavors;
-                    } else if (!isBefore(flavorDate, today)) {
-                        upcoming.push({
-                            date: dateISO,
-                            flavors: dailyFlavors
-                        });
                     }
                 }
             }
-        }
+        });
     });
 
     const status = getOscarsStatus();
