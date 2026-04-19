@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.3.0](https://github.com/cgrady17/custard-tracker/compare/v1.2.0...v1.3.0) (2026-04-19)
+
+
+### Bug Fixes
+
+* **scrapers:** improve Oscar's month detection and add Golden Gyros scraper ([684c8c6](https://github.com/cgrady17/custard-tracker/commit/684c8c62cad8ee8b1019cdf57f612f5ead0a8e0f))
+* **scrapers:** update Golden Gyros hours and limit upcoming flavors for Oscars and Golden Gyros ([058c905](https://github.com/cgrady17/custard-tracker/commit/058c90556a8697cb5c6c63a5e83bf7f84a615487))
+
 ### [1.2.1](https://github.com/cgrady17/custard-tracker/compare/v1.2.0...v1.2.1) (2026-04-19)
 
 
