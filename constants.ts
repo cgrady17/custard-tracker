@@ -111,6 +111,16 @@ const KRAVERZ_HOURS: Record<number, OperatingHours | null> = {
   6: { open: "10:00", close: "21:00" }, // Sat
 };
 
+const GOLDEN_GYROS_HOURS: Record<number, OperatingHours> = {
+  0: { open: "11:00", close: "21:30" },
+  1: { open: "11:00", close: "22:00" },
+  2: { open: "11:00", close: "22:00" },
+  3: { open: "11:00", close: "22:00" },
+  4: { open: "11:00", close: "22:00" },
+  5: { open: "11:00", close: "22:00" },
+  6: { open: "11:00", close: "22:00" },
+};
+
 const CULVERS_HOURS_10: Record<number, OperatingHours> = {
   0: { open: "10:00", close: "22:00" },
   1: { open: "10:00", close: "22:00" },
@@ -305,6 +315,18 @@ export const MILWAUKEE_SHOPS: CustardShop[] = [
     chain: "Kraverz",
     logoUrl: "https://www.google.com/s2/favicons?domain=kraverzcustard.com&sz=64",
     hours: KRAVERZ_HOURS
+  },
+  {
+    id: 'golden-gyros',
+    name: "Golden Gyros",
+    address: "7233 W Lincoln Ave, West Allis, WI 53219",
+    lat: 43.0031,
+    lng: -88.0035,
+    website: "https://goldengyro.com",
+    brandColor: "#c70000",
+    chain: "Golden Gyros",
+    logoUrl: "https://www.google.com/s2/favicons?domain=goldengyro.com&sz=64",
+    hours: GOLDEN_GYROS_HOURS
   },
 
   // --- CULVER'S ---

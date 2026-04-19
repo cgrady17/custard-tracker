@@ -137,7 +137,7 @@ resource "google_cloudfunctions2_function" "scraper" {
   description = "Scrapes custard flavors daily"
 
   build_config {
-    runtime     = "nodejs20"
+    runtime     = "nodejs22"
     entry_point = "scrapeCustard"
     source {
       storage_source {
