@@ -209,8 +209,8 @@ export async function scrapeOscars() {
 
   return {
     flavors,
-    upcoming: upcoming.sort((a, b) => a.date.localeCompare(b.date)),
+    upcoming: upcoming.sort((a, b) => a.date.localeCompare(b.date)).slice(0, 7),
     isOpen,
     statusMessage: statusMessage || (flavors.length > 0 ? "Open" : "Update failed")
   };
-}
+  }

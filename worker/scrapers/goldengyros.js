@@ -5,14 +5,26 @@ import { format, startOfDay, parse } from 'date-fns';
 function getGoldenGyrosStatus() {
   const now = new Date();
   const centralTime = new Date(now.toLocaleString('en-US', { timeZone: 'America/Chicago' }));
+  const day = centralTime.getDay();
   const hour = centralTime.getHours();
+  const minute = centralTime.getMinutes();
   
-  // Hours: 11:00 am – 10:00 pm daily
-  const openHour = 11;
-  const closeHour = 22;
+  const totalMinutes = hour * 60 + minute;
+  const openTime = 11 * 60;
   
-  const isOpen = hour >= openHour && hour < closeHour;
-  const statusMessage = isOpen ? "Open until 10:00 PM" : "Closed • Opens 11:00 AM";
+  // Hours: 11:00 am – 10:00 pm daily, except Sunday 9:30 pm
+  let closeTime;
+  let closeTimeStr;
+  if (day === 0) { // Sunday
+    closeTime = 21 * 60 + 30; // 9:30 PM
+    closeTimeStr = "9:30 PM";
+  } else {
+    closeTime = 22 * 60; // 10:00 PM
+    closeTimeStr = "10:00 PM";
+  }
+  
+  const isOpen = totalMinutes >= openTime && totalMinutes < closeTime;
+  const statusMessage = isOpen ? `Open until ${closeTimeStr}` : "Closed • Opens 11:00 AM";
   
   return { isOpen, statusMessage };
 }
@@ -89,7 +101,7 @@ export async function scrapeGoldenGyros() {
 
   return {
     flavors,
-    upcoming: upcoming.sort((a, b) => a.date.localeCompare(b.date)),
+    upcoming: upcoming.sort((a, b) => a.date.localeCompare(b.date)).slice(0, 7),
     isOpen: status.isOpen,
     statusMessage: status.statusMessage
   };

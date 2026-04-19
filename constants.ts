@@ -112,7 +112,7 @@ const KRAVERZ_HOURS: Record<number, OperatingHours | null> = {
 };
 
 const GOLDEN_GYROS_HOURS: Record<number, OperatingHours> = {
-  0: { open: "11:00", close: "22:00" },
+  0: { open: "11:00", close: "21:30" },
   1: { open: "11:00", close: "22:00" },
   2: { open: "11:00", close: "22:00" },
   3: { open: "11:00", close: "22:00" },
