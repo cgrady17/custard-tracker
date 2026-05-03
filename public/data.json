@@ -2,31 +2,31 @@
   "kopps-greenfield": {
     "flavors": [
       {
-        "name": "Butter Pecan",
-        "imageUrl": "https://kopps.com/wp-content/uploads/2022/07/ButterPecan-Edit.jpg",
-        "description": "A butterscotch flavor and whole roasted pecans",
+        "name": "Caramel Cashew",
+        "imageUrl": "https://kopps.com/wp-content/uploads/2022/07/CararmelCashew.jpg",
+        "description": "Our own caramel with special roasted cashews",
         "type": "daily"
       },
       {
-        "name": "Razzmatazz",
+        "name": "Strawberry Shortcake",
         "imageUrl": "https://kopps.com/wp-content/uploads/2023/01/flavor-placeholder-300x300.png",
-        "description": "Red Raspberry Custard + Chocolate Shavings + Marshmallow Crème",
+        "description": "Speaks for itself, so start talking about it!",
         "type": "daily"
       },
       {
-        "name": "Heath Bar Shake",
+        "name": "Chocolate Peanut Butter Shake",
         "description": "Shake of the Month",
         "type": "monthly_shake"
       },
       {
-        "name": "Oreo Cookie Sundae",
-        "description": "Three scoops of Vanilla Custard with Chocolate Chips, loads of Oreo Cookies, Marshmallow Sauce, and topped off with a Bittersweet Chocolate Hardshell.",
+        "name": "Chocolate Banana Cream Pie Sundae",
+        "description": "Three scoops of Vanilla Custard, topped with slices of ripe Banana, “made from scratch” Chocolate Marshmallow Cream and Banana Marshmallow Cream, plus sprinkles of French Pastry Pieces and Chocolate Flakes",
         "type": "monthly_sundae"
       }
     ],
     "upcoming": [
       {
-        "date": "2026-01-23",
+        "date": "2026-05-04",
         "flavors": [
           {
             "name": "Cookies ‘N Cream",
@@ -35,83 +35,15 @@
             "type": "daily"
           },
           {
-            "name": "French Silk Pie",
-            "imageUrl": "https://kopps.com/wp-content/uploads/2023/01/flavor-placeholder-300x300.png",
-            "description": "Twirls of Swiss chocolate and cream cheese custard, packed with flaky pie crust pieces and jumbo chocolate flakes",
+            "name": "Chocolate Raspberry Cheesecake",
+            "imageUrl": "https://kopps.com/wp-content/uploads/2022/07/Choc-Rasp-Chs.jpg",
+            "description": "A creamy raspberry and cheesecake custard with chocolate shavings and a tart raspberry swirl.",
             "type": "daily"
           }
         ]
       },
       {
-        "date": "2026-01-24",
-        "flavors": [
-          {
-            "name": "Reese’s Peanut Butter Kupps",
-            "imageUrl": "https://kopps.com/wp-content/uploads/2025/11/Reeses.jpg",
-            "description": "What do you get when you cross a peanut butter cup with Kopp’s Frozen Custard?  You guessed it!",
-            "type": "daily"
-          },
-          {
-            "name": "Caramel Cashew",
-            "imageUrl": "https://kopps.com/wp-content/uploads/2022/07/CararmelCashew.jpg",
-            "description": "Our own caramel with special roasted cashews",
-            "type": "daily"
-          }
-        ]
-      },
-      {
-        "date": "2026-01-25",
-        "flavors": [
-          {
-            "name": "Grasshopper Fudge",
-            "imageUrl": "https://kopps.com/wp-content/uploads/2022/07/Grass.jpg",
-            "description": "A classic cocktail made into a classic flavor with a fudge accent",
-            "type": "daily"
-          },
-          {
-            "name": "Red Velvet Oreo",
-            "imageUrl": "https://kopps.com/wp-content/uploads/2023/01/flavor-placeholder-300x300.png",
-            "description": "Chocolate Cake Batter Custard + Cream Cheese Frosting + Oreos",
-            "type": "daily"
-          }
-        ]
-      },
-      {
-        "date": "2026-01-26",
-        "flavors": [
-          {
-            "name": "Red Raspberry",
-            "imageUrl": "https://kopps.com/wp-content/uploads/2022/07/Red-Rasp.jpg",
-            "description": "A natural raspberry flavor with sweet, tart berries",
-            "type": "daily"
-          },
-          {
-            "name": "Snickers® Chunky Cheesecake",
-            "imageUrl": "https://kopps.com/wp-content/uploads/2022/07/Snickers.jpg",
-            "description": "America’s favorite candy bar and Wisconsin’s  favorite custard with New York’s favorite cheesecake.  Only at Kopp’s!",
-            "type": "daily"
-          }
-        ]
-      },
-      {
-        "date": "2026-01-27",
-        "flavors": [
-          {
-            "name": "Spumoni",
-            "imageUrl": "https://kopps.com/wp-content/uploads/2022/07/Spumoni-1.jpg",
-            "description": "Three delicious custards: pistachio nut, burgundy cherry and chocolate almond.  Mangia! Mangia!\nMangia!  For our loyal customer and Spumoni lover, Jonathan.",
-            "type": "daily"
-          },
-          {
-            "name": "Midnight Chocolate Cake",
-            "imageUrl": "https://kopps.com/wp-content/uploads/2022/07/Midnight.jpg",
-            "description": "Rich, dark, sinfully delicious.  Chocolate truffel pieces, thick fudge and dark chocolate custard",
-            "type": "daily"
-          }
-        ]
-      },
-      {
-        "date": "2026-01-28",
+        "date": "2026-05-05",
         "flavors": [
           {
             "name": "Turtle Sundae",
@@ -120,20 +52,156 @@
             "type": "daily"
           },
           {
-            "name": "Blueberry Muffin",
+            "name": "Kahlua Colada",
             "imageUrl": "https://kopps.com/wp-content/uploads/2023/01/flavor-placeholder-300x300.png",
-            "description": "Blueberry Custard + Sponge Cake + Streusel + Blueberries.",
+            "description": "A new twist on an old favorite; we twirled together Kahlua flavored custard with coconut custard, and sprinkled in toasted coconut for an outstanding, new flavor.",
             "type": "daily"
           }
         ]
       },
       {
-        "date": "2026-01-29",
+        "date": "2026-05-06",
         "flavors": [
           {
-            "name": "Mint Chip",
-            "imageUrl": "https://kopps.com/wp-content/uploads/2022/07/MintChip-1.jpg",
-            "description": "A mint flavored custard with dark chocolate chunks",
+            "name": "Butter Pecan",
+            "imageUrl": "https://kopps.com/wp-content/uploads/2022/07/ButterPecan-Edit.jpg",
+            "description": "A butterscotch flavor and whole roasted pecans",
+            "type": "daily"
+          },
+          {
+            "name": "Never Enough Chocolate",
+            "imageUrl": "https://kopps.com/wp-content/uploads/2022/07/NeverEnufChoc.jpg",
+            "description": "Dark Swiss chocolate custard, thick fudge swirls, and luscious chocolate truffel chunks. Is that enough?",
+            "type": "daily"
+          }
+        ]
+      },
+      {
+        "date": "2026-05-07",
+        "flavors": [
+          {
+            "name": "Reese’s Peanut Butter Kupps",
+            "imageUrl": "https://kopps.com/wp-content/uploads/2025/11/Reeses.jpg",
+            "description": "What do you get when you cross a peanut butter cup with Kopp’s Frozen Custard?  You guessed it!",
+            "type": "daily"
+          },
+          {
+            "name": "German Apple Streusel",
+            "imageUrl": "https://kopps.com/wp-content/uploads/2022/07/GermanApple.jpg",
+            "description": "Imported tart apple flavor with apple pieces and delicious streusel crunchies.",
+            "type": "daily"
+          }
+        ]
+      },
+      {
+        "date": "2026-05-08",
+        "flavors": [
+          {
+            "name": "Ultimate Cookie Dough",
+            "imageUrl": "https://kopps.com/wp-content/uploads/2025/10/Ultimate.jpg",
+            "description": "Cookie dough flavored custard with ribbons of caramel and thick fudge, twirled around with chunks of cookie dough pieces",
+            "type": "daily"
+          },
+          {
+            "name": "Chocolate Almond",
+            "imageUrl": "https://kopps.com/wp-content/uploads/2022/07/ChocAlmond.jpg",
+            "description": "Starting with a milk chocolate custard, we add almond flavor, then sprinkle in fresh, roasted almonds",
+            "type": "daily"
+          }
+        ]
+      },
+      {
+        "date": "2026-05-09",
+        "flavors": [
+          {
+            "name": "Grasshopper Fudge",
+            "imageUrl": "https://kopps.com/wp-content/uploads/2022/07/Grass.jpg",
+            "description": "A classic cocktail made into a classic flavor with a fudge accent",
+            "type": "daily"
+          },
+          {
+            "name": "Mango Tango",
+            "imageUrl": "https://kopps.com/wp-content/uploads/2023/01/flavor-placeholder-300x300.png",
+            "description": "Mango Custard + Mango Pieces + Toasted  Coconut",
+            "type": "daily"
+          }
+        ]
+      },
+      {
+        "date": "2026-05-10",
+        "flavors": [
+          {
+            "name": "Mom’s Chocolate Chip Cheesecake",
+            "imageUrl": "https://kopps.com/wp-content/uploads/2023/01/flavor-placeholder-300x300.png",
+            "description": "Made with Hershey’s® chocolate chips, cheesecake and custard. Yes, yes,yes!!! Your mom will love it!",
+            "type": "daily"
+          },
+          {
+            "name": "Macadamia Nut",
+            "imageUrl": "https://kopps.com/wp-content/uploads/2025/12/Mac-Nut.jpg",
+            "description": "This is too expensive for us to make, so don’t buy it, we lose money!",
+            "type": "daily"
+          }
+        ]
+      },
+      {
+        "date": "2026-05-11",
+        "flavors": [
+          {
+            "name": "Heath Bar®",
+            "imageUrl": "https://kopps.com/wp-content/uploads/2022/07/HeathBar.jpg",
+            "description": "Our own recipe with chunks of Heath Bar®.",
+            "type": "daily"
+          },
+          {
+            "name": "Lemon Meringue Pie",
+            "imageUrl": "https://kopps.com/wp-content/uploads/2023/01/flavor-placeholder-300x300.png",
+            "description": "A tart lemon flavored custard with pastry bits and a lemon meringue ribbon.",
+            "type": "daily"
+          }
+        ]
+      },
+      {
+        "date": "2026-05-12",
+        "flavors": [
+          {
+            "name": "Red Raspberry",
+            "imageUrl": "https://kopps.com/wp-content/uploads/2022/07/Red-Rasp.jpg",
+            "description": "A natural raspberry flavor with sweet, tart berries",
+            "type": "daily"
+          },
+          {
+            "name": "Chocolate Caramel Crackle",
+            "imageUrl": "https://kopps.com/wp-content/uploads/2023/01/flavor-placeholder-300x300.png",
+            "description": "Chocolate malt custard, caramel, graham crackers, and chocolate flakes + you = : )",
+            "type": "daily"
+          }
+        ]
+      },
+      {
+        "date": "2026-05-13",
+        "flavors": [
+          {
+            "name": "Mr Fudgie",
+            "imageUrl": "https://kopps.com/wp-content/uploads/2022/07/IMG_9705-258x300.jpeg",
+            "description": "Mint custard, Oreo® cookies and plenty of fudge",
+            "type": "daily"
+          },
+          {
+            "name": "Apple Pie à la Mode",
+            "imageUrl": "https://kopps.com/wp-content/uploads/2023/01/flavor-placeholder-300x300.png",
+            "description": "Apple custard and vanilla custard swirled together, ladles of cinnamon apple chunks and generous pieces of flaky pie crust.",
+            "type": "daily"
+          }
+        ]
+      },
+      {
+        "date": "2026-05-14",
+        "flavors": [
+          {
+            "name": "Strawberry",
+            "imageUrl": "https://kopps.com/wp-content/uploads/2022/07/Strawberry.jpg",
+            "description": "A natural strawberry flavored custard with sliced strawberries",
             "type": "daily"
           },
           {
@@ -145,7 +213,75 @@
         ]
       },
       {
-        "date": "2026-01-30",
+        "date": "2026-05-15",
+        "flavors": [
+          {
+            "name": "Turtle Sundae",
+            "imageUrl": "https://kopps.com/wp-content/uploads/2022/07/Turtle.jpg",
+            "description": "Caramel flavored custard, loaded with pecans and swirls of caramel and fudge",
+            "type": "daily"
+          },
+          {
+            "name": "Chocolate Chocolate Chip",
+            "imageUrl": "https://kopps.com/wp-content/uploads/2022/07/Choc-Choc-Chip-1.jpg",
+            "description": "Dark, rich chocolate custard and chunks of intense bittersweet chocolate.  For the chocolate addict!",
+            "type": "daily"
+          }
+        ]
+      },
+      {
+        "date": "2026-05-16",
+        "flavors": [
+          {
+            "name": "Wedding Cake",
+            "imageUrl": "https://kopps.com/wp-content/uploads/2025/10/Wedding-Cake.jpg",
+            "description": "Cake batter custard + frosting + sponge cake + raspberry + Bavarian cream",
+            "type": "daily"
+          },
+          {
+            "name": "Chocolate Trüffel",
+            "imageUrl": "https://kopps.com/wp-content/uploads/2022/07/Chocolate-Truffel.jpg",
+            "description": "A connoisseurr’s imported trüffel flavor with delicate chocolate flakes.",
+            "type": "daily"
+          }
+        ]
+      },
+      {
+        "date": "2026-05-17",
+        "flavors": [
+          {
+            "name": "Reese’s Peanut Butter Kupps",
+            "imageUrl": "https://kopps.com/wp-content/uploads/2025/11/Reeses.jpg",
+            "description": "What do you get when you cross a peanut butter cup with Kopp’s Frozen Custard?  You guessed it!",
+            "type": "daily"
+          },
+          {
+            "name": "Banana Walnut Chocolate Chunk",
+            "imageUrl": "https://kopps.com/wp-content/uploads/2025/10/Ban-Walnut.jpg",
+            "description": "We use 100% all natural fully-ripened Chiquita brand bananas sprinkled with walnut pieces and giant chocolate chunks",
+            "type": "daily"
+          }
+        ]
+      },
+      {
+        "date": "2026-05-18",
+        "flavors": [
+          {
+            "name": "Midnight Chocolate Cake",
+            "imageUrl": "https://kopps.com/wp-content/uploads/2022/07/Midnight.jpg",
+            "description": "Rich, dark, sinfully delicious.  Chocolate truffel pieces, thick fudge and dark chocolate custard",
+            "type": "daily"
+          },
+          {
+            "name": "Pralines ‘N Caramel ‘N Cream",
+            "imageUrl": "https://kopps.com/wp-content/uploads/2022/07/PralinesnCararmelnCream.jpg",
+            "description": "A pure creamy custard with pralines and swirls of caramel",
+            "type": "daily"
+          }
+        ]
+      },
+      {
+        "date": "2026-05-19",
         "flavors": [
           {
             "name": "Butter Pecan",
@@ -154,15 +290,134 @@
             "type": "daily"
           },
           {
-            "name": "Strawberry",
-            "imageUrl": "https://kopps.com/wp-content/uploads/2022/07/Strawberry.jpg",
-            "description": "A natural strawberry flavored custard with sliced strawberries",
+            "name": "Little Devil",
+            "imageUrl": "https://kopps.com/wp-content/uploads/2023/01/flavor-placeholder-300x300.png",
+            "description": "Dark Chocolate Custard + Devil’s Food Cake + Cherry Whipped Cream + Maraschino Cherry Syrup",
             "type": "daily"
           }
         ]
       },
       {
-        "date": "2026-01-31",
+        "date": "2026-05-20",
+        "flavors": [
+          {
+            "name": "Chocolate Chip Cookie Dough",
+            "imageUrl": "https://kopps.com/wp-content/uploads/2022/07/Cookie-Dough.jpg",
+            "description": "Tastes like chocolate chip cookie dough!  Made with Hershey’s chocolate chips and cookie dough chunks",
+            "type": "daily"
+          },
+          {
+            "name": "Peach Melba",
+            "imageUrl": "https://kopps.com/wp-content/uploads/2022/07/Peach-Melba-1.jpg",
+            "description": "A peach flavor with peach chunks and raspberry swirls",
+            "type": "daily"
+          }
+        ]
+      },
+      {
+        "date": "2026-05-21",
+        "flavors": [
+          {
+            "name": "Strawberry",
+            "imageUrl": "https://kopps.com/wp-content/uploads/2022/07/Strawberry.jpg",
+            "description": "A natural strawberry flavored custard with sliced strawberries",
+            "type": "daily"
+          },
+          {
+            "name": "Red Velvet Oreo",
+            "imageUrl": "https://kopps.com/wp-content/uploads/2026/01/Red-Velvet-Oreo.jpg",
+            "description": "Chocolate Cake Batter Custard + Cream Cheese Frosting + Oreos",
+            "type": "daily"
+          }
+        ]
+      },
+      {
+        "date": "2026-05-22",
+        "flavors": [
+          {
+            "name": "Spumoni",
+            "imageUrl": "https://kopps.com/wp-content/uploads/2022/07/Spumoni-1.jpg",
+            "description": "Three delicious custards: pistachio nut, burgundy cherry and chocolate almond.  Mangia! Mangia!\nMangia!  For our loyal customer and Spumoni lover, Jonathan.",
+            "type": "daily"
+          },
+          {
+            "name": "Butterfinger® Candy Bar",
+            "imageUrl": "https://kopps.com/wp-content/uploads/2022/07/Butterfinger.jpg",
+            "description": "Lots of Butterfinger® pieces added to our secret custard flavor.  No we won’t tell!",
+            "type": "daily"
+          }
+        ]
+      },
+      {
+        "date": "2026-05-23",
+        "flavors": [
+          {
+            "name": "Twix-Tac-Dough",
+            "imageUrl": "https://kopps.com/wp-content/uploads/2025/10/Twix-Tac-Doughedit-e1760120813444.jpg",
+            "description": "Cookie Dough Custard + Caramel + Chocolate Flakes + Shortbread Cookies + Chocolate Chip Cookie Dough",
+            "type": "daily"
+          },
+          {
+            "name": "Mint Chip",
+            "imageUrl": "https://kopps.com/wp-content/uploads/2022/07/MintChip-1.jpg",
+            "description": "A mint flavored custard with dark chocolate chunks",
+            "type": "daily"
+          }
+        ]
+      },
+      {
+        "date": "2026-05-24",
+        "flavors": [
+          {
+            "name": "Bienenstichkuchen",
+            "imageUrl": "https://kopps.com/wp-content/uploads/2022/07/Bienenstich.jpg",
+            "description": "A delightful German dessert; almond flavored custard mingled with yellow cake pieces, honey, Bavarian creme and sliced almonds.",
+            "type": "daily"
+          },
+          {
+            "name": "Orange Dream",
+            "imageUrl": "https://kopps.com/wp-content/uploads/2022/07/Orange-Dream-1.jpg",
+            "description": "Swirls of frosty orange and smooth vanilla custard are combined for the perfect reproduction of our childhood favorite.  All that’s missing is the stick!",
+            "type": "daily"
+          }
+        ]
+      },
+      {
+        "date": "2026-05-25",
+        "flavors": [
+          {
+            "name": "All American Cherry",
+            "imageUrl": "https://kopps.com/wp-content/uploads/2022/07/AllAmerican.jpg",
+            "description": "Cherries, blueberries, and vanilla custard.",
+            "type": "daily"
+          },
+          {
+            "name": "Caramel Cashew",
+            "imageUrl": "https://kopps.com/wp-content/uploads/2022/07/CararmelCashew.jpg",
+            "description": "Our own caramel with special roasted cashews",
+            "type": "daily"
+          }
+        ]
+      },
+      {
+        "date": "2026-05-26",
+        "flavors": [
+          {
+            "name": "Cookies ‘N Cream",
+            "imageUrl": "https://kopps.com/wp-content/uploads/2022/07/Cookies-n-Cream.jpg",
+            "description": "The creamiest custard with big Oreo® chunks",
+            "type": "daily"
+          },
+          {
+            "name": "Strawberry Cheesecake",
+            "imageUrl": "https://kopps.com/wp-content/uploads/2022/07/StrawChs.jpg",
+            "description": "Cheesecake custard and New York style cheesecake pieces with sliced strawberries.",
+            "type": "daily"
+          }
+        ]
+      },
+      {
+        "date": "2026-05-27",
         "flavors": [
           {
             "name": "Ultimate Cookie Dough",
@@ -171,9 +426,77 @@
             "type": "daily"
           },
           {
-            "name": "Hot Chocolate",
-            "imageUrl": "https://kopps.com/wp-content/uploads/2025/12/Hot-Chocolate-2.jpg",
-            "description": "Milk chocolate custard + marshmallows + coco + marshmallow ribbon",
+            "name": "Mocha Chip",
+            "imageUrl": "https://kopps.com/wp-content/uploads/2022/07/Mocha-Chip-1.jpg",
+            "description": "A delicious mocha flavor with chocolate chips.",
+            "type": "daily"
+          }
+        ]
+      },
+      {
+        "date": "2026-05-28",
+        "flavors": [
+          {
+            "name": "Red Raspberry",
+            "imageUrl": "https://kopps.com/wp-content/uploads/2022/07/Red-Rasp.jpg",
+            "description": "A natural raspberry flavor with sweet, tart berries",
+            "type": "daily"
+          },
+          {
+            "name": "Chocolate Peanut Butter Chocolate",
+            "imageUrl": "https://kopps.com/wp-content/uploads/2022/07/ChocPBChoc.jpg",
+            "description": "Rich, rich, rich.",
+            "type": "daily"
+          }
+        ]
+      },
+      {
+        "date": "2026-05-29",
+        "flavors": [
+          {
+            "name": "Turtle Sundae",
+            "imageUrl": "https://kopps.com/wp-content/uploads/2022/07/Turtle.jpg",
+            "description": "Caramel flavored custard, loaded with pecans and swirls of caramel and fudge",
+            "type": "daily"
+          },
+          {
+            "name": "Key Lime Pie",
+            "imageUrl": "https://kopps.com/wp-content/uploads/2022/07/KeyLimePie.jpg",
+            "description": "You’ve had the pie…we’ve made it into a tropical custard treat",
+            "type": "daily"
+          }
+        ]
+      },
+      {
+        "date": "2026-05-30",
+        "flavors": [
+          {
+            "name": "Grasshopper Fudge",
+            "imageUrl": "https://kopps.com/wp-content/uploads/2022/07/Grass.jpg",
+            "description": "A classic cocktail made into a classic flavor with a fudge accent",
+            "type": "daily"
+          },
+          {
+            "name": "Conehead",
+            "imageUrl": "https://kopps.com/wp-content/uploads/2022/07/Drumstick.jpg",
+            "description": "Vanilla custard, loaded with chocolate cookie cone pieces, a ribbon of chocolate and lots of chopped nuts",
+            "type": "daily"
+          }
+        ]
+      },
+      {
+        "date": "2026-05-31",
+        "flavors": [
+          {
+            "name": "Butter Pecan",
+            "imageUrl": "https://kopps.com/wp-content/uploads/2022/07/ButterPecan-Edit.jpg",
+            "description": "A butterscotch flavor and whole roasted pecans",
+            "type": "daily"
+          },
+          {
+            "name": "Cookie Monster Custard",
+            "imageUrl": "https://kopps.com/wp-content/uploads/2023/01/flavor-placeholder-300x300.png",
+            "description": "Blue Moon Custard + Oreos + Cookie Dough Chunks",
             "type": "daily"
           }
         ]
@@ -182,36 +505,36 @@
     "isOpen": true,
     "statusMessage": "Open until 10:00 PM",
     "shopId": "kopps-greenfield",
-    "lastUpdated": "2026-01-23T03:12:16.223Z"
+    "lastUpdated": "2026-05-03T21:02:03.834Z"
   },
   "kopps-glendale": {
     "flavors": [
       {
-        "name": "Butter Pecan",
-        "imageUrl": "https://kopps.com/wp-content/uploads/2022/07/ButterPecan-Edit.jpg",
-        "description": "A butterscotch flavor and whole roasted pecans",
+        "name": "Caramel Cashew",
+        "imageUrl": "https://kopps.com/wp-content/uploads/2022/07/CararmelCashew.jpg",
+        "description": "Our own caramel with special roasted cashews",
         "type": "daily"
       },
       {
-        "name": "Razzmatazz",
+        "name": "Strawberry Shortcake",
         "imageUrl": "https://kopps.com/wp-content/uploads/2023/01/flavor-placeholder-300x300.png",
-        "description": "Red Raspberry Custard + Chocolate Shavings + Marshmallow Crème",
+        "description": "Speaks for itself, so start talking about it!",
         "type": "daily"
       },
       {
-        "name": "Heath Bar Shake",
+        "name": "Chocolate Peanut Butter Shake",
         "description": "Shake of the Month",
         "type": "monthly_shake"
       },
       {
-        "name": "Oreo Cookie Sundae",
-        "description": "Three scoops of Vanilla Custard with Chocolate Chips, loads of Oreo Cookies, Marshmallow Sauce, and topped off with a Bittersweet Chocolate Hardshell.",
+        "name": "Chocolate Banana Cream Pie Sundae",
+        "description": "Three scoops of Vanilla Custard, topped with slices of ripe Banana, “made from scratch” Chocolate Marshmallow Cream and Banana Marshmallow Cream, plus sprinkles of French Pastry Pieces and Chocolate Flakes",
         "type": "monthly_sundae"
       }
     ],
     "upcoming": [
       {
-        "date": "2026-01-23",
+        "date": "2026-05-04",
         "flavors": [
           {
             "name": "Cookies ‘N Cream",
@@ -220,83 +543,15 @@
             "type": "daily"
           },
           {
-            "name": "French Silk Pie",
-            "imageUrl": "https://kopps.com/wp-content/uploads/2023/01/flavor-placeholder-300x300.png",
-            "description": "Twirls of Swiss chocolate and cream cheese custard, packed with flaky pie crust pieces and jumbo chocolate flakes",
+            "name": "Chocolate Raspberry Cheesecake",
+            "imageUrl": "https://kopps.com/wp-content/uploads/2022/07/Choc-Rasp-Chs.jpg",
+            "description": "A creamy raspberry and cheesecake custard with chocolate shavings and a tart raspberry swirl.",
             "type": "daily"
           }
         ]
       },
       {
-        "date": "2026-01-24",
-        "flavors": [
-          {
-            "name": "Reese’s Peanut Butter Kupps",
-            "imageUrl": "https://kopps.com/wp-content/uploads/2025/11/Reeses.jpg",
-            "description": "What do you get when you cross a peanut butter cup with Kopp’s Frozen Custard?  You guessed it!",
-            "type": "daily"
-          },
-          {
-            "name": "Caramel Cashew",
-            "imageUrl": "https://kopps.com/wp-content/uploads/2022/07/CararmelCashew.jpg",
-            "description": "Our own caramel with special roasted cashews",
-            "type": "daily"
-          }
-        ]
-      },
-      {
-        "date": "2026-01-25",
-        "flavors": [
-          {
-            "name": "Grasshopper Fudge",
-            "imageUrl": "https://kopps.com/wp-content/uploads/2022/07/Grass.jpg",
-            "description": "A classic cocktail made into a classic flavor with a fudge accent",
-            "type": "daily"
-          },
-          {
-            "name": "Red Velvet Oreo",
-            "imageUrl": "https://kopps.com/wp-content/uploads/2023/01/flavor-placeholder-300x300.png",
-            "description": "Chocolate Cake Batter Custard + Cream Cheese Frosting + Oreos",
-            "type": "daily"
-          }
-        ]
-      },
-      {
-        "date": "2026-01-26",
-        "flavors": [
-          {
-            "name": "Red Raspberry",
-            "imageUrl": "https://kopps.com/wp-content/uploads/2022/07/Red-Rasp.jpg",
-            "description": "A natural raspberry flavor with sweet, tart berries",
-            "type": "daily"
-          },
-          {
-            "name": "Snickers® Chunky Cheesecake",
-            "imageUrl": "https://kopps.com/wp-content/uploads/2022/07/Snickers.jpg",
-            "description": "America’s favorite candy bar and Wisconsin’s  favorite custard with New York’s favorite cheesecake.  Only at Kopp’s!",
-            "type": "daily"
-          }
-        ]
-      },
-      {
-        "date": "2026-01-27",
-        "flavors": [
-          {
-            "name": "Spumoni",
-            "imageUrl": "https://kopps.com/wp-content/uploads/2022/07/Spumoni-1.jpg",
-            "description": "Three delicious custards: pistachio nut, burgundy cherry and chocolate almond.  Mangia! Mangia!\nMangia!  For our loyal customer and Spumoni lover, Jonathan.",
-            "type": "daily"
-          },
-          {
-            "name": "Midnight Chocolate Cake",
-            "imageUrl": "https://kopps.com/wp-content/uploads/2022/07/Midnight.jpg",
-            "description": "Rich, dark, sinfully delicious.  Chocolate truffel pieces, thick fudge and dark chocolate custard",
-            "type": "daily"
-          }
-        ]
-      },
-      {
-        "date": "2026-01-28",
+        "date": "2026-05-05",
         "flavors": [
           {
             "name": "Turtle Sundae",
@@ -305,20 +560,156 @@
             "type": "daily"
           },
           {
-            "name": "Blueberry Muffin",
+            "name": "Kahlua Colada",
             "imageUrl": "https://kopps.com/wp-content/uploads/2023/01/flavor-placeholder-300x300.png",
-            "description": "Blueberry Custard + Sponge Cake + Streusel + Blueberries.",
+            "description": "A new twist on an old favorite; we twirled together Kahlua flavored custard with coconut custard, and sprinkled in toasted coconut for an outstanding, new flavor.",
             "type": "daily"
           }
         ]
       },
       {
-        "date": "2026-01-29",
+        "date": "2026-05-06",
         "flavors": [
           {
-            "name": "Mint Chip",
-            "imageUrl": "https://kopps.com/wp-content/uploads/2022/07/MintChip-1.jpg",
-            "description": "A mint flavored custard with dark chocolate chunks",
+            "name": "Butter Pecan",
+            "imageUrl": "https://kopps.com/wp-content/uploads/2022/07/ButterPecan-Edit.jpg",
+            "description": "A butterscotch flavor and whole roasted pecans",
+            "type": "daily"
+          },
+          {
+            "name": "Never Enough Chocolate",
+            "imageUrl": "https://kopps.com/wp-content/uploads/2022/07/NeverEnufChoc.jpg",
+            "description": "Dark Swiss chocolate custard, thick fudge swirls, and luscious chocolate truffel chunks. Is that enough?",
+            "type": "daily"
+          }
+        ]
+      },
+      {
+        "date": "2026-05-07",
+        "flavors": [
+          {
+            "name": "Reese’s Peanut Butter Kupps",
+            "imageUrl": "https://kopps.com/wp-content/uploads/2025/11/Reeses.jpg",
+            "description": "What do you get when you cross a peanut butter cup with Kopp’s Frozen Custard?  You guessed it!",
+            "type": "daily"
+          },
+          {
+            "name": "German Apple Streusel",
+            "imageUrl": "https://kopps.com/wp-content/uploads/2022/07/GermanApple.jpg",
+            "description": "Imported tart apple flavor with apple pieces and delicious streusel crunchies.",
+            "type": "daily"
+          }
+        ]
+      },
+      {
+        "date": "2026-05-08",
+        "flavors": [
+          {
+            "name": "Ultimate Cookie Dough",
+            "imageUrl": "https://kopps.com/wp-content/uploads/2025/10/Ultimate.jpg",
+            "description": "Cookie dough flavored custard with ribbons of caramel and thick fudge, twirled around with chunks of cookie dough pieces",
+            "type": "daily"
+          },
+          {
+            "name": "Chocolate Almond",
+            "imageUrl": "https://kopps.com/wp-content/uploads/2022/07/ChocAlmond.jpg",
+            "description": "Starting with a milk chocolate custard, we add almond flavor, then sprinkle in fresh, roasted almonds",
+            "type": "daily"
+          }
+        ]
+      },
+      {
+        "date": "2026-05-09",
+        "flavors": [
+          {
+            "name": "Grasshopper Fudge",
+            "imageUrl": "https://kopps.com/wp-content/uploads/2022/07/Grass.jpg",
+            "description": "A classic cocktail made into a classic flavor with a fudge accent",
+            "type": "daily"
+          },
+          {
+            "name": "Mango Tango",
+            "imageUrl": "https://kopps.com/wp-content/uploads/2023/01/flavor-placeholder-300x300.png",
+            "description": "Mango Custard + Mango Pieces + Toasted  Coconut",
+            "type": "daily"
+          }
+        ]
+      },
+      {
+        "date": "2026-05-10",
+        "flavors": [
+          {
+            "name": "Mom’s Chocolate Chip Cheesecake",
+            "imageUrl": "https://kopps.com/wp-content/uploads/2023/01/flavor-placeholder-300x300.png",
+            "description": "Made with Hershey’s® chocolate chips, cheesecake and custard. Yes, yes,yes!!! Your mom will love it!",
+            "type": "daily"
+          },
+          {
+            "name": "Macadamia Nut",
+            "imageUrl": "https://kopps.com/wp-content/uploads/2025/12/Mac-Nut.jpg",
+            "description": "This is too expensive for us to make, so don’t buy it, we lose money!",
+            "type": "daily"
+          }
+        ]
+      },
+      {
+        "date": "2026-05-11",
+        "flavors": [
+          {
+            "name": "Heath Bar®",
+            "imageUrl": "https://kopps.com/wp-content/uploads/2022/07/HeathBar.jpg",
+            "description": "Our own recipe with chunks of Heath Bar®.",
+            "type": "daily"
+          },
+          {
+            "name": "Lemon Meringue Pie",
+            "imageUrl": "https://kopps.com/wp-content/uploads/2023/01/flavor-placeholder-300x300.png",
+            "description": "A tart lemon flavored custard with pastry bits and a lemon meringue ribbon.",
+            "type": "daily"
+          }
+        ]
+      },
+      {
+        "date": "2026-05-12",
+        "flavors": [
+          {
+            "name": "Red Raspberry",
+            "imageUrl": "https://kopps.com/wp-content/uploads/2022/07/Red-Rasp.jpg",
+            "description": "A natural raspberry flavor with sweet, tart berries",
+            "type": "daily"
+          },
+          {
+            "name": "Chocolate Caramel Crackle",
+            "imageUrl": "https://kopps.com/wp-content/uploads/2023/01/flavor-placeholder-300x300.png",
+            "description": "Chocolate malt custard, caramel, graham crackers, and chocolate flakes + you = : )",
+            "type": "daily"
+          }
+        ]
+      },
+      {
+        "date": "2026-05-13",
+        "flavors": [
+          {
+            "name": "Mr Fudgie",
+            "imageUrl": "https://kopps.com/wp-content/uploads/2022/07/IMG_9705-258x300.jpeg",
+            "description": "Mint custard, Oreo® cookies and plenty of fudge",
+            "type": "daily"
+          },
+          {
+            "name": "Apple Pie à la Mode",
+            "imageUrl": "https://kopps.com/wp-content/uploads/2023/01/flavor-placeholder-300x300.png",
+            "description": "Apple custard and vanilla custard swirled together, ladles of cinnamon apple chunks and generous pieces of flaky pie crust.",
+            "type": "daily"
+          }
+        ]
+      },
+      {
+        "date": "2026-05-14",
+        "flavors": [
+          {
+            "name": "Strawberry",
+            "imageUrl": "https://kopps.com/wp-content/uploads/2022/07/Strawberry.jpg",
+            "description": "A natural strawberry flavored custard with sliced strawberries",
             "type": "daily"
           },
           {
@@ -330,7 +721,75 @@
         ]
       },
       {
-        "date": "2026-01-30",
+        "date": "2026-05-15",
+        "flavors": [
+          {
+            "name": "Turtle Sundae",
+            "imageUrl": "https://kopps.com/wp-content/uploads/2022/07/Turtle.jpg",
+            "description": "Caramel flavored custard, loaded with pecans and swirls of caramel and fudge",
+            "type": "daily"
+          },
+          {
+            "name": "Chocolate Chocolate Chip",
+            "imageUrl": "https://kopps.com/wp-content/uploads/2022/07/Choc-Choc-Chip-1.jpg",
+            "description": "Dark, rich chocolate custard and chunks of intense bittersweet chocolate.  For the chocolate addict!",
+            "type": "daily"
+          }
+        ]
+      },
+      {
+        "date": "2026-05-16",
+        "flavors": [
+          {
+            "name": "Wedding Cake",
+            "imageUrl": "https://kopps.com/wp-content/uploads/2025/10/Wedding-Cake.jpg",
+            "description": "Cake batter custard + frosting + sponge cake + raspberry + Bavarian cream",
+            "type": "daily"
+          },
+          {
+            "name": "Chocolate Trüffel",
+            "imageUrl": "https://kopps.com/wp-content/uploads/2022/07/Chocolate-Truffel.jpg",
+            "description": "A connoisseurr’s imported trüffel flavor with delicate chocolate flakes.",
+            "type": "daily"
+          }
+        ]
+      },
+      {
+        "date": "2026-05-17",
+        "flavors": [
+          {
+            "name": "Reese’s Peanut Butter Kupps",
+            "imageUrl": "https://kopps.com/wp-content/uploads/2025/11/Reeses.jpg",
+            "description": "What do you get when you cross a peanut butter cup with Kopp’s Frozen Custard?  You guessed it!",
+            "type": "daily"
+          },
+          {
+            "name": "Banana Walnut Chocolate Chunk",
+            "imageUrl": "https://kopps.com/wp-content/uploads/2025/10/Ban-Walnut.jpg",
+            "description": "We use 100% all natural fully-ripened Chiquita brand bananas sprinkled with walnut pieces and giant chocolate chunks",
+            "type": "daily"
+          }
+        ]
+      },
+      {
+        "date": "2026-05-18",
+        "flavors": [
+          {
+            "name": "Midnight Chocolate Cake",
+            "imageUrl": "https://kopps.com/wp-content/uploads/2022/07/Midnight.jpg",
+            "description": "Rich, dark, sinfully delicious.  Chocolate truffel pieces, thick fudge and dark chocolate custard",
+            "type": "daily"
+          },
+          {
+            "name": "Pralines ‘N Caramel ‘N Cream",
+            "imageUrl": "https://kopps.com/wp-content/uploads/2022/07/PralinesnCararmelnCream.jpg",
+            "description": "A pure creamy custard with pralines and swirls of caramel",
+            "type": "daily"
+          }
+        ]
+      },
+      {
+        "date": "2026-05-19",
         "flavors": [
           {
             "name": "Butter Pecan",
@@ -339,15 +798,134 @@
             "type": "daily"
           },
           {
-            "name": "Strawberry",
-            "imageUrl": "https://kopps.com/wp-content/uploads/2022/07/Strawberry.jpg",
-            "description": "A natural strawberry flavored custard with sliced strawberries",
+            "name": "Little Devil",
+            "imageUrl": "https://kopps.com/wp-content/uploads/2023/01/flavor-placeholder-300x300.png",
+            "description": "Dark Chocolate Custard + Devil’s Food Cake + Cherry Whipped Cream + Maraschino Cherry Syrup",
             "type": "daily"
           }
         ]
       },
       {
-        "date": "2026-01-31",
+        "date": "2026-05-20",
+        "flavors": [
+          {
+            "name": "Chocolate Chip Cookie Dough",
+            "imageUrl": "https://kopps.com/wp-content/uploads/2022/07/Cookie-Dough.jpg",
+            "description": "Tastes like chocolate chip cookie dough!  Made with Hershey’s chocolate chips and cookie dough chunks",
+            "type": "daily"
+          },
+          {
+            "name": "Peach Melba",
+            "imageUrl": "https://kopps.com/wp-content/uploads/2022/07/Peach-Melba-1.jpg",
+            "description": "A peach flavor with peach chunks and raspberry swirls",
+            "type": "daily"
+          }
+        ]
+      },
+      {
+        "date": "2026-05-21",
+        "flavors": [
+          {
+            "name": "Strawberry",
+            "imageUrl": "https://kopps.com/wp-content/uploads/2022/07/Strawberry.jpg",
+            "description": "A natural strawberry flavored custard with sliced strawberries",
+            "type": "daily"
+          },
+          {
+            "name": "Red Velvet Oreo",
+            "imageUrl": "https://kopps.com/wp-content/uploads/2026/01/Red-Velvet-Oreo.jpg",
+            "description": "Chocolate Cake Batter Custard + Cream Cheese Frosting + Oreos",
+            "type": "daily"
+          }
+        ]
+      },
+      {
+        "date": "2026-05-22",
+        "flavors": [
+          {
+            "name": "Spumoni",
+            "imageUrl": "https://kopps.com/wp-content/uploads/2022/07/Spumoni-1.jpg",
+            "description": "Three delicious custards: pistachio nut, burgundy cherry and chocolate almond.  Mangia! Mangia!\nMangia!  For our loyal customer and Spumoni lover, Jonathan.",
+            "type": "daily"
+          },
+          {
+            "name": "Butterfinger® Candy Bar",
+            "imageUrl": "https://kopps.com/wp-content/uploads/2022/07/Butterfinger.jpg",
+            "description": "Lots of Butterfinger® pieces added to our secret custard flavor.  No we won’t tell!",
+            "type": "daily"
+          }
+        ]
+      },
+      {
+        "date": "2026-05-23",
+        "flavors": [
+          {
+            "name": "Twix-Tac-Dough",
+            "imageUrl": "https://kopps.com/wp-content/uploads/2025/10/Twix-Tac-Doughedit-e1760120813444.jpg",
+            "description": "Cookie Dough Custard + Caramel + Chocolate Flakes + Shortbread Cookies + Chocolate Chip Cookie Dough",
+            "type": "daily"
+          },
+          {
+            "name": "Mint Chip",
+            "imageUrl": "https://kopps.com/wp-content/uploads/2022/07/MintChip-1.jpg",
+            "description": "A mint flavored custard with dark chocolate chunks",
+            "type": "daily"
+          }
+        ]
+      },
+      {
+        "date": "2026-05-24",
+        "flavors": [
+          {
+            "name": "Bienenstichkuchen",
+            "imageUrl": "https://kopps.com/wp-content/uploads/2022/07/Bienenstich.jpg",
+            "description": "A delightful German dessert; almond flavored custard mingled with yellow cake pieces, honey, Bavarian creme and sliced almonds.",
+            "type": "daily"
+          },
+          {
+            "name": "Orange Dream",
+            "imageUrl": "https://kopps.com/wp-content/uploads/2022/07/Orange-Dream-1.jpg",
+            "description": "Swirls of frosty orange and smooth vanilla custard are combined for the perfect reproduction of our childhood favorite.  All that’s missing is the stick!",
+            "type": "daily"
+          }
+        ]
+      },
+      {
+        "date": "2026-05-25",
+        "flavors": [
+          {
+            "name": "All American Cherry",
+            "imageUrl": "https://kopps.com/wp-content/uploads/2022/07/AllAmerican.jpg",
+            "description": "Cherries, blueberries, and vanilla custard.",
+            "type": "daily"
+          },
+          {
+            "name": "Caramel Cashew",
+            "imageUrl": "https://kopps.com/wp-content/uploads/2022/07/CararmelCashew.jpg",
+            "description": "Our own caramel with special roasted cashews",
+            "type": "daily"
+          }
+        ]
+      },
+      {
+        "date": "2026-05-26",
+        "flavors": [
+          {
+            "name": "Cookies ‘N Cream",
+            "imageUrl": "https://kopps.com/wp-content/uploads/2022/07/Cookies-n-Cream.jpg",
+            "description": "The creamiest custard with big Oreo® chunks",
+            "type": "daily"
+          },
+          {
+            "name": "Strawberry Cheesecake",
+            "imageUrl": "https://kopps.com/wp-content/uploads/2022/07/StrawChs.jpg",
+            "description": "Cheesecake custard and New York style cheesecake pieces with sliced strawberries.",
+            "type": "daily"
+          }
+        ]
+      },
+      {
+        "date": "2026-05-27",
         "flavors": [
           {
             "name": "Ultimate Cookie Dough",
@@ -356,9 +934,77 @@
             "type": "daily"
           },
           {
-            "name": "Hot Chocolate",
-            "imageUrl": "https://kopps.com/wp-content/uploads/2025/12/Hot-Chocolate-2.jpg",
-            "description": "Milk chocolate custard + marshmallows + coco + marshmallow ribbon",
+            "name": "Mocha Chip",
+            "imageUrl": "https://kopps.com/wp-content/uploads/2022/07/Mocha-Chip-1.jpg",
+            "description": "A delicious mocha flavor with chocolate chips.",
+            "type": "daily"
+          }
+        ]
+      },
+      {
+        "date": "2026-05-28",
+        "flavors": [
+          {
+            "name": "Red Raspberry",
+            "imageUrl": "https://kopps.com/wp-content/uploads/2022/07/Red-Rasp.jpg",
+            "description": "A natural raspberry flavor with sweet, tart berries",
+            "type": "daily"
+          },
+          {
+            "name": "Chocolate Peanut Butter Chocolate",
+            "imageUrl": "https://kopps.com/wp-content/uploads/2022/07/ChocPBChoc.jpg",
+            "description": "Rich, rich, rich.",
+            "type": "daily"
+          }
+        ]
+      },
+      {
+        "date": "2026-05-29",
+        "flavors": [
+          {
+            "name": "Turtle Sundae",
+            "imageUrl": "https://kopps.com/wp-content/uploads/2022/07/Turtle.jpg",
+            "description": "Caramel flavored custard, loaded with pecans and swirls of caramel and fudge",
+            "type": "daily"
+          },
+          {
+            "name": "Key Lime Pie",
+            "imageUrl": "https://kopps.com/wp-content/uploads/2022/07/KeyLimePie.jpg",
+            "description": "You’ve had the pie…we’ve made it into a tropical custard treat",
+            "type": "daily"
+          }
+        ]
+      },
+      {
+        "date": "2026-05-30",
+        "flavors": [
+          {
+            "name": "Grasshopper Fudge",
+            "imageUrl": "https://kopps.com/wp-content/uploads/2022/07/Grass.jpg",
+            "description": "A classic cocktail made into a classic flavor with a fudge accent",
+            "type": "daily"
+          },
+          {
+            "name": "Conehead",
+            "imageUrl": "https://kopps.com/wp-content/uploads/2022/07/Drumstick.jpg",
+            "description": "Vanilla custard, loaded with chocolate cookie cone pieces, a ribbon of chocolate and lots of chopped nuts",
+            "type": "daily"
+          }
+        ]
+      },
+      {
+        "date": "2026-05-31",
+        "flavors": [
+          {
+            "name": "Butter Pecan",
+            "imageUrl": "https://kopps.com/wp-content/uploads/2022/07/ButterPecan-Edit.jpg",
+            "description": "A butterscotch flavor and whole roasted pecans",
+            "type": "daily"
+          },
+          {
+            "name": "Cookie Monster Custard",
+            "imageUrl": "https://kopps.com/wp-content/uploads/2023/01/flavor-placeholder-300x300.png",
+            "description": "Blue Moon Custard + Oreos + Cookie Dough Chunks",
             "type": "daily"
           }
         ]
@@ -367,36 +1013,36 @@
     "isOpen": true,
     "statusMessage": "Open until 10:00 PM",
     "shopId": "kopps-glendale",
-    "lastUpdated": "2026-01-23T03:12:16.224Z"
+    "lastUpdated": "2026-05-03T21:02:03.835Z"
   },
   "kopps-brookfield": {
     "flavors": [
       {
-        "name": "Butter Pecan",
-        "imageUrl": "https://kopps.com/wp-content/uploads/2022/07/ButterPecan-Edit.jpg",
-        "description": "A butterscotch flavor and whole roasted pecans",
+        "name": "Caramel Cashew",
+        "imageUrl": "https://kopps.com/wp-content/uploads/2022/07/CararmelCashew.jpg",
+        "description": "Our own caramel with special roasted cashews",
         "type": "daily"
       },
       {
-        "name": "Razzmatazz",
+        "name": "Strawberry Shortcake",
         "imageUrl": "https://kopps.com/wp-content/uploads/2023/01/flavor-placeholder-300x300.png",
-        "description": "Red Raspberry Custard + Chocolate Shavings + Marshmallow Crème",
+        "description": "Speaks for itself, so start talking about it!",
         "type": "daily"
       },
       {
-        "name": "Heath Bar Shake",
+        "name": "Chocolate Peanut Butter Shake",
         "description": "Shake of the Month",
         "type": "monthly_shake"
       },
       {
-        "name": "Oreo Cookie Sundae",
-        "description": "Three scoops of Vanilla Custard with Chocolate Chips, loads of Oreo Cookies, Marshmallow Sauce, and topped off with a Bittersweet Chocolate Hardshell.",
+        "name": "Chocolate Banana Cream Pie Sundae",
+        "description": "Three scoops of Vanilla Custard, topped with slices of ripe Banana, “made from scratch” Chocolate Marshmallow Cream and Banana Marshmallow Cream, plus sprinkles of French Pastry Pieces and Chocolate Flakes",
         "type": "monthly_sundae"
       }
     ],
     "upcoming": [
       {
-        "date": "2026-01-23",
+        "date": "2026-05-04",
         "flavors": [
           {
             "name": "Cookies ‘N Cream",
@@ -405,83 +1051,15 @@
             "type": "daily"
           },
           {
-            "name": "French Silk Pie",
-            "imageUrl": "https://kopps.com/wp-content/uploads/2023/01/flavor-placeholder-300x300.png",
-            "description": "Twirls of Swiss chocolate and cream cheese custard, packed with flaky pie crust pieces and jumbo chocolate flakes",
+            "name": "Chocolate Raspberry Cheesecake",
+            "imageUrl": "https://kopps.com/wp-content/uploads/2022/07/Choc-Rasp-Chs.jpg",
+            "description": "A creamy raspberry and cheesecake custard with chocolate shavings and a tart raspberry swirl.",
             "type": "daily"
           }
         ]
       },
       {
-        "date": "2026-01-24",
-        "flavors": [
-          {
-            "name": "Reese’s Peanut Butter Kupps",
-            "imageUrl": "https://kopps.com/wp-content/uploads/2025/11/Reeses.jpg",
-            "description": "What do you get when you cross a peanut butter cup with Kopp’s Frozen Custard?  You guessed it!",
-            "type": "daily"
-          },
-          {
-            "name": "Caramel Cashew",
-            "imageUrl": "https://kopps.com/wp-content/uploads/2022/07/CararmelCashew.jpg",
-            "description": "Our own caramel with special roasted cashews",
-            "type": "daily"
-          }
-        ]
-      },
-      {
-        "date": "2026-01-25",
-        "flavors": [
-          {
-            "name": "Grasshopper Fudge",
-            "imageUrl": "https://kopps.com/wp-content/uploads/2022/07/Grass.jpg",
-            "description": "A classic cocktail made into a classic flavor with a fudge accent",
-            "type": "daily"
-          },
-          {
-            "name": "Red Velvet Oreo",
-            "imageUrl": "https://kopps.com/wp-content/uploads/2023/01/flavor-placeholder-300x300.png",
-            "description": "Chocolate Cake Batter Custard + Cream Cheese Frosting + Oreos",
-            "type": "daily"
-          }
-        ]
-      },
-      {
-        "date": "2026-01-26",
-        "flavors": [
-          {
-            "name": "Red Raspberry",
-            "imageUrl": "https://kopps.com/wp-content/uploads/2022/07/Red-Rasp.jpg",
-            "description": "A natural raspberry flavor with sweet, tart berries",
-            "type": "daily"
-          },
-          {
-            "name": "Snickers® Chunky Cheesecake",
-            "imageUrl": "https://kopps.com/wp-content/uploads/2022/07/Snickers.jpg",
-            "description": "America’s favorite candy bar and Wisconsin’s  favorite custard with New York’s favorite cheesecake.  Only at Kopp’s!",
-            "type": "daily"
-          }
-        ]
-      },
-      {
-        "date": "2026-01-27",
-        "flavors": [
-          {
-            "name": "Spumoni",
-            "imageUrl": "https://kopps.com/wp-content/uploads/2022/07/Spumoni-1.jpg",
-            "description": "Three delicious custards: pistachio nut, burgundy cherry and chocolate almond.  Mangia! Mangia!\nMangia!  For our loyal customer and Spumoni lover, Jonathan.",
-            "type": "daily"
-          },
-          {
-            "name": "Midnight Chocolate Cake",
-            "imageUrl": "https://kopps.com/wp-content/uploads/2022/07/Midnight.jpg",
-            "description": "Rich, dark, sinfully delicious.  Chocolate truffel pieces, thick fudge and dark chocolate custard",
-            "type": "daily"
-          }
-        ]
-      },
-      {
-        "date": "2026-01-28",
+        "date": "2026-05-05",
         "flavors": [
           {
             "name": "Turtle Sundae",
@@ -490,20 +1068,156 @@
             "type": "daily"
           },
           {
-            "name": "Blueberry Muffin",
+            "name": "Kahlua Colada",
             "imageUrl": "https://kopps.com/wp-content/uploads/2023/01/flavor-placeholder-300x300.png",
-            "description": "Blueberry Custard + Sponge Cake + Streusel + Blueberries.",
+            "description": "A new twist on an old favorite; we twirled together Kahlua flavored custard with coconut custard, and sprinkled in toasted coconut for an outstanding, new flavor.",
             "type": "daily"
           }
         ]
       },
       {
-        "date": "2026-01-29",
+        "date": "2026-05-06",
         "flavors": [
           {
-            "name": "Mint Chip",
-            "imageUrl": "https://kopps.com/wp-content/uploads/2022/07/MintChip-1.jpg",
-            "description": "A mint flavored custard with dark chocolate chunks",
+            "name": "Butter Pecan",
+            "imageUrl": "https://kopps.com/wp-content/uploads/2022/07/ButterPecan-Edit.jpg",
+            "description": "A butterscotch flavor and whole roasted pecans",
+            "type": "daily"
+          },
+          {
+            "name": "Never Enough Chocolate",
+            "imageUrl": "https://kopps.com/wp-content/uploads/2022/07/NeverEnufChoc.jpg",
+            "description": "Dark Swiss chocolate custard, thick fudge swirls, and luscious chocolate truffel chunks. Is that enough?",
+            "type": "daily"
+          }
+        ]
+      },
+      {
+        "date": "2026-05-07",
+        "flavors": [
+          {
+            "name": "Reese’s Peanut Butter Kupps",
+            "imageUrl": "https://kopps.com/wp-content/uploads/2025/11/Reeses.jpg",
+            "description": "What do you get when you cross a peanut butter cup with Kopp’s Frozen Custard?  You guessed it!",
+            "type": "daily"
+          },
+          {
+            "name": "German Apple Streusel",
+            "imageUrl": "https://kopps.com/wp-content/uploads/2022/07/GermanApple.jpg",
+            "description": "Imported tart apple flavor with apple pieces and delicious streusel crunchies.",
+            "type": "daily"
+          }
+        ]
+      },
+      {
+        "date": "2026-05-08",
+        "flavors": [
+          {
+            "name": "Ultimate Cookie Dough",
+            "imageUrl": "https://kopps.com/wp-content/uploads/2025/10/Ultimate.jpg",
+            "description": "Cookie dough flavored custard with ribbons of caramel and thick fudge, twirled around with chunks of cookie dough pieces",
+            "type": "daily"
+          },
+          {
+            "name": "Chocolate Almond",
+            "imageUrl": "https://kopps.com/wp-content/uploads/2022/07/ChocAlmond.jpg",
+            "description": "Starting with a milk chocolate custard, we add almond flavor, then sprinkle in fresh, roasted almonds",
+            "type": "daily"
+          }
+        ]
+      },
+      {
+        "date": "2026-05-09",
+        "flavors": [
+          {
+            "name": "Grasshopper Fudge",
+            "imageUrl": "https://kopps.com/wp-content/uploads/2022/07/Grass.jpg",
+            "description": "A classic cocktail made into a classic flavor with a fudge accent",
+            "type": "daily"
+          },
+          {
+            "name": "Mango Tango",
+            "imageUrl": "https://kopps.com/wp-content/uploads/2023/01/flavor-placeholder-300x300.png",
+            "description": "Mango Custard + Mango Pieces + Toasted  Coconut",
+            "type": "daily"
+          }
+        ]
+      },
+      {
+        "date": "2026-05-10",
+        "flavors": [
+          {
+            "name": "Mom’s Chocolate Chip Cheesecake",
+            "imageUrl": "https://kopps.com/wp-content/uploads/2023/01/flavor-placeholder-300x300.png",
+            "description": "Made with Hershey’s® chocolate chips, cheesecake and custard. Yes, yes,yes!!! Your mom will love it!",
+            "type": "daily"
+          },
+          {
+            "name": "Macadamia Nut",
+            "imageUrl": "https://kopps.com/wp-content/uploads/2025/12/Mac-Nut.jpg",
+            "description": "This is too expensive for us to make, so don’t buy it, we lose money!",
+            "type": "daily"
+          }
+        ]
+      },
+      {
+        "date": "2026-05-11",
+        "flavors": [
+          {
+            "name": "Heath Bar®",
+            "imageUrl": "https://kopps.com/wp-content/uploads/2022/07/HeathBar.jpg",
+            "description": "Our own recipe with chunks of Heath Bar®.",
+            "type": "daily"
+          },
+          {
+            "name": "Lemon Meringue Pie",
+            "imageUrl": "https://kopps.com/wp-content/uploads/2023/01/flavor-placeholder-300x300.png",
+            "description": "A tart lemon flavored custard with pastry bits and a lemon meringue ribbon.",
+            "type": "daily"
+          }
+        ]
+      },
+      {
+        "date": "2026-05-12",
+        "flavors": [
+          {
+            "name": "Red Raspberry",
+            "imageUrl": "https://kopps.com/wp-content/uploads/2022/07/Red-Rasp.jpg",
+            "description": "A natural raspberry flavor with sweet, tart berries",
+            "type": "daily"
+          },
+          {
+            "name": "Chocolate Caramel Crackle",
+            "imageUrl": "https://kopps.com/wp-content/uploads/2023/01/flavor-placeholder-300x300.png",
+            "description": "Chocolate malt custard, caramel, graham crackers, and chocolate flakes + you = : )",
+            "type": "daily"
+          }
+        ]
+      },
+      {
+        "date": "2026-05-13",
+        "flavors": [
+          {
+            "name": "Mr Fudgie",
+            "imageUrl": "https://kopps.com/wp-content/uploads/2022/07/IMG_9705-258x300.jpeg",
+            "description": "Mint custard, Oreo® cookies and plenty of fudge",
+            "type": "daily"
+          },
+          {
+            "name": "Apple Pie à la Mode",
+            "imageUrl": "https://kopps.com/wp-content/uploads/2023/01/flavor-placeholder-300x300.png",
+            "description": "Apple custard and vanilla custard swirled together, ladles of cinnamon apple chunks and generous pieces of flaky pie crust.",
+            "type": "daily"
+          }
+        ]
+      },
+      {
+        "date": "2026-05-14",
+        "flavors": [
+          {
+            "name": "Strawberry",
+            "imageUrl": "https://kopps.com/wp-content/uploads/2022/07/Strawberry.jpg",
+            "description": "A natural strawberry flavored custard with sliced strawberries",
             "type": "daily"
           },
           {
@@ -515,7 +1229,75 @@
         ]
       },
       {
-        "date": "2026-01-30",
+        "date": "2026-05-15",
+        "flavors": [
+          {
+            "name": "Turtle Sundae",
+            "imageUrl": "https://kopps.com/wp-content/uploads/2022/07/Turtle.jpg",
+            "description": "Caramel flavored custard, loaded with pecans and swirls of caramel and fudge",
+            "type": "daily"
+          },
+          {
+            "name": "Chocolate Chocolate Chip",
+            "imageUrl": "https://kopps.com/wp-content/uploads/2022/07/Choc-Choc-Chip-1.jpg",
+            "description": "Dark, rich chocolate custard and chunks of intense bittersweet chocolate.  For the chocolate addict!",
+            "type": "daily"
+          }
+        ]
+      },
+      {
+        "date": "2026-05-16",
+        "flavors": [
+          {
+            "name": "Wedding Cake",
+            "imageUrl": "https://kopps.com/wp-content/uploads/2025/10/Wedding-Cake.jpg",
+            "description": "Cake batter custard + frosting + sponge cake + raspberry + Bavarian cream",
+            "type": "daily"
+          },
+          {
+            "name": "Chocolate Trüffel",
+            "imageUrl": "https://kopps.com/wp-content/uploads/2022/07/Chocolate-Truffel.jpg",
+            "description": "A connoisseurr’s imported trüffel flavor with delicate chocolate flakes.",
+            "type": "daily"
+          }
+        ]
+      },
+      {
+        "date": "2026-05-17",
+        "flavors": [
+          {
+            "name": "Reese’s Peanut Butter Kupps",
+            "imageUrl": "https://kopps.com/wp-content/uploads/2025/11/Reeses.jpg",
+            "description": "What do you get when you cross a peanut butter cup with Kopp’s Frozen Custard?  You guessed it!",
+            "type": "daily"
+          },
+          {
+            "name": "Banana Walnut Chocolate Chunk",
+            "imageUrl": "https://kopps.com/wp-content/uploads/2025/10/Ban-Walnut.jpg",
+            "description": "We use 100% all natural fully-ripened Chiquita brand bananas sprinkled with walnut pieces and giant chocolate chunks",
+            "type": "daily"
+          }
+        ]
+      },
+      {
+        "date": "2026-05-18",
+        "flavors": [
+          {
+            "name": "Midnight Chocolate Cake",
+            "imageUrl": "https://kopps.com/wp-content/uploads/2022/07/Midnight.jpg",
+            "description": "Rich, dark, sinfully delicious.  Chocolate truffel pieces, thick fudge and dark chocolate custard",
+            "type": "daily"
+          },
+          {
+            "name": "Pralines ‘N Caramel ‘N Cream",
+            "imageUrl": "https://kopps.com/wp-content/uploads/2022/07/PralinesnCararmelnCream.jpg",
+            "description": "A pure creamy custard with pralines and swirls of caramel",
+            "type": "daily"
+          }
+        ]
+      },
+      {
+        "date": "2026-05-19",
         "flavors": [
           {
             "name": "Butter Pecan",
@@ -524,15 +1306,134 @@
             "type": "daily"
           },
           {
-            "name": "Strawberry",
-            "imageUrl": "https://kopps.com/wp-content/uploads/2022/07/Strawberry.jpg",
-            "description": "A natural strawberry flavored custard with sliced strawberries",
+            "name": "Little Devil",
+            "imageUrl": "https://kopps.com/wp-content/uploads/2023/01/flavor-placeholder-300x300.png",
+            "description": "Dark Chocolate Custard + Devil’s Food Cake + Cherry Whipped Cream + Maraschino Cherry Syrup",
             "type": "daily"
           }
         ]
       },
       {
-        "date": "2026-01-31",
+        "date": "2026-05-20",
+        "flavors": [
+          {
+            "name": "Chocolate Chip Cookie Dough",
+            "imageUrl": "https://kopps.com/wp-content/uploads/2022/07/Cookie-Dough.jpg",
+            "description": "Tastes like chocolate chip cookie dough!  Made with Hershey’s chocolate chips and cookie dough chunks",
+            "type": "daily"
+          },
+          {
+            "name": "Peach Melba",
+            "imageUrl": "https://kopps.com/wp-content/uploads/2022/07/Peach-Melba-1.jpg",
+            "description": "A peach flavor with peach chunks and raspberry swirls",
+            "type": "daily"
+          }
+        ]
+      },
+      {
+        "date": "2026-05-21",
+        "flavors": [
+          {
+            "name": "Strawberry",
+            "imageUrl": "https://kopps.com/wp-content/uploads/2022/07/Strawberry.jpg",
+            "description": "A natural strawberry flavored custard with sliced strawberries",
+            "type": "daily"
+          },
+          {
+            "name": "Red Velvet Oreo",
+            "imageUrl": "https://kopps.com/wp-content/uploads/2026/01/Red-Velvet-Oreo.jpg",
+            "description": "Chocolate Cake Batter Custard + Cream Cheese Frosting + Oreos",
+            "type": "daily"
+          }
+        ]
+      },
+      {
+        "date": "2026-05-22",
+        "flavors": [
+          {
+            "name": "Spumoni",
+            "imageUrl": "https://kopps.com/wp-content/uploads/2022/07/Spumoni-1.jpg",
+            "description": "Three delicious custards: pistachio nut, burgundy cherry and chocolate almond.  Mangia! Mangia!\nMangia!  For our loyal customer and Spumoni lover, Jonathan.",
+            "type": "daily"
+          },
+          {
+            "name": "Butterfinger® Candy Bar",
+            "imageUrl": "https://kopps.com/wp-content/uploads/2022/07/Butterfinger.jpg",
+            "description": "Lots of Butterfinger® pieces added to our secret custard flavor.  No we won’t tell!",
+            "type": "daily"
+          }
+        ]
+      },
+      {
+        "date": "2026-05-23",
+        "flavors": [
+          {
+            "name": "Twix-Tac-Dough",
+            "imageUrl": "https://kopps.com/wp-content/uploads/2025/10/Twix-Tac-Doughedit-e1760120813444.jpg",
+            "description": "Cookie Dough Custard + Caramel + Chocolate Flakes + Shortbread Cookies + Chocolate Chip Cookie Dough",
+            "type": "daily"
+          },
+          {
+            "name": "Mint Chip",
+            "imageUrl": "https://kopps.com/wp-content/uploads/2022/07/MintChip-1.jpg",
+            "description": "A mint flavored custard with dark chocolate chunks",
+            "type": "daily"
+          }
+        ]
+      },
+      {
+        "date": "2026-05-24",
+        "flavors": [
+          {
+            "name": "Bienenstichkuchen",
+            "imageUrl": "https://kopps.com/wp-content/uploads/2022/07/Bienenstich.jpg",
+            "description": "A delightful German dessert; almond flavored custard mingled with yellow cake pieces, honey, Bavarian creme and sliced almonds.",
+            "type": "daily"
+          },
+          {
+            "name": "Orange Dream",
+            "imageUrl": "https://kopps.com/wp-content/uploads/2022/07/Orange-Dream-1.jpg",
+            "description": "Swirls of frosty orange and smooth vanilla custard are combined for the perfect reproduction of our childhood favorite.  All that’s missing is the stick!",
+            "type": "daily"
+          }
+        ]
+      },
+      {
+        "date": "2026-05-25",
+        "flavors": [
+          {
+            "name": "All American Cherry",
+            "imageUrl": "https://kopps.com/wp-content/uploads/2022/07/AllAmerican.jpg",
+            "description": "Cherries, blueberries, and vanilla custard.",
+            "type": "daily"
+          },
+          {
+            "name": "Caramel Cashew",
+            "imageUrl": "https://kopps.com/wp-content/uploads/2022/07/CararmelCashew.jpg",
+            "description": "Our own caramel with special roasted cashews",
+            "type": "daily"
+          }
+        ]
+      },
+      {
+        "date": "2026-05-26",
+        "flavors": [
+          {
+            "name": "Cookies ‘N Cream",
+            "imageUrl": "https://kopps.com/wp-content/uploads/2022/07/Cookies-n-Cream.jpg",
+            "description": "The creamiest custard with big Oreo® chunks",
+            "type": "daily"
+          },
+          {
+            "name": "Strawberry Cheesecake",
+            "imageUrl": "https://kopps.com/wp-content/uploads/2022/07/StrawChs.jpg",
+            "description": "Cheesecake custard and New York style cheesecake pieces with sliced strawberries.",
+            "type": "daily"
+          }
+        ]
+      },
+      {
+        "date": "2026-05-27",
         "flavors": [
           {
             "name": "Ultimate Cookie Dough",
@@ -541,9 +1442,77 @@
             "type": "daily"
           },
           {
-            "name": "Hot Chocolate",
-            "imageUrl": "https://kopps.com/wp-content/uploads/2025/12/Hot-Chocolate-2.jpg",
-            "description": "Milk chocolate custard + marshmallows + coco + marshmallow ribbon",
+            "name": "Mocha Chip",
+            "imageUrl": "https://kopps.com/wp-content/uploads/2022/07/Mocha-Chip-1.jpg",
+            "description": "A delicious mocha flavor with chocolate chips.",
+            "type": "daily"
+          }
+        ]
+      },
+      {
+        "date": "2026-05-28",
+        "flavors": [
+          {
+            "name": "Red Raspberry",
+            "imageUrl": "https://kopps.com/wp-content/uploads/2022/07/Red-Rasp.jpg",
+            "description": "A natural raspberry flavor with sweet, tart berries",
+            "type": "daily"
+          },
+          {
+            "name": "Chocolate Peanut Butter Chocolate",
+            "imageUrl": "https://kopps.com/wp-content/uploads/2022/07/ChocPBChoc.jpg",
+            "description": "Rich, rich, rich.",
+            "type": "daily"
+          }
+        ]
+      },
+      {
+        "date": "2026-05-29",
+        "flavors": [
+          {
+            "name": "Turtle Sundae",
+            "imageUrl": "https://kopps.com/wp-content/uploads/2022/07/Turtle.jpg",
+            "description": "Caramel flavored custard, loaded with pecans and swirls of caramel and fudge",
+            "type": "daily"
+          },
+          {
+            "name": "Key Lime Pie",
+            "imageUrl": "https://kopps.com/wp-content/uploads/2022/07/KeyLimePie.jpg",
+            "description": "You’ve had the pie…we’ve made it into a tropical custard treat",
+            "type": "daily"
+          }
+        ]
+      },
+      {
+        "date": "2026-05-30",
+        "flavors": [
+          {
+            "name": "Grasshopper Fudge",
+            "imageUrl": "https://kopps.com/wp-content/uploads/2022/07/Grass.jpg",
+            "description": "A classic cocktail made into a classic flavor with a fudge accent",
+            "type": "daily"
+          },
+          {
+            "name": "Conehead",
+            "imageUrl": "https://kopps.com/wp-content/uploads/2022/07/Drumstick.jpg",
+            "description": "Vanilla custard, loaded with chocolate cookie cone pieces, a ribbon of chocolate and lots of chopped nuts",
+            "type": "daily"
+          }
+        ]
+      },
+      {
+        "date": "2026-05-31",
+        "flavors": [
+          {
+            "name": "Butter Pecan",
+            "imageUrl": "https://kopps.com/wp-content/uploads/2022/07/ButterPecan-Edit.jpg",
+            "description": "A butterscotch flavor and whole roasted pecans",
+            "type": "daily"
+          },
+          {
+            "name": "Cookie Monster Custard",
+            "imageUrl": "https://kopps.com/wp-content/uploads/2023/01/flavor-placeholder-300x300.png",
+            "description": "Blue Moon Custard + Oreos + Cookie Dough Chunks",
             "type": "daily"
           }
         ]
@@ -552,70 +1521,26 @@
     "isOpen": true,
     "statusMessage": "Open until 10:00 PM",
     "shopId": "kopps-brookfield",
-    "lastUpdated": "2026-01-23T03:12:16.224Z"
+    "lastUpdated": "2026-05-03T21:02:03.835Z"
   },
   "gilles": {
     "flavors": [
       {
-        "name": "Strawberry",
-        "imageUrl": "https://gillesfrozencustard.com/sites/default/files/styles/calendar/public/flavor/Strawberry.jpg?itok=7vA5WMiR",
+        "name": "Butter Pecan",
+        "imageUrl": "https://gillesfrozencustard.com/sites/default/files/styles/calendar/public/flavor/butter-pecan.jpg?itok=N-7q_QhC",
         "type": "daily",
         "description": ""
       },
       {
-        "name": "Chocolate Oreo",
-        "imageUrl": "https://gillesfrozencustard.com/sites/default/files/styles/calendar/public/flavor/Chocolate%20Oreo.jpg?itok=5lNMN3Q9",
+        "name": "Orange Dreamsicle",
+        "imageUrl": "https://gillesfrozencustard.com/sites/default/files/styles/calendar/public/flavor/Orange%20Dream%20FOD_0.jpg?itok=jBkMsz8R",
         "type": "monthly_flavor",
         "description": "Flavor of the Month"
       }
     ],
     "upcoming": [
       {
-        "date": "2026-01-23",
-        "flavors": [
-          {
-            "name": "Turtle",
-            "imageUrl": "https://gillesfrozencustard.com/sites/default/files/styles/calendar/public/flavor/turtle.jpg?itok=polt9Guf",
-            "type": "daily",
-            "description": ""
-          }
-        ]
-      },
-      {
-        "date": "2026-01-24",
-        "flavors": [
-          {
-            "name": "Turtle",
-            "imageUrl": "https://gillesfrozencustard.com/sites/default/files/styles/calendar/public/flavor/turtle.jpg?itok=polt9Guf",
-            "type": "daily",
-            "description": ""
-          }
-        ]
-      },
-      {
-        "date": "2026-01-25",
-        "flavors": [
-          {
-            "name": "Root Beer Float",
-            "imageUrl": "https://gillesfrozencustard.com/sites/default/files/styles/calendar/public/flavor/Root%20Beer%20Float.jpg?itok=dc26KQA-",
-            "type": "daily",
-            "description": ""
-          }
-        ]
-      },
-      {
-        "date": "2026-01-26",
-        "flavors": [
-          {
-            "name": "Root Beer Float",
-            "imageUrl": "https://gillesfrozencustard.com/sites/default/files/styles/calendar/public/flavor/Root%20Beer%20Float.jpg?itok=dc26KQA-",
-            "type": "daily",
-            "description": ""
-          }
-        ]
-      },
-      {
-        "date": "2026-01-28",
+        "date": "2026-05-04",
         "flavors": [
           {
             "name": "Butter Pecan",
@@ -626,33 +1551,253 @@
         ]
       },
       {
-        "date": "2026-01-29",
+        "date": "2026-05-06",
         "flavors": [
           {
-            "name": "Butter Pecan",
-            "imageUrl": "https://gillesfrozencustard.com/sites/default/files/styles/calendar/public/flavor/butter-pecan.jpg?itok=N-7q_QhC",
+            "name": "Strawberry",
+            "imageUrl": "https://gillesfrozencustard.com/sites/default/files/styles/calendar/public/flavor/Strawberry.jpg?itok=7vA5WMiR",
             "type": "daily",
             "description": ""
           }
         ]
       },
       {
-        "date": "2026-01-30",
+        "date": "2026-05-07",
         "flavors": [
           {
-            "name": "Peppermint",
-            "imageUrl": "https://gillesfrozencustard.com/sites/default/files/styles/calendar/public/flavor/Peppermint.jpg?itok=mrSB5nVG",
+            "name": "Strawberry",
+            "imageUrl": "https://gillesfrozencustard.com/sites/default/files/styles/calendar/public/flavor/Strawberry.jpg?itok=7vA5WMiR",
             "type": "daily",
             "description": ""
           }
         ]
       },
       {
-        "date": "2026-01-31",
+        "date": "2026-05-08",
         "flavors": [
           {
-            "name": "Peppermint",
-            "imageUrl": "https://gillesfrozencustard.com/sites/default/files/styles/calendar/public/flavor/Peppermint.jpg?itok=mrSB5nVG",
+            "name": "Turtle",
+            "imageUrl": "https://gillesfrozencustard.com/sites/default/files/styles/calendar/public/flavor/turtle.jpg?itok=polt9Guf",
+            "type": "daily",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "date": "2026-05-09",
+        "flavors": [
+          {
+            "name": "Turtle",
+            "imageUrl": "https://gillesfrozencustard.com/sites/default/files/styles/calendar/public/flavor/turtle.jpg?itok=polt9Guf",
+            "type": "daily",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "date": "2026-05-10",
+        "flavors": [
+          {
+            "name": "Oreo",
+            "imageUrl": "https://gillesfrozencustard.com/sites/default/files/styles/calendar/public/flavor/Oreo%20Cheesecake.jpg?itok=Dq7IB9ct",
+            "type": "daily",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "date": "2026-05-11",
+        "flavors": [
+          {
+            "name": "Oreo",
+            "imageUrl": "https://gillesfrozencustard.com/sites/default/files/styles/calendar/public/flavor/Oreo%20Cheesecake.jpg?itok=Dq7IB9ct",
+            "type": "daily",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "date": "2026-05-13",
+        "flavors": [
+          {
+            "name": "Mocha Delight",
+            "imageUrl": "https://gillesfrozencustard.com/sites/default/files/styles/calendar/public/flavor/Mocha%20Delight.jpg?itok=ke04ZZqp",
+            "type": "daily",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "date": "2026-05-14",
+        "flavors": [
+          {
+            "name": "Mocha Delight",
+            "imageUrl": "https://gillesfrozencustard.com/sites/default/files/styles/calendar/public/flavor/Mocha%20Delight.jpg?itok=ke04ZZqp",
+            "type": "daily",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "date": "2026-05-15",
+        "flavors": [
+          {
+            "name": "Key Lime Pie",
+            "imageUrl": "https://gillesfrozencustard.com/sites/default/files/styles/calendar/public/flavor/Key%20Lime%20Pie.jpg?itok=01w8hlc_",
+            "type": "daily",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "date": "2026-05-16",
+        "flavors": [
+          {
+            "name": "Key Lime Pie",
+            "imageUrl": "https://gillesfrozencustard.com/sites/default/files/styles/calendar/public/flavor/Key%20Lime%20Pie.jpg?itok=01w8hlc_",
+            "type": "daily",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "date": "2026-05-17",
+        "flavors": [
+          {
+            "name": "Avi's Avalanche",
+            "imageUrl": "https://gillesfrozencustard.com/sites/default/files/styles/calendar/public/flavor/Avis%20Avalanche.jpg?itok=Gx3YHyzR",
+            "type": "daily",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "date": "2026-05-18",
+        "flavors": [
+          {
+            "name": "Avi's Avalanche",
+            "imageUrl": "https://gillesfrozencustard.com/sites/default/files/styles/calendar/public/flavor/Avis%20Avalanche.jpg?itok=Gx3YHyzR",
+            "type": "daily",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "date": "2026-05-20",
+        "flavors": [
+          {
+            "name": "Turtle",
+            "imageUrl": "https://gillesfrozencustard.com/sites/default/files/styles/calendar/public/flavor/turtle.jpg?itok=polt9Guf",
+            "type": "daily",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "date": "2026-05-21",
+        "flavors": [
+          {
+            "name": "Turtle",
+            "imageUrl": "https://gillesfrozencustard.com/sites/default/files/styles/calendar/public/flavor/turtle.jpg?itok=polt9Guf",
+            "type": "daily",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "date": "2026-05-22",
+        "flavors": [
+          {
+            "name": "Heavenly Chocolate",
+            "imageUrl": "https://gillesfrozencustard.com/sites/default/files/styles/calendar/public/flavor/heavenly-choco.jpg?itok=U_nIWqez",
+            "type": "daily",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "date": "2026-05-23",
+        "flavors": [
+          {
+            "name": "Heavenly Chocolate",
+            "imageUrl": "https://gillesfrozencustard.com/sites/default/files/styles/calendar/public/flavor/heavenly-choco.jpg?itok=U_nIWqez",
+            "type": "daily",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "date": "2026-05-24",
+        "flavors": [
+          {
+            "name": "M & M",
+            "imageUrl": "https://gillesfrozencustard.com/sites/default/files/styles/calendar/public/flavor/M%26M-2022.jpg?itok=5LkDRE2i",
+            "type": "daily",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "date": "2026-05-25",
+        "flavors": [
+          {
+            "name": "M & M",
+            "imageUrl": "https://gillesfrozencustard.com/sites/default/files/styles/calendar/public/flavor/M%26M-2022.jpg?itok=5LkDRE2i",
+            "type": "daily",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "date": "2026-05-27",
+        "flavors": [
+          {
+            "name": "Simply Strawberry",
+            "imageUrl": "https://gillesfrozencustard.com/sites/default/files/styles/calendar/public/flavor/Strawberry-2a.jpg?itok=PmCIZE8G",
+            "type": "daily",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "date": "2026-05-28",
+        "flavors": [
+          {
+            "name": "Simply Strawberry",
+            "imageUrl": "https://gillesfrozencustard.com/sites/default/files/styles/calendar/public/flavor/Strawberry-2a.jpg?itok=PmCIZE8G",
+            "type": "daily",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "date": "2026-05-29",
+        "flavors": [
+          {
+            "name": "Chocolate Reese's Peanut Butter Cup",
+            "imageUrl": "https://gillesfrozencustard.com/sites/default/files/styles/calendar/public/flavor/choco-reesees.jpg?itok=LBp1-Zrm",
+            "type": "daily",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "date": "2026-05-30",
+        "flavors": [
+          {
+            "name": "Chocolate Reese's Peanut Butter Cup",
+            "imageUrl": "https://gillesfrozencustard.com/sites/default/files/styles/calendar/public/flavor/choco-reesees.jpg?itok=LBp1-Zrm",
+            "type": "daily",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "date": "2026-05-31",
+        "flavors": [
+          {
+            "name": "Turtle",
+            "imageUrl": "https://gillesfrozencustard.com/sites/default/files/styles/calendar/public/flavor/turtle.jpg?itok=polt9Guf",
             "type": "daily",
             "description": ""
           }
@@ -660,113 +1805,69 @@
       }
     ],
     "shopId": "gilles",
-    "lastUpdated": "2026-01-23T03:12:16.234Z"
+    "lastUpdated": "2026-05-03T21:02:03.845Z"
   },
   "oscars-west-allis": {
     "flavors": [
       {
-        "name": "CHOCOLATE MALT WHOPPER SUPREME",
-        "imageUrl": "https://www.oscarscustard.com/wp-content/uploads/2023/10/ChocoMaltSup-768x1024-1.jpg",
-        "description": "Crushed Whopper Malt Balls blended into chocolate malt custard.",
+        "name": "BUTTER PECAN",
+        "imageUrl": "https://www.oscarscustard.com/wp-content/uploads/2023/10/butterpecanLR.jpg",
+        "description": "everyone knows butter pecan!",
         "type": "daily"
       },
       {
-        "name": "“THE NEW YEAR’S RESOLUTION”",
-        "description": "Bring in 2026 with this mouth-watering sundae! Chocolate custard topped with peanut butter sauce, hot fudge, chunks of Reese’s Peanut Butter Cup and a cherry, of course!",
+        "name": "“CHOCOLATE COVERED STRAWBERRY”",
+        "description": "Three heaping scoops of vanilla custard, covered in delicious strawberries smothered in hard shell chocolate and whipped cream, topped with a cherry!",
         "type": "monthly_sundae"
       },
       {
-        "name": "Salted Caramel Mocha",
+        "name": "Sweet Cinnamon Fiesta!!!",
         "description": "Shake of the Month",
         "type": "monthly_shake"
       }
     ],
     "upcoming": [
       {
-        "date": "2026-01-23",
+        "date": "2026-05-04",
         "flavors": [
           {
-            "name": "DRUM…STIXXX!",
-            "imageUrl": "https://www.oscarscustard.com/wp-content/uploads/2023/11/drum2LR.jpg",
-            "description": "Hard shell chocolate, crushed nuts &    crushed waffle cones mixed into vanilla.",
+            "name": "DEATH STAR BY CHOCOLATE",
+            "imageUrl": "https://www.oscarscustard.com/wp-content/uploads/2023/10/deathbychoco.jpg",
+            "description": "DEATH BY CHOCOLATEChocolate lover’s delight chocolate custard, fudge bits, Oreos and chocolate pieces.",
             "type": "daily"
           }
         ]
       },
       {
-        "date": "2026-01-24",
+        "date": "2026-05-05",
         "flavors": [
           {
-            "name": "M&M COOKIE DOUGH",
-            "imageUrl": "https://www.oscarscustard.com/wp-content/uploads/2023/10/mmcookieLR.jpg",
-            "description": "Chunky chocolate chip cookie dough and crunchy pieces of M&M candy swirled into a cool vanilla custard – a new twist on an old favorite.",
+            "name": "FIESTA CUSTARD",
+            "imageUrl": "https://www.oscarscustard.com/wp-content/uploads/2023/10/fiesta.jpg",
+            "description": "All amigos need to celebrate Cinco De Mayo with this flavor! Vanilla custard mixed with a blend of caramel, cinnamon sugar, chocolate flakes & fiesta sprinkles.",
             "type": "daily"
-          }
-        ]
-      },
-      {
-        "date": "2026-01-25",
-        "flavors": [
-          {
-            "name": "BUTTER PECAN",
-            "imageUrl": "https://www.oscarscustard.com/wp-content/uploads/2023/10/butterpecanLR.jpg",
-            "description": "everyone knows butter pecan!",
-            "type": "daily"
-          }
-        ]
-      },
-      {
-        "date": "2026-01-26",
-        "flavors": [
-          {
-            "name": "BANANA CREAM PIE",
-            "imageUrl": "https://www.oscarscustard.com/wp-content/uploads/2023/10/bananacreampieLR.jpg",
-            "description": "Savor the flavor of this traditional favorite…smooth banana custard loaded with crushed vanilla wafers topped with whipped cream.",
-            "type": "daily"
-          }
-        ]
-      },
-      {
-        "date": "2026-01-27",
-        "flavors": [
+          },
           {
             "name": "BLUE MOON",
             "imageUrl": "https://www.oscarscustard.com/wp-content/uploads/2023/10/bluemoonLR.jpg",
             "description": "It’s a Blue Moon at Oscar’s! A true WI native flavor – just can’t pinpoint the taste!!",
             "type": "daily"
-          },
-          {
-            "name": "CHOCOLATE CHOCOLATE CHIP",
-            "imageUrl": "https://www.oscarscustard.com/wp-content/uploads/2024/01/chocochocochip.jpg",
-            "description": "Chocolate custard with chocolate chips.",
-            "type": "daily"
           }
         ]
       },
       {
-        "date": "2026-01-28",
+        "date": "2026-05-06",
         "flavors": [
           {
-            "name": "POLAR BEAR TRACKS",
-            "imageUrl": "https://www.oscarscustard.com/wp-content/uploads/2023/10/PolarBearLR.jpg",
-            "description": "A glacier of vanilla malt custard driven by a gravitational force of Heath Bar bits and chocolate flakes.",
+            "name": "CHERRY AMARETTO CHEESECAKE",
+            "imageUrl": "https://www.oscarscustard.com/wp-content/uploads/2020/01/ChryAmChCke.jpg",
+            "description": "A light cheesecake flavored custard with just a hint of Amaretto and swirls of cherry pie filling.",
             "type": "daily"
           }
         ]
       },
       {
-        "date": "2026-01-29",
-        "flavors": [
-          {
-            "name": "TIRAMISÚ",
-            "imageUrl": "https://www.oscarscustard.com/wp-content/uploads/2023/10/TiramisuLR.jpg",
-            "description": "Scrumptious bite-size pieces of this famous  Italian pastry blended into a light mocha custard covered  with a dusting of cocoa powder and chocolate shavings.",
-            "type": "daily"
-          }
-        ]
-      },
-      {
-        "date": "2026-01-30",
+        "date": "2026-05-07",
         "flavors": [
           {
             "name": "SNICKERS",
@@ -777,12 +1878,34 @@
         ]
       },
       {
-        "date": "2026-01-31",
+        "date": "2026-05-08",
         "flavors": [
           {
-            "name": "DEATH BY CHOCOLATE",
-            "imageUrl": "https://www.oscarscustard.com/wp-content/uploads/2023/10/deathbychoco.jpg",
-            "description": "Chocolate lover’s delight chocolate custard, fudge bits, Oreos and chocolate pieces.",
+            "name": "PEANUTBUTTER PARTY!!!",
+            "imageUrl": "https://www.oscarscustard.com/wp-content/uploads/2023/10/PBPARTYLR.jpg",
+            "description": "PEANUTBUTTER PARTYYou’re invited to indulge in…Fresh vanilla custard, bursting with Reese’s peanut butter cups with twists of hard shell chocolate andpeanut butter sauce.",
+            "type": "daily"
+          }
+        ]
+      },
+      {
+        "date": "2026-05-09",
+        "flavors": [
+          {
+            "name": "GRASSHOPPER PIE",
+            "imageUrl": "https://www.oscarscustard.com/wp-content/uploads/2023/10/grasshopper2.jpg",
+            "description": "Scrumptious fudge swirled in mint\ncustard with cookie crust.",
+            "type": "daily"
+          }
+        ]
+      },
+      {
+        "date": "2026-05-10",
+        "flavors": [
+          {
+            "name": "CHOCOLATE COVERED CHERRY",
+            "imageUrl": "https://www.oscarscustard.com/wp-content/uploads/2024/10/chococovcherry.jpg",
+            "description": "Scrumptious chocolate covered cherries wrapped into a light Amaretto custard",
             "type": "daily"
           }
         ]
@@ -791,113 +1914,69 @@
     "isOpen": true,
     "statusMessage": "Open until 10:00 PM",
     "shopId": "oscars-west-allis",
-    "lastUpdated": "2026-01-23T03:12:16.235Z"
+    "lastUpdated": "2026-05-03T21:02:03.845Z"
   },
   "oscars-franklin": {
     "flavors": [
       {
-        "name": "CHOCOLATE MALT WHOPPER SUPREME",
-        "imageUrl": "https://www.oscarscustard.com/wp-content/uploads/2023/10/ChocoMaltSup-768x1024-1.jpg",
-        "description": "Crushed Whopper Malt Balls blended into chocolate malt custard.",
+        "name": "BUTTER PECAN",
+        "imageUrl": "https://www.oscarscustard.com/wp-content/uploads/2023/10/butterpecanLR.jpg",
+        "description": "everyone knows butter pecan!",
         "type": "daily"
       },
       {
-        "name": "“THE NEW YEAR’S RESOLUTION”",
-        "description": "Bring in 2026 with this mouth-watering sundae! Chocolate custard topped with peanut butter sauce, hot fudge, chunks of Reese’s Peanut Butter Cup and a cherry, of course!",
+        "name": "“CHOCOLATE COVERED STRAWBERRY”",
+        "description": "Three heaping scoops of vanilla custard, covered in delicious strawberries smothered in hard shell chocolate and whipped cream, topped with a cherry!",
         "type": "monthly_sundae"
       },
       {
-        "name": "Salted Caramel Mocha",
+        "name": "Sweet Cinnamon Fiesta!!!",
         "description": "Shake of the Month",
         "type": "monthly_shake"
       }
     ],
     "upcoming": [
       {
-        "date": "2026-01-23",
+        "date": "2026-05-04",
         "flavors": [
           {
-            "name": "DRUM…STIXXX!",
-            "imageUrl": "https://www.oscarscustard.com/wp-content/uploads/2023/11/drum2LR.jpg",
-            "description": "Hard shell chocolate, crushed nuts &    crushed waffle cones mixed into vanilla.",
+            "name": "DEATH STAR BY CHOCOLATE",
+            "imageUrl": "https://www.oscarscustard.com/wp-content/uploads/2023/10/deathbychoco.jpg",
+            "description": "DEATH BY CHOCOLATEChocolate lover’s delight chocolate custard, fudge bits, Oreos and chocolate pieces.",
             "type": "daily"
           }
         ]
       },
       {
-        "date": "2026-01-24",
+        "date": "2026-05-05",
         "flavors": [
           {
-            "name": "M&M COOKIE DOUGH",
-            "imageUrl": "https://www.oscarscustard.com/wp-content/uploads/2023/10/mmcookieLR.jpg",
-            "description": "Chunky chocolate chip cookie dough and crunchy pieces of M&M candy swirled into a cool vanilla custard – a new twist on an old favorite.",
+            "name": "FIESTA CUSTARD",
+            "imageUrl": "https://www.oscarscustard.com/wp-content/uploads/2023/10/fiesta.jpg",
+            "description": "All amigos need to celebrate Cinco De Mayo with this flavor! Vanilla custard mixed with a blend of caramel, cinnamon sugar, chocolate flakes & fiesta sprinkles.",
             "type": "daily"
-          }
-        ]
-      },
-      {
-        "date": "2026-01-25",
-        "flavors": [
-          {
-            "name": "BUTTER PECAN",
-            "imageUrl": "https://www.oscarscustard.com/wp-content/uploads/2023/10/butterpecanLR.jpg",
-            "description": "everyone knows butter pecan!",
-            "type": "daily"
-          }
-        ]
-      },
-      {
-        "date": "2026-01-26",
-        "flavors": [
-          {
-            "name": "BANANA CREAM PIE",
-            "imageUrl": "https://www.oscarscustard.com/wp-content/uploads/2023/10/bananacreampieLR.jpg",
-            "description": "Savor the flavor of this traditional favorite…smooth banana custard loaded with crushed vanilla wafers topped with whipped cream.",
-            "type": "daily"
-          }
-        ]
-      },
-      {
-        "date": "2026-01-27",
-        "flavors": [
+          },
           {
             "name": "BLUE MOON",
             "imageUrl": "https://www.oscarscustard.com/wp-content/uploads/2023/10/bluemoonLR.jpg",
             "description": "It’s a Blue Moon at Oscar’s! A true WI native flavor – just can’t pinpoint the taste!!",
             "type": "daily"
-          },
-          {
-            "name": "CHOCOLATE CHOCOLATE CHIP",
-            "imageUrl": "https://www.oscarscustard.com/wp-content/uploads/2024/01/chocochocochip.jpg",
-            "description": "Chocolate custard with chocolate chips.",
-            "type": "daily"
           }
         ]
       },
       {
-        "date": "2026-01-28",
+        "date": "2026-05-06",
         "flavors": [
           {
-            "name": "POLAR BEAR TRACKS",
-            "imageUrl": "https://www.oscarscustard.com/wp-content/uploads/2023/10/PolarBearLR.jpg",
-            "description": "A glacier of vanilla malt custard driven by a gravitational force of Heath Bar bits and chocolate flakes.",
+            "name": "CHERRY AMARETTO CHEESECAKE",
+            "imageUrl": "https://www.oscarscustard.com/wp-content/uploads/2020/01/ChryAmChCke.jpg",
+            "description": "A light cheesecake flavored custard with just a hint of Amaretto and swirls of cherry pie filling.",
             "type": "daily"
           }
         ]
       },
       {
-        "date": "2026-01-29",
-        "flavors": [
-          {
-            "name": "TIRAMISÚ",
-            "imageUrl": "https://www.oscarscustard.com/wp-content/uploads/2023/10/TiramisuLR.jpg",
-            "description": "Scrumptious bite-size pieces of this famous  Italian pastry blended into a light mocha custard covered  with a dusting of cocoa powder and chocolate shavings.",
-            "type": "daily"
-          }
-        ]
-      },
-      {
-        "date": "2026-01-30",
+        "date": "2026-05-07",
         "flavors": [
           {
             "name": "SNICKERS",
@@ -908,12 +1987,34 @@
         ]
       },
       {
-        "date": "2026-01-31",
+        "date": "2026-05-08",
         "flavors": [
           {
-            "name": "DEATH BY CHOCOLATE",
-            "imageUrl": "https://www.oscarscustard.com/wp-content/uploads/2023/10/deathbychoco.jpg",
-            "description": "Chocolate lover’s delight chocolate custard, fudge bits, Oreos and chocolate pieces.",
+            "name": "PEANUTBUTTER PARTY!!!",
+            "imageUrl": "https://www.oscarscustard.com/wp-content/uploads/2023/10/PBPARTYLR.jpg",
+            "description": "PEANUTBUTTER PARTYYou’re invited to indulge in…Fresh vanilla custard, bursting with Reese’s peanut butter cups with twists of hard shell chocolate andpeanut butter sauce.",
+            "type": "daily"
+          }
+        ]
+      },
+      {
+        "date": "2026-05-09",
+        "flavors": [
+          {
+            "name": "GRASSHOPPER PIE",
+            "imageUrl": "https://www.oscarscustard.com/wp-content/uploads/2023/10/grasshopper2.jpg",
+            "description": "Scrumptious fudge swirled in mint\ncustard with cookie crust.",
+            "type": "daily"
+          }
+        ]
+      },
+      {
+        "date": "2026-05-10",
+        "flavors": [
+          {
+            "name": "CHOCOLATE COVERED CHERRY",
+            "imageUrl": "https://www.oscarscustard.com/wp-content/uploads/2024/10/chococovcherry.jpg",
+            "description": "Scrumptious chocolate covered cherries wrapped into a light Amaretto custard",
             "type": "daily"
           }
         ]
@@ -922,14 +2023,14 @@
     "isOpen": true,
     "statusMessage": "Open until 10:00 PM",
     "shopId": "oscars-franklin",
-    "lastUpdated": "2026-01-23T03:12:16.235Z"
+    "lastUpdated": "2026-05-03T21:02:03.845Z"
   },
   "oscars-waukesha": {
     "shopId": "oscars-waukesha",
     "flavors": [],
     "isOpen": false,
     "statusMessage": "Temporarily Closed (Fire)",
-    "lastUpdated": "2026-01-23T03:12:16.235Z"
+    "lastUpdated": "2026-05-03T21:02:03.845Z"
   },
   "leons": {
     "flavors": [
@@ -947,45 +2048,45 @@
     "isOpen": true,
     "statusMessage": "Call to confirm special",
     "shopId": "leons",
-    "lastUpdated": "2026-01-23T03:12:16.235Z"
+    "lastUpdated": "2026-05-03T21:02:03.845Z"
   },
   "leducs": {
     "flavors": [
       {
-        "name": "Kahlua",
+        "name": "Rocky Road",
         "type": "daily",
         "description": ""
       }
     ],
     "shopId": "leducs",
-    "lastUpdated": "2026-01-23T03:12:16.235Z"
+    "lastUpdated": "2026-05-03T21:02:03.845Z"
   },
   "hefners": {
     "flavors": [
       {
-        "name": "Drumstick",
-        "description": "Creamy vanilla custard loaded with broken waffle cone pieces, chocolate flakes, crushed nuts and drizzled with hot fudge topping.",
+        "name": "Dubai Chocolate Cheesecake",
+        "description": "Pistachio flavored custard loaded with crushed pistachios, a homemade Dubai cream mix from our friends at Ultimate Confections, chocolate syrup, cheesecake pieces and chocolate chunks.",
         "type": "daily"
       }
     ],
     "shopId": "hefners",
-    "lastUpdated": "2026-01-23T03:12:16.236Z"
+    "lastUpdated": "2026-05-03T21:02:03.845Z"
   },
   "georgie-porgies": {
     "flavors": [
       {
-        "name": "Cookie Butter Crunch",
+        "name": "Dulce De Leche",
         "description": "",
-        "type": "daily"
+        "type": "monthly_sundae"
       },
       {
-        "name": "Cozy Cocoa",
-        "description": "Twist custard topped with hot cocoa marshmallow mix, mini marshmallows, and hot fudge topped with whipped cream & a cherry",
-        "type": "monthly_sundae"
+        "name": "Georgies",
+        "description": "",
+        "type": "daily"
       }
     ],
     "shopId": "georgie-porgies",
-    "lastUpdated": "2026-01-23T03:12:16.236Z"
+    "lastUpdated": "2026-05-03T21:02:03.846Z"
   },
   "murfs": {
     "flavors": [
@@ -997,37 +2098,7 @@
     ],
     "upcoming": [
       {
-        "date": "2026-01-23",
-        "flavors": [
-          {
-            "name": "Mocha Chip",
-            "type": "daily",
-            "description": ""
-          }
-        ]
-      },
-      {
-        "date": "2026-01-24",
-        "flavors": [
-          {
-            "name": "Old Fashion Drumroll",
-            "type": "daily",
-            "description": ""
-          }
-        ]
-      },
-      {
-        "date": "2026-01-25",
-        "flavors": [
-          {
-            "name": "Mint Brownie Fudge",
-            "type": "daily",
-            "description": ""
-          }
-        ]
-      },
-      {
-        "date": "2026-01-26",
+        "date": "2026-05-04",
         "flavors": [
           {
             "name": "Temporarily Closed Mondays",
@@ -1037,17 +2108,57 @@
         ]
       },
       {
-        "date": "2026-01-27",
+        "date": "2026-05-05",
         "flavors": [
           {
-            "name": "Blue Moon",
+            "name": "M&M Fudge Swirl",
             "type": "daily",
             "description": ""
           }
         ]
       },
       {
-        "date": "2026-01-28",
+        "date": "2026-05-06",
+        "flavors": [
+          {
+            "name": "Old Fashion Drumroll",
+            "type": "daily",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "date": "2026-05-07",
+        "flavors": [
+          {
+            "name": "Chocolate Raspberry Oreo",
+            "type": "daily",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "date": "2026-05-08",
+        "flavors": [
+          {
+            "name": "Peanut Butter Brownie",
+            "type": "daily",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "date": "2026-05-09",
+        "flavors": [
+          {
+            "name": "Birthday Cake",
+            "type": "daily",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "date": "2026-05-10",
         "flavors": [
           {
             "name": "Chocolate Covered Strawberry",
@@ -1058,29 +2169,69 @@
       }
     ],
     "shopId": "murfs",
-    "lastUpdated": "2026-01-23T03:12:16.236Z"
+    "lastUpdated": "2026-05-03T21:02:03.846Z"
   },
   "roberts": {
     "flavors": [
       {
-        "name": "Black Raspberry",
+        "name": "Red Raspberry",
         "type": "daily",
         "description": ""
       }
     ],
     "upcoming": [
       {
-        "date": "2026-01-23",
+        "date": "2026-05-04",
         "flavors": [
           {
-            "name": "Peanut Butter Cup",
+            "name": "Butter Almond",
             "type": "daily",
             "description": ""
           }
         ]
       },
       {
-        "date": "2026-01-24",
+        "date": "2026-05-05",
+        "flavors": [
+          {
+            "name": "Banana Fudge Chunk",
+            "type": "daily",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "date": "2026-05-06",
+        "flavors": [
+          {
+            "name": "French Silk Pie",
+            "type": "daily",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "date": "2026-05-07",
+        "flavors": [
+          {
+            "name": "Classic Mint Chip",
+            "type": "daily",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "date": "2026-05-08",
+        "flavors": [
+          {
+            "name": "Ultimate Cookie Dough",
+            "type": "daily",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "date": "2026-05-09",
         "flavors": [
           {
             "name": "Bailey's Irish Cream",
@@ -1090,47 +2241,97 @@
         ]
       },
       {
-        "date": "2026-01-25",
+        "date": "2026-05-10",
         "flavors": [
           {
-            "name": "Chocolate Pecan Turtle",
+            "name": "Butter Pecan",
             "type": "daily",
             "description": ""
           }
         ]
       },
       {
-        "date": "2026-01-26",
+        "date": "2026-05-11",
         "flavors": [
           {
-            "name": "Burgundy Cherry",
+            "name": "Rocky Road",
             "type": "daily",
             "description": ""
           }
         ]
       },
       {
-        "date": "2026-01-27",
+        "date": "2026-05-12",
         "flavors": [
           {
-            "name": "Chocolate Almond",
+            "name": "Rice Krispie Crunch",
             "type": "daily",
             "description": ""
           }
         ]
       },
       {
-        "date": "2026-01-28",
+        "date": "2026-05-13",
         "flavors": [
           {
-            "name": "Cookies & Cream",
+            "name": "Peach Raspberry Bellini",
             "type": "daily",
             "description": ""
           }
         ]
       },
       {
-        "date": "2026-01-29",
+        "date": "2026-05-14",
+        "flavors": [
+          {
+            "name": "Caramel Cashew",
+            "type": "daily",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "date": "2026-05-15",
+        "flavors": [
+          {
+            "name": "Peanut Butter Cup",
+            "type": "daily",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "date": "2026-05-16",
+        "flavors": [
+          {
+            "name": "Mint Drumstick",
+            "type": "daily",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "date": "2026-05-17",
+        "flavors": [
+          {
+            "name": "Turtle Sundae",
+            "type": "daily",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "date": "2026-05-18",
+        "flavors": [
+          {
+            "name": "Dreamsicle",
+            "type": "daily",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "date": "2026-05-19",
         "flavors": [
           {
             "name": "Coffee Heath Bar Crunch",
@@ -1140,17 +2341,37 @@
         ]
       },
       {
-        "date": "2026-01-30",
+        "date": "2026-05-20",
         "flavors": [
           {
-            "name": "Andes Chocolate Mint",
+            "name": "Twix Bar",
             "type": "daily",
             "description": ""
           }
         ]
       },
       {
-        "date": "2026-01-31",
+        "date": "2026-05-21",
+        "flavors": [
+          {
+            "name": "Chocolate Pecan Turtle",
+            "type": "daily",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "date": "2026-05-22",
+        "flavors": [
+          {
+            "name": "Bailey's Irish Cream",
+            "type": "daily",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "date": "2026-05-23",
         "flavors": [
           {
             "name": "Ultimate Cookie Dough",
@@ -1158,62 +2379,122 @@
             "description": ""
           }
         ]
+      },
+      {
+        "date": "2026-05-24",
+        "flavors": [
+          {
+            "name": "Black Raspberry",
+            "type": "daily",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "date": "2026-05-25",
+        "flavors": [
+          {
+            "name": "Butter Pecan",
+            "type": "daily",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "date": "2026-05-26",
+        "flavors": [
+          {
+            "name": "Cookie & Cream",
+            "type": "daily",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "date": "2026-05-27",
+        "flavors": [
+          {
+            "name": "Strawberry",
+            "type": "daily",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "date": "2026-05-28",
+        "flavors": [
+          {
+            "name": "Mint Fudge Brownie",
+            "type": "daily",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "date": "2026-05-29",
+        "flavors": [
+          {
+            "name": "Peanut Butter Cup",
+            "type": "daily",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "date": "2026-05-30",
+        "flavors": [
+          {
+            "name": "Caramel Brownie",
+            "type": "daily",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "date": "2026-05-31",
+        "flavors": [
+          {
+            "name": "Pecan Toffee Crunch",
+            "type": "daily",
+            "description": ""
+          }
+        ]
       }
     ],
     "shopId": "roberts",
-    "lastUpdated": "2026-01-23T03:12:16.236Z"
+    "lastUpdated": "2026-05-03T21:02:03.846Z"
   },
   "kraverz": {
     "flavors": [
       {
-        "name": "CARAMEL CASHEW",
+        "name": "CLOSED",
         "type": "daily",
         "description": ""
       }
     ],
     "upcoming": [
       {
-        "date": "2026-01-23",
+        "date": "2026-05-04",
         "flavors": [
           {
-            "name": "CHOC OREO",
+            "name": "KIT KAT BAR",
             "type": "daily",
             "description": ""
           }
         ]
       },
       {
-        "date": "2026-01-24",
+        "date": "2026-05-05",
         "flavors": [
           {
-            "name": "CHOC BROWNIE",
+            "name": "TWIX MIX",
             "type": "daily",
             "description": ""
           }
         ]
       },
       {
-        "date": "2026-01-25",
-        "flavors": [
-          {
-            "name": "CLOSED",
-            "type": "daily",
-            "description": ""
-          }
-        ]
-      },
-      {
-        "date": "2026-01-26",
-        "flavors": [
-          {
-            "name": "BUTTER FINGER BLAST",
-            "type": "daily",
-            "description": ""
-          }
-        ]
-      },
-      {
-        "date": "2026-01-27",
+        "date": "2026-05-06",
         "flavors": [
           {
             "name": "DRUMSTICK",
@@ -1223,7 +2504,7 @@
         ]
       },
       {
-        "date": "2026-01-28",
+        "date": "2026-05-07",
         "flavors": [
           {
             "name": "ANDE'S MINT",
@@ -1233,10 +2514,30 @@
         ]
       },
       {
-        "date": "2026-01-29",
+        "date": "2026-05-08",
         "flavors": [
           {
-            "name": "CARAMEL FUDGE BROWNIE",
+            "name": "BAILEY'S IRISH CREAM",
+            "type": "daily",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "date": "2026-05-09",
+        "flavors": [
+          {
+            "name": "M & M SWIRL",
+            "type": "daily",
+            "description": ""
+          }
+        ]
+      },
+      {
+        "date": "2026-05-10",
+        "flavors": [
+          {
+            "name": "CLOSED \" HAPPY MOTHER'S DAY\"",
             "type": "daily",
             "description": ""
           }
@@ -1244,22 +2545,208 @@
       }
     ],
     "shopId": "kraverz",
-    "lastUpdated": "2026-01-23T03:12:16.236Z"
+    "lastUpdated": "2026-05-03T21:02:03.846Z"
   },
-  "culvers-milwaukee-good-hope": {
+  "golden-gyros": {
     "flavors": [
       {
-        "name": "Mint Cookie",
-        "description": "Our specially blended Mint Fresh Frozen Custard with OREO® Cookies for a refreshing treat.",
-        "imageUrl": "https://cdn.culvers.com/menu-item-detail/img-Mint-Oreo-updated.png"
+        "name": "Caramel Apple Pie",
+        "description": "Fresh Sliced Cinnamon Apple Pies Drizzled with Our Butter Caramel, Over Vanilla Custard! A True Classic Favorite!",
+        "type": "daily"
+      }
+    ],
+    "upcoming": [
+      {
+        "date": "2026-05-04",
+        "flavors": [
+          {
+            "name": "Tiramisu",
+            "description": "Light Espresso - Caramel Flavored Custard with Italian Tiramisu Coffee Cake, Swirls of Creamy Fudge and a Touch of Sprinkled Cocoa Powder",
+            "type": "daily"
+          }
+        ]
+      },
+      {
+        "date": "2026-05-05",
+        "flavors": [
+          {
+            "name": "Bluemoon",
+            "description": "Wisconsin's Favorite Flavor",
+            "type": "daily"
+          }
+        ]
+      },
+      {
+        "date": "2026-05-06",
+        "flavors": [
+          {
+            "name": "Egion Cherry",
+            "description": "Delicious Imported Mediterranean Cherries With All Natural Cherry Syrup In Creamy Vanilla Custard   Happy Mother's Day!",
+            "type": "daily"
+          }
+        ]
+      },
+      {
+        "date": "2026-05-07",
+        "flavors": [
+          {
+            "name": "Snickers",
+            "description": "Vanilla Custard with Crushed Snickers and Swirls of Caramel",
+            "type": "daily"
+          },
+          {
+            "name": "Butter Finger",
+            "description": "Butterfinger Pieces in Vanilla Custard",
+            "type": "daily"
+          }
+        ]
+      },
+      {
+        "date": "2026-05-08",
+        "flavors": [
+          {
+            "name": "Twix Salted Caramel",
+            "description": "Vanilla Custard with Twix Pieces and Swirls of Caramel",
+            "type": "daily"
+          }
+        ]
+      },
+      {
+        "date": "2026-05-09",
+        "flavors": [
+          {
+            "name": "Peanut Butter Chocolate",
+            "description": "Vanilla Custard, Swirls of Creamy Chocolate Mousse, Dark Chocolate Flakes and Pie Crust Piece",
+            "type": "daily"
+          }
+        ]
+      },
+      {
+        "date": "2026-05-10",
+        "flavors": [
+          {
+            "name": "Cherry Amaretto",
+            "description": "All Natural Burgundy Amaretto flavored custard with special chocolate covered cherries",
+            "type": "daily"
+          }
+        ]
+      }
+    ],
+    "isOpen": true,
+    "statusMessage": "Open until 9:30 PM",
+    "shopId": "golden-gyros",
+    "lastUpdated": "2026-05-03T21:02:03.846Z"
+  },
+  "moosa": {
+    "flavors": [
+      {
+        "name": "Vanilla, Chocolate, or Twist",
+        "description": "MooSa's signature soft-serve custard. Always smooth and creamy.",
+        "imageUrl": ""
+      },
+      {
+        "name": "Custard Shakes",
+        "description": "Hand-spun shakes in flavors like Vanilla, Chocolate, Strawberry, Peanut Butter, and Cotton Candy.",
+        "imageUrl": ""
+      }
+    ],
+    "isOpen": true,
+    "statusMessage": "Open seasonally at Bradford Beach",
+    "shopId": "moosa",
+    "lastUpdated": "2026-05-03T21:02:03.846Z"
+  },
+  "culvers-glendale-wi-bayside-dr": {
+    "flavors": [
+      {
+        "name": "Chocolate Volcano",
+        "description": "Our delicious Chocolate Fresh Frozen Custard explodes with OREO® Cookie pieces, chopped Dove® Chocolate pieces, mini M&Ms and streams of chocolate syrup.",
+        "imageUrl": "https://cdn.culvers.com/menu-item-detail/img-Chocolate-Volcano2.png"
+      }
+    ],
+    "isOpen": true,
+    "statusMessage": "Open until 10:30 PM",
+    "shopId": "culvers-glendale-wi-bayside-dr",
+    "lastUpdated": "2026-05-03T21:02:04.124Z"
+  },
+  "culvers-waukesha-sunset": {
+    "flavors": [
+      {
+        "name": "Turtle",
+        "description": "A Culver's Classic! We begin with creamy Vanilla Fresh Frozen Custard and swirl in ribbons of old fashioned salted caramel, novelty chocolate, and toasted pecan pieces.",
+        "imageUrl": "https://cdn.culvers.com/menu-item-detail/img-Turtle.png"
       }
     ],
     "isOpen": true,
     "statusMessage": "Open until 10:00 PM",
-    "shopId": "culvers-milwaukee-good-hope",
-    "lastUpdated": "2026-01-23T03:12:16.476Z"
+    "shopId": "culvers-waukesha-sunset",
+    "lastUpdated": "2026-05-03T21:02:04.140Z"
   },
-  "culvers-menomonee-falls": {
+  "culvers-west-milwaukee": {
+    "flavors": [
+      {
+        "name": "Chocolate Heath Crunch",
+        "description": "Our delicious Chocolate Fresh Frozen Custard with crunchy bits of Heath Bar. Kind of crunchy, kind of smooth, kind of incredible.",
+        "imageUrl": "https://cdn.culvers.com/menu-item-detail/img-Choc-Heath-Crunch.Cake-Cone.png"
+      }
+    ],
+    "isOpen": true,
+    "statusMessage": "Open until 11:00 PM",
+    "shopId": "culvers-west-milwaukee",
+    "lastUpdated": "2026-05-03T21:02:04.192Z"
+  },
+  "culvers-hales-corners": {
+    "flavors": [
+      {
+        "name": "Crazy for Cookie Dough",
+        "description": "Our creamy Vanilla and Chocolate Fresh Frozen Custard swirled together and mixed with thick fudge, ribbons of old fashioned salted caramel and cookie dough pieces.",
+        "imageUrl": "https://cdn.culvers.com/menu-item-detail/img-Crazy-for-Cookie-Dough.Waffle-Cone1.png"
+      }
+    ],
+    "isOpen": true,
+    "statusMessage": "Open until 10:00 PM",
+    "shopId": "culvers-hales-corners",
+    "lastUpdated": "2026-05-03T21:02:04.230Z"
+  },
+  "culvers-shorewood": {
+    "flavors": [
+      {
+        "name": "Dark Chocolate Decadence",
+        "description": "Premium blend of cocoas for the ultimate chocolate experience.",
+        "imageUrl": "https://cdn.culvers.com/menu-item-detail/img-Dark-Chocolate-Decadence1.png"
+      }
+    ],
+    "isOpen": true,
+    "statusMessage": "Open until 11:00 PM",
+    "shopId": "culvers-shorewood",
+    "lastUpdated": "2026-05-03T21:02:04.338Z"
+  },
+  "culvers-oak-creek": {
+    "flavors": [
+      {
+        "name": "Snickers Swirl",
+        "description": "Chocolate and Vanilla Fresh Frozen Custard swirled together with chewy pieces of Snickers.",
+        "imageUrl": "https://cdn.culvers.com/menu-item-detail/img-Snicker-Swirl.png"
+      }
+    ],
+    "isOpen": true,
+    "statusMessage": "Open until 10:00 PM",
+    "shopId": "culvers-oak-creek",
+    "lastUpdated": "2026-05-03T21:02:04.369Z"
+  },
+  "culvers-muskego": {
+    "flavors": [
+      {
+        "name": "Caramel Peanut Buttercup",
+        "description": "Creamy Vanilla Fresh Frozen Custard swirled with ribbons of peanut butter and old fashioned salted caramel and loaded with novelty chocolate.",
+        "imageUrl": "https://cdn.culvers.com/menu-item-detail/caramel-peanut-buttercup.png"
+      }
+    ],
+    "isOpen": true,
+    "statusMessage": "Open until 10:00 PM",
+    "shopId": "culvers-muskego",
+    "lastUpdated": "2026-05-03T21:02:04.373Z"
+  },
+  "culvers-greenfield-wi-layton-ave": {
     "flavors": [
       {
         "name": "Devil's Food Cake",
@@ -1268,9 +2755,113 @@
       }
     ],
     "isOpen": true,
+    "statusMessage": "Open until 11:00 PM",
+    "shopId": "culvers-greenfield-wi-layton-ave",
+    "lastUpdated": "2026-05-03T21:02:04.378Z"
+  },
+  "culvers-sussex": {
+    "flavors": [
+      {
+        "name": "Devil's Food Cake",
+        "description": "Dark Chocolate Fresh Frozen Custard swirled with chocolate cake and novelty chocolate.",
+        "imageUrl": "https://cdn.culvers.com/menu-item-detail/img-Devils-Food-Cake.png"
+      }
+    ],
+    "isOpen": true,
+    "statusMessage": "Open until 11:00 PM",
+    "shopId": "culvers-sussex",
+    "lastUpdated": "2026-05-03T21:02:04.385Z"
+  },
+  "culvers-brookfield-capitol": {
+    "flavors": [
+      {
+        "name": "Salted Double Caramel Pecan",
+        "description": "Ribbons of old fashioned salted caramel swirled into Caramel Fresh Frozen Custard and mixed with toasted pecan pieces.",
+        "imageUrl": "https://cdn.culvers.com/menu-item-detail/img-Salted-Double-Caramel-Pecan.Cake-Cone.png"
+      }
+    ],
+    "isOpen": true,
     "statusMessage": "Open until 10:00 PM",
-    "shopId": "culvers-menomonee-falls",
-    "lastUpdated": "2026-01-23T03:12:16.501Z"
+    "shopId": "culvers-brookfield-capitol",
+    "lastUpdated": "2026-05-03T21:02:04.391Z"
+  },
+  "culvers-franklin": {
+    "flavors": [
+      {
+        "name": "Snickers Swirl",
+        "description": "Chocolate and Vanilla Fresh Frozen Custard swirled together with chewy pieces of Snickers.",
+        "imageUrl": "https://cdn.culvers.com/menu-item-detail/img-Snicker-Swirl.png"
+      }
+    ],
+    "isOpen": true,
+    "statusMessage": "Open until 10:00 PM",
+    "shopId": "culvers-franklin",
+    "lastUpdated": "2026-05-03T21:02:04.393Z"
+  },
+  "culvers-mequon": {
+    "flavors": [
+      {
+        "name": "Chocolate Caramel Twist",
+        "description": "Chocolate and Vanilla Fresh Frozen Custard swirled together with ribbons of old fashioned salted caramel and chopped Dove® Chocolate pieces.",
+        "imageUrl": "https://cdn.culvers.com/menu-item-detail/img-Chocolate-Caramel-Twist2.png"
+      }
+    ],
+    "isOpen": true,
+    "statusMessage": "Open until 10:00 PM",
+    "shopId": "culvers-mequon",
+    "lastUpdated": "2026-05-03T21:02:04.441Z"
+  },
+  "culvers-milwaukee-fond-du-lac": {
+    "flavors": [
+      {
+        "name": "Caramel Cashew",
+        "description": "Culver’s Classic! Our creamy Vanilla Fresh Frozen Custard swirled with ribbons of old fashioned salted caramel and loaded with lightly salted cashew pieces.",
+        "imageUrl": "https://cdn.culvers.com/menu-item-detail/img-Caramel-Cashew.png"
+      }
+    ],
+    "isOpen": true,
+    "statusMessage": "Open until 11:00 PM",
+    "shopId": "culvers-milwaukee-fond-du-lac",
+    "lastUpdated": "2026-05-03T21:02:04.443Z"
+  },
+  "culvers-brown-deer": {
+    "flavors": [
+      {
+        "name": "Chocolate Caramel Twist",
+        "description": "Chocolate and Vanilla Fresh Frozen Custard swirled together with ribbons of old fashioned salted caramel and chopped Dove® Chocolate pieces.",
+        "imageUrl": "https://cdn.culvers.com/menu-item-detail/img-Chocolate-Caramel-Twist2.png"
+      }
+    ],
+    "isOpen": true,
+    "statusMessage": "Open until 10:00 PM",
+    "shopId": "culvers-brown-deer",
+    "lastUpdated": "2026-05-03T21:02:04.460Z"
+  },
+  "culvers-racine-wi-douglas-ave": {
+    "flavors": [
+      {
+        "name": "Chocolate Heath Crunch",
+        "description": "Our delicious Chocolate Fresh Frozen Custard with crunchy bits of Heath Bar. Kind of crunchy, kind of smooth, kind of incredible.",
+        "imageUrl": "https://cdn.culvers.com/menu-item-detail/img-Choc-Heath-Crunch.Cake-Cone.png"
+      }
+    ],
+    "isOpen": true,
+    "statusMessage": "Open until 10:00 PM",
+    "shopId": "culvers-racine-wi-douglas-ave",
+    "lastUpdated": "2026-05-03T21:02:04.471Z"
+  },
+  "culvers-milwaukee-layton": {
+    "flavors": [
+      {
+        "name": "Mint Cookie",
+        "description": "Our specially blended Mint Fresh Frozen Custard with OREO® Cookies for a refreshing treat.",
+        "imageUrl": "https://cdn.culvers.com/menu-item-detail/img-Mint-Oreo-updated.png"
+      }
+    ],
+    "isOpen": true,
+    "statusMessage": "Open until 11:00 PM",
+    "shopId": "culvers-milwaukee-layton",
+    "lastUpdated": "2026-05-03T21:02:06.065Z"
   },
   "culvers-new-berlin": {
     "flavors": [
@@ -1283,282 +2874,35 @@
     "isOpen": true,
     "statusMessage": "Open until 10:00 PM",
     "shopId": "culvers-new-berlin",
-    "lastUpdated": "2026-01-23T03:12:16.523Z"
+    "lastUpdated": "2026-05-03T21:02:06.071Z"
   },
-  "culvers-racine-wi-douglas-ave": {
-    "flavors": [
-      {
-        "name": "Turtle Dove",
-        "description": "Creamy Vanilla Fresh Frozen Custard swirled with ribbons of old fashioned salted caramel, marshmallow creme, toasted pecan pieces and chopped Dove® Chocolate pieces.",
-        "imageUrl": "https://cdn.culvers.com/menu-item-detail/turtle-dove.png"
-      }
-    ],
-    "isOpen": true,
-    "statusMessage": "Open until 10:00 PM",
-    "shopId": "culvers-racine-wi-douglas-ave",
-    "lastUpdated": "2026-01-23T03:12:16.523Z"
-  },
-  "culvers-milwaukee-fond-du-lac": {
-    "flavors": [
-      {
-        "name": "Chocolate Volcano",
-        "description": "Our delicious Chocolate Fresh Frozen Custard explodes with OREO® Cookie pieces, chopped Dove® Chocolate pieces, mini M&Ms and streams of chocolate syrup.",
-        "imageUrl": "https://cdn.culvers.com/menu-item-detail/img-Chocolate-Volcano2.png"
-      }
-    ],
-    "isOpen": true,
-    "statusMessage": "Open until 11:00 PM",
-    "shopId": "culvers-milwaukee-fond-du-lac",
-    "lastUpdated": "2026-01-23T03:12:16.524Z"
-  },
-  "culvers-greenfield-wi-layton-ave": {
-    "flavors": [
-      {
-        "name": "Chocolate Covered Strawberry",
-        "description": "Our creamy Vanilla Fresh Frozen Custard complemented with plump strawberries and novelty chocolate.",
-        "imageUrl": "https://cdn.culvers.com/menu-item-detail/img-Chocolate-Covered-Strawberry1.png"
-      }
-    ],
-    "isOpen": true,
-    "statusMessage": "Open until 11:00 PM",
-    "shopId": "culvers-greenfield-wi-layton-ave",
-    "lastUpdated": "2026-01-23T03:12:16.524Z"
-  },
-  "culvers-muskego": {
-    "flavors": [
-      {
-        "name": "Devil's Food Cake",
-        "description": "Dark Chocolate Fresh Frozen Custard swirled with chocolate cake and novelty chocolate.",
-        "imageUrl": "https://cdn.culvers.com/menu-item-detail/img-Devils-Food-Cake.png"
-      }
-    ],
-    "isOpen": true,
-    "statusMessage": "Open until 10:00 PM",
-    "shopId": "culvers-muskego",
-    "lastUpdated": "2026-01-23T03:12:16.568Z"
-  },
-  "culvers-brown-deer": {
-    "flavors": [
-      {
-        "name": "Mint Cookie",
-        "description": "Our specially blended Mint Fresh Frozen Custard with OREO® Cookies for a refreshing treat.",
-        "imageUrl": "https://cdn.culvers.com/menu-item-detail/img-Mint-Oreo-updated.png"
-      }
-    ],
-    "isOpen": true,
-    "statusMessage": "Open until 10:00 PM",
-    "shopId": "culvers-brown-deer",
-    "lastUpdated": "2026-01-23T03:12:16.580Z"
-  },
-  "culvers-west-milwaukee": {
+  "culvers-west-allis": {
     "flavors": [
       {
         "name": "Crazy for Cookie Dough",
         "description": "Our creamy Vanilla and Chocolate Fresh Frozen Custard swirled together and mixed with thick fudge, ribbons of old fashioned salted caramel and cookie dough pieces.",
         "imageUrl": "https://cdn.culvers.com/menu-item-detail/img-Crazy-for-Cookie-Dough.Waffle-Cone1.png"
-      }
-    ],
-    "isOpen": true,
-    "statusMessage": "Open until 11:00 PM",
-    "shopId": "culvers-west-milwaukee",
-    "lastUpdated": "2026-01-23T03:12:16.593Z"
-  },
-  "culvers-sussex": {
-    "flavors": [
-      {
-        "name": "Mint Cookie",
-        "description": "Our specially blended Mint Fresh Frozen Custard with OREO® Cookies for a refreshing treat.",
-        "imageUrl": "https://cdn.culvers.com/menu-item-detail/img-Mint-Oreo-updated.png"
-      }
-    ],
-    "isOpen": true,
-    "statusMessage": "Open until 11:00 PM",
-    "shopId": "culvers-sussex",
-    "lastUpdated": "2026-01-23T03:12:16.594Z"
-  },
-  "culvers-oak-creek": {
-    "flavors": [
-      {
-        "name": "Caramel Pecan",
-        "description": "Ribbons of old fashioned salted caramel swirled with our creamy Vanilla Fresh Frozen Custard and toasted pecan pieces. Taste why it's one of out most popular treats!",
-        "imageUrl": "https://cdn.culvers.com/menu-item-detail/img-Caramel-Pecan.png"
-      }
-    ],
-    "isOpen": true,
-    "statusMessage": "Open until 10:00 PM",
-    "shopId": "culvers-oak-creek",
-    "lastUpdated": "2026-01-23T03:12:16.599Z"
-  },
-  "culvers-franklin": {
-    "flavors": [
-      {
-        "name": "Caramel Cashew",
-        "description": "Culver’s Classic! Our creamy Vanilla Fresh Frozen Custard swirled with ribbons of old fashioned salted caramel and loaded with lightly salted cashew pieces.",
-        "imageUrl": "https://cdn.culvers.com/menu-item-detail/img-Caramel-Cashew.png"
-      }
-    ],
-    "isOpen": true,
-    "statusMessage": "Open until 10:00 PM",
-    "shopId": "culvers-franklin",
-    "lastUpdated": "2026-01-23T03:12:16.615Z"
-  },
-  "culvers-milwaukee-layton": {
-    "flavors": [
-      {
-        "name": "Turtle Dove",
-        "description": "Creamy Vanilla Fresh Frozen Custard swirled with ribbons of old fashioned salted caramel, marshmallow creme, toasted pecan pieces and chopped Dove® Chocolate pieces.",
-        "imageUrl": "https://cdn.culvers.com/menu-item-detail/turtle-dove.png"
-      }
-    ],
-    "isOpen": true,
-    "statusMessage": "Open until 11:00 PM",
-    "shopId": "culvers-milwaukee-layton",
-    "lastUpdated": "2026-01-23T03:12:16.623Z"
-  },
-  "culvers-brookfield-capitol": {
-    "flavors": [
-      {
-        "name": "Mint Explosion",
-        "description": "Our specially blended Mint Fresh Frozen Custard exploding with OREO® Cookie pieces, Andes® candies and novelty chocolate.",
-        "imageUrl": "https://cdn.culvers.com/menu-item-detail/img-Mint-Explosion.Cake-Cone-updated.png"
-      }
-    ],
-    "isOpen": true,
-    "statusMessage": "Open until 10:00 PM",
-    "shopId": "culvers-brookfield-capitol",
-    "lastUpdated": "2026-01-23T03:12:16.779Z"
-  },
-  "culvers-hales-corners": {
-    "flavors": [
-      {
-        "name": "Really Reese's",
-        "description": "Reese’s Peanut Butter Cups become a special treat when stirred in our delicious Chocolate Fresh Frozen Custard.",
-        "imageUrl": "https://cdn.culvers.com/menu-item-detail/img-Really-Reeses.Cake-Cone.png"
-      }
-    ],
-    "isOpen": true,
-    "statusMessage": "Open until 10:00 PM",
-    "shopId": "culvers-hales-corners",
-    "lastUpdated": "2026-01-23T03:12:16.786Z"
-  },
-  "culvers-brookfield-124th": {
-    "flavors": [
-      {
-        "name": "Dark Chocolate PB Crunch",
-        "description": "Dark Chocolate Fresh Frozen Custard swirled with a ribbon of peanut butter and crunchy Butterfinger pieces.",
-        "imageUrl": "https://cdn.culvers.com/menu-item-detail/img-Dark-Chocolate-PB-Crunch12.png"
-      }
-    ],
-    "isOpen": true,
-    "statusMessage": "Open until 10:00 PM",
-    "shopId": "culvers-brookfield-124th",
-    "lastUpdated": "2026-01-23T03:12:16.885Z"
-  },
-  "culvers-west-allis": {
-    "flavors": [
-      {
-        "name": "Chocolate Covered Strawberry",
-        "description": "Our creamy Vanilla Fresh Frozen Custard complemented with plump strawberries and novelty chocolate.",
-        "imageUrl": "https://cdn.culvers.com/menu-item-detail/img-Chocolate-Covered-Strawberry1.png"
       }
     ],
     "isOpen": true,
     "statusMessage": "Open until 10:00 PM",
     "shopId": "culvers-west-allis",
-    "lastUpdated": "2026-01-23T03:12:16.915Z"
+    "lastUpdated": "2026-05-03T21:02:06.099Z"
   },
-  "culvers-glendale-wi-bayside-dr": {
+  "culvers-menomonee-falls": {
     "flavors": [
       {
-        "name": "Crazy for Cookie Dough",
-        "description": "Our creamy Vanilla and Chocolate Fresh Frozen Custard swirled together and mixed with thick fudge, ribbons of old fashioned salted caramel and cookie dough pieces.",
-        "imageUrl": "https://cdn.culvers.com/menu-item-detail/img-Crazy-for-Cookie-Dough.Waffle-Cone1.png"
-      }
-    ],
-    "isOpen": true,
-    "statusMessage": "Open until 10:30 PM",
-    "shopId": "culvers-glendale-wi-bayside-dr",
-    "lastUpdated": "2026-01-23T03:12:16.943Z"
-  },
-  "culvers-waukesha-sunset": {
-    "flavors": [
-      {
-        "name": "Devil's Food Cake",
-        "description": "Dark Chocolate Fresh Frozen Custard swirled with chocolate cake and novelty chocolate.",
-        "imageUrl": "https://cdn.culvers.com/menu-item-detail/img-Devils-Food-Cake.png"
+        "name": "Raspberry Cheesecake",
+        "description": "Creamy Cheesecake Fresh Frozen Custard with rich cheesecake pieces and sweet raspberries for an indulgent treat.",
+        "imageUrl": "https://cdn.culvers.com/menu-item-detail/img-Raspberry-Cheesecake.Waffle-Cone.png"
       }
     ],
     "isOpen": true,
     "statusMessage": "Open until 10:00 PM",
-    "shopId": "culvers-waukesha-sunset",
-    "lastUpdated": "2026-01-23T03:12:16.978Z"
+    "shopId": "culvers-menomonee-falls",
+    "lastUpdated": "2026-05-03T21:02:06.100Z"
   },
-  "culvers-elm-grove-wi": {
-    "flavors": [
-      {
-        "name": "Chocolate Volcano",
-        "description": "Our delicious Chocolate Fresh Frozen Custard explodes with OREO® Cookie pieces, chopped Dove® Chocolate pieces, mini M&Ms and streams of chocolate syrup.",
-        "imageUrl": "https://cdn.culvers.com/menu-item-detail/img-Chocolate-Volcano2.png"
-      }
-    ],
-    "isOpen": true,
-    "statusMessage": "Open until 10:00 PM",
-    "shopId": "culvers-elm-grove-wi",
-    "lastUpdated": "2026-01-23T03:12:16.990Z"
-  },
-  "culvers-grafton": {
-    "flavors": [
-      {
-        "name": "Chocolate Volcano",
-        "description": "Our delicious Chocolate Fresh Frozen Custard explodes with OREO® Cookie pieces, chopped Dove® Chocolate pieces, mini M&Ms and streams of chocolate syrup.",
-        "imageUrl": "https://cdn.culvers.com/menu-item-detail/img-Chocolate-Volcano2.png"
-      }
-    ],
-    "isOpen": true,
-    "statusMessage": "Open until 12:00 AM",
-    "shopId": "culvers-grafton",
-    "lastUpdated": "2026-01-23T03:12:17.068Z"
-  },
-  "culvers-waukesha-hwy-164": {
-    "flavors": [
-      {
-        "name": "Chocolate Heath Crunch",
-        "description": "Our delicious Chocolate Fresh Frozen Custard with crunchy bits of Heath Bar. Kind of crunchy, kind of smooth, kind of incredible.",
-        "imageUrl": "https://cdn.culvers.com/menu-item-detail/img-Choc-Heath-Crunch.Cake-Cone.png"
-      }
-    ],
-    "isOpen": true,
-    "statusMessage": "Open until 10:00 PM",
-    "shopId": "culvers-waukesha-hwy-164",
-    "lastUpdated": "2026-01-23T03:12:17.139Z"
-  },
-  "culvers-shorewood": {
-    "flavors": [
-      {
-        "name": "Georgia Peach",
-        "description": "Our specially blended Peach Fresh Frozen Custard swirled with sweet peaches for a light, refreshing treat.",
-        "imageUrl": "https://cdn.culvers.com/menu-item-detail/img-Georgia-Peach1.png"
-      }
-    ],
-    "isOpen": true,
-    "statusMessage": "Open until 11:00 PM",
-    "shopId": "culvers-shorewood",
-    "lastUpdated": "2026-01-23T03:12:17.140Z"
-  },
-  "culvers-mequon": {
-    "flavors": [
-      {
-        "name": "Mint Cookie",
-        "description": "Our specially blended Mint Fresh Frozen Custard with OREO® Cookies for a refreshing treat.",
-        "imageUrl": "https://cdn.culvers.com/menu-item-detail/img-Mint-Oreo-updated.png"
-      }
-    ],
-    "isOpen": true,
-    "statusMessage": "Open until 10:00 PM",
-    "shopId": "culvers-mequon",
-    "lastUpdated": "2026-01-23T03:12:17.248Z"
-  },
-  "culvers-waukesha-grandview": {
+  "culvers-brookfield-124th": {
     "flavors": [
       {
         "name": "Butter Pecan",
@@ -1568,7 +2912,72 @@
     ],
     "isOpen": true,
     "statusMessage": "Open until 10:00 PM",
+    "shopId": "culvers-brookfield-124th",
+    "lastUpdated": "2026-05-03T21:02:06.105Z"
+  },
+  "culvers-milwaukee-good-hope": {
+    "flavors": [
+      {
+        "name": "Chocolate Caramel Twist",
+        "description": "Chocolate and Vanilla Fresh Frozen Custard swirled together with ribbons of old fashioned salted caramel and chopped Dove® Chocolate pieces.",
+        "imageUrl": "https://cdn.culvers.com/menu-item-detail/img-Chocolate-Caramel-Twist2.png"
+      }
+    ],
+    "isOpen": true,
+    "statusMessage": "Open until 10:00 PM",
+    "shopId": "culvers-milwaukee-good-hope",
+    "lastUpdated": "2026-05-03T21:02:06.142Z"
+  },
+  "culvers-waukesha-hwy-164": {
+    "flavors": [
+      {
+        "name": "Andes Mint Avalanche",
+        "description": "Andes Candies and novelty chocolate with our specially blended Mint Fresh Frozen Custard.",
+        "imageUrl": "https://cdn.culvers.com/menu-item-detail/andes-mint-avalanche.png"
+      }
+    ],
+    "isOpen": true,
+    "statusMessage": "Open until 10:00 PM",
+    "shopId": "culvers-waukesha-hwy-164",
+    "lastUpdated": "2026-05-03T21:02:06.179Z"
+  },
+  "culvers-waukesha-grandview": {
+    "flavors": [
+      {
+        "name": "Turtle Dove",
+        "description": "Creamy Vanilla Fresh Frozen Custard swirled with ribbons of old fashioned salted caramel, marshmallow creme, toasted pecan pieces and chopped Dove® Chocolate pieces.",
+        "imageUrl": "https://cdn.culvers.com/menu-item-detail/turtle-dove.png"
+      }
+    ],
+    "isOpen": true,
+    "statusMessage": "Open until 10:00 PM",
     "shopId": "culvers-waukesha-grandview",
-    "lastUpdated": "2026-01-23T03:12:17.338Z"
+    "lastUpdated": "2026-05-03T21:02:06.187Z"
+  },
+  "culvers-elm-grove-wi": {
+    "flavors": [
+      {
+        "name": "Chocolate Caramel Twist",
+        "description": "Chocolate and Vanilla Fresh Frozen Custard swirled together with ribbons of old fashioned salted caramel and chopped Dove® Chocolate pieces.",
+        "imageUrl": "https://cdn.culvers.com/menu-item-detail/img-Chocolate-Caramel-Twist2.png"
+      }
+    ],
+    "isOpen": true,
+    "statusMessage": "Open until 10:00 PM",
+    "shopId": "culvers-elm-grove-wi",
+    "lastUpdated": "2026-05-03T21:02:06.295Z"
+  },
+  "culvers-grafton": {
+    "flavors": [
+      {
+        "name": "Chocolate Caramel Twist",
+        "description": "Chocolate and Vanilla Fresh Frozen Custard swirled together with ribbons of old fashioned salted caramel and chopped Dove® Chocolate pieces.",
+        "imageUrl": "https://cdn.culvers.com/menu-item-detail/img-Chocolate-Caramel-Twist2.png"
+      }
+    ],
+    "isOpen": true,
+    "statusMessage": "Open until 12:00 AM",
+    "shopId": "culvers-grafton",
+    "lastUpdated": "2026-05-03T21:02:08.946Z"
   }
 }
