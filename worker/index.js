@@ -10,6 +10,7 @@ import { scrapeMurfs } from './scrapers/murfs.js';
 import { scrapeRoberts } from './scrapers/roberts.js';
 import { scrapeKraverz } from './scrapers/kraverz.js';
 import { scrapeGoldenGyros } from './scrapers/goldengyros.js';
+import { scrapeMoosa } from './scrapers/moosa.js';
 import { Storage } from '@google-cloud/storage';
 import * as fs from 'fs';
 import admin from 'firebase-admin';
@@ -68,7 +69,8 @@ export const SHOPS = [
   { id: 'murfs', chain: "Murf's", url: "https://www.murfsfrozencustard.com/" },
   { id: 'roberts', chain: "Robert's", url: "https://robertsfrozencustard.com/flavor.html" },
   { id: 'kraverz', chain: "Kraverz", url: "https://www.kraverzcustard.com/FlavorSchedule" },
-  { id: 'golden-gyros', chain: "Golden Gyros", url: "https://goldengyro.com/daily-flavors" }
+  { id: 'golden-gyros', chain: "Golden Gyros", url: "https://goldengyro.com/daily-flavors" },
+  { id: 'moosa', chain: "MooSa's", url: "https://www.moosaburger.com/" }
 ];
 
 export const scrapeCustard = async (req, res) => {
@@ -77,7 +79,7 @@ export const scrapeCustard = async (req, res) => {
   
   // 1. Fetch shared data in parallel
   console.log("Fetching shared chain data...");
-  const [koppsData, gillesData, oscarsData, leonsData, leducsData, hefnersData, georgieData, murfsData, robertsData, kraverzData, goldenGyrosData] = await Promise.all([
+  const [koppsData, gillesData, oscarsData, leonsData, leducsData, hefnersData, georgieData, murfsData, robertsData, kraverzData, goldenGyrosData, moosaData] = await Promise.all([
       scrapeKopps().catch(e => { console.error(`[SCRAPER_ERROR] Kopps failed: ${e.message}`); return { error: e.message, flavors: [] }; }),
       scrapeGilles().catch(e => { console.error(`[SCRAPER_ERROR] Gilles failed: ${e.message}`); return { error: e.message, flavors: [] }; }),
       scrapeOscars().catch(e => { console.error(`[SCRAPER_ERROR] Oscars failed: ${e.message}`); return { error: e.message, flavors: [] }; }),
@@ -88,7 +90,8 @@ export const scrapeCustard = async (req, res) => {
       scrapeMurfs().catch(e => { console.error(`[SCRAPER_ERROR] Murfs failed: ${e.message}`); return { error: e.message, flavors: [] }; }),
       scrapeRoberts().catch(e => { console.error(`[SCRAPER_ERROR] Roberts failed: ${e.message}`); return { error: e.message, flavors: [] }; }),
       scrapeKraverz().catch(e => { console.error(`[SCRAPER_ERROR] Kraverz failed: ${e.message}`); return { error: e.message, flavors: [] }; }),
-      scrapeGoldenGyros().catch(e => { console.error(`[SCRAPER_ERROR] Golden Gyros failed: ${e.message}`); return { error: e.message, flavors: [] }; })
+      scrapeGoldenGyros().catch(e => { console.error(`[SCRAPER_ERROR] Golden Gyros failed: ${e.message}`); return { error: e.message, flavors: [] }; }),
+      scrapeMoosa().catch(e => { console.error(`[SCRAPER_ERROR] MooSa's failed: ${e.message}`); return { error: e.message, flavors: [] }; })
   ]);
 
   // 2. Process all shops in parallel
@@ -127,6 +130,8 @@ export const scrapeCustard = async (req, res) => {
               data = { ...kraverzData, shopId: shop.id };
           } else if (shop.chain === "Golden Gyros") {
               data = { ...goldenGyrosData, shopId: shop.id };
+          } else if (shop.chain === "MooSa's") {
+              data = { ...moosaData, shopId: shop.id };
           } else if (shop.chain === "Culver's") {
               // Culver's requires individual API calls per location
               try {

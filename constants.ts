@@ -121,6 +121,16 @@ const GOLDEN_GYROS_HOURS: Record<number, OperatingHours> = {
   6: { open: "11:00", close: "22:00" },
 };
 
+const MOOSA_HOURS: Record<number, OperatingHours> = {
+  0: { open: "11:00", close: "20:45" },
+  1: { open: "11:00", close: "20:45" },
+  2: { open: "11:00", close: "20:45" },
+  3: { open: "11:00", close: "20:45" },
+  4: { open: "11:00", close: "20:45" },
+  5: { open: "11:00", close: "20:45" },
+  6: { open: "11:00", close: "20:45" },
+};
+
 const CULVERS_HOURS_10: Record<number, OperatingHours> = {
   0: { open: "10:00", close: "22:00" },
   1: { open: "10:00", close: "22:00" },
@@ -190,6 +200,19 @@ export const MILWAUKEE_SHOPS: CustardShop[] = [
     chain: "Oscar's",
     logoUrl: "https://www.google.com/s2/favicons?domain=oscarscustard.com&sz=64",
     hours: OSCARS_HOURS
+  },
+  {
+    id: 'moosa',
+    name: "MooSa's",
+    address: "2272 N Lincoln Memorial Dr, Milwaukee, WI 53202",
+    lat: 43.0581,
+    lng: -87.8725,
+    website: "https://www.moosaburger.com",
+    brandColor: "#e91e63",
+    chain: "MooSa's",
+    logoUrl: "https://www.google.com/s2/favicons?domain=moosaburger.com&sz=64",
+    hours: MOOSA_HOURS,
+    temporaryClosure: "Closed for the Season (Opens mid-June)"
   },
 
   // --- KOPP'S (Remaining) ---
