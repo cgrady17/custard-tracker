@@ -38,6 +38,8 @@ export async function scrapeCulvers(oloID) {
         console.error("Error calculating Culver's status message", err);
     }
 
+    const phone = details.telephone || undefined;
+
     // Find today's flavor
     const todayFlavor = details.flavors.find(f => f.calendarDate.startsWith(todayStr));
     
@@ -45,7 +47,8 @@ export async function scrapeCulvers(oloID) {
         return {
           flavors: [{ name: "Visit Website to View", description: "No flavor data for today.", imageUrl: "" }],
           isOpen: details.isOpenNow,
-          statusMessage: statusMessage
+          statusMessage: statusMessage,
+          phone
         };
     }
 
@@ -56,7 +59,8 @@ export async function scrapeCulvers(oloID) {
         imageUrl: todayFlavor.image.imagePath
       }],
       isOpen: details.isOpenNow,
-      statusMessage: statusMessage
+      statusMessage: statusMessage,
+      phone
     };
 
   } catch (e) {

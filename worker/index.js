@@ -104,16 +104,7 @@ export const scrapeCustard = async (req, res) => {
           } else if (shop.chain === "Gilles") {
               data = { ...gillesData, shopId: shop.id };
           } else if (shop.chain === "Oscar's") {
-              if (shop.id === 'oscars-waukesha') {
-                  data = { 
-                      shopId: shop.id, 
-                      flavors: [], 
-                      isOpen: false, 
-                      statusMessage: "Temporarily Closed (Fire)" 
-                  };
-              } else {
-                  data = { ...oscarsData, shopId: shop.id };
-              }
+              data = { ...oscarsData, shopId: shop.id };
           } else if (shop.chain === "Leon's") {
               data = { ...leonsData, shopId: shop.id };
           } else if (shop.chain === "LeDuc's") {

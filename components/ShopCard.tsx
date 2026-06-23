@@ -248,6 +248,8 @@ const ShopCard: React.FC<ShopCardProps> = ({
   const [showSchedule, setShowSchedule] = useState(false);
   
   const { isOpen, statusMessage } = getShopStatus(shop);
+  
+  const phone = shop.phone || status?.phone;
 
   const directionsUrl = `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(shop.address)}`;
   
@@ -338,7 +340,19 @@ const ShopCard: React.FC<ShopCardProps> = ({
             )}
           </div>
           
-          <p className="text-xs sm:text-sm text-stone-500 dark:text-stone-400 mb-2 leading-tight truncate">{shop.address}</p>
+          <div className="flex flex-wrap items-center gap-x-2 gap-y-1 text-xs sm:text-sm text-stone-500 dark:text-stone-400 mb-2 leading-tight">
+            <span className="truncate max-w-full">{shop.address}</span>
+            {phone && (
+              <span className="flex items-center gap-1.5 flex-shrink-0">
+                <a 
+                  href={`tel:${phone.replace(/\D/g, '')}`} 
+                  className="hover:text-lake-blue dark:hover:text-sunrise-gold transition-colors font-medium flex items-center gap-1 text-[11px] sm:text-xs"
+                >
+                  <i className="fas fa-phone text-[9px] text-stone-400"></i> {phone}
+                </a>
+              </span>
+            )}
+          </div>
           
           <div className="flex items-center gap-2">
             {statusMessage ? (
