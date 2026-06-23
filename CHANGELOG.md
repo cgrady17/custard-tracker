@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.5.0](https://github.com/cgrady17/custard-tracker/compare/v1.4.1...v1.5.0) (2026-06-23)
+
+
+### Features
+
+* add phone numbers to all custard shops and dynamically scrape Culver's phone numbers ([90feb63](https://github.com/cgrady17/custard-tracker/commit/90feb639cef2cba58334d0a81c8dbfc9b78e0d6f))
+
 ### [1.4.1](https://github.com/cgrady17/custard-tracker/compare/v1.3.2...v1.4.1) (2026-05-03)
 
 ### [1.3.2](https://github.com/cgrady17/custard-tracker/compare/v1.3.1...v1.3.2) (2026-04-19)
