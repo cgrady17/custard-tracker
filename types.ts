@@ -41,6 +41,7 @@ export interface FlavorStatus {
   isLoading: boolean;
   error?: string;
   upcoming?: UpcomingFlavor[];
+  phone?: string;
 }
 
 export interface SyncMetadata {

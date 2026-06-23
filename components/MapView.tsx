@@ -72,6 +72,7 @@ const MapView: React.FC<MapViewProps> = ({ shops, flavors, onRefresh, isDarkMode
       }
 
       const status = flavors[shop.id];
+      const phone = shop.phone || status?.phone;
       const hasFlavors = status?.flavors && status.flavors.length > 0;
       
       const { isOpen, statusMessage } = getShopStatus(shop);
@@ -197,6 +198,18 @@ const MapView: React.FC<MapViewProps> = ({ shops, flavors, onRefresh, isDarkMode
                <i class="fas fa-chevron-right text-[8px] text-lake-blue"></i>
              </div>
           </a>
+          ${phone ? `
+            <a 
+              href="tel:${phone.replace(/\D/g, '')}" 
+              class="flex items-center justify-between pt-1.5 border-t border-stone-50/50 dark:border-stone-800 hover:opacity-70 transition-opacity no-underline"
+            >
+               <p class="text-[9px] text-stone-400 dark:text-stone-500 m-0"><i class="fas fa-phone text-[8px] text-stone-400 mr-1"></i>${phone}</p>
+               <div class="flex items-center gap-1">
+                 <span class="text-[8px] font-black text-lake-blue uppercase">Call</span>
+                 <i class="fas fa-chevron-right text-[8px] text-lake-blue"></i>
+               </div>
+            </a>
+          ` : ''}
         </div>
       `;
 
