@@ -19,6 +19,16 @@ if (Test-Path ".env.local") {
 
 Write-Host "Building container image for MKE Scoop..."
 
+# Ensure commit hash is set
+if (-not (Get-Variable -Name "ENV_VITE_COMMIT_HASH" -ErrorAction SilentlyContinue)) {
+    try {
+        $gitHash = (git rev-parse --short HEAD).Trim()
+        Set-Variable -Name "ENV_VITE_COMMIT_HASH" -Value $gitHash
+    } catch {
+        Set-Variable -Name "ENV_VITE_COMMIT_HASH" -Value "unknown"
+    }
+}
+
 # Prepare substitutions string
 $subs = ""
 Get-Variable -Name "ENV_VITE_*" -ErrorAction SilentlyContinue | ForEach-Object {
