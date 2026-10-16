@@ -44,11 +44,14 @@ const MapView: React.FC<MapViewProps> = ({ shops, flavors, onRefresh, isDarkMode
       mapRef.current.removeLayer(tileLayerRef.current);
     }
 
-    const lightTiles = 'https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png';
-    const darkTiles = 'https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png';
+    const cartoKey = import.meta.env.VITE_CARTO_API_KEY;
+    const keyParam = cartoKey ? `?key=${cartoKey}` : '';
+    const lightTiles = `https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png${keyParam}`;
+    const darkTiles = `https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png${keyParam}`;
     
     tileLayerRef.current = (window as any).L.tileLayer(isDarkMode ? darkTiles : lightTiles, {
-      maxZoom: 20
+      maxZoom: 20,
+      subdomains: 'abcd'
     }).addTo(mapRef.current);
 
   }, [isDarkMode]);
