@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.5.1](https://github.com/cgrady17/custard-tracker/compare/v1.5.0...v1.5.1) (2026-10-16)
+
+
+### Bug Fixes
+
+* **map:** add CARTO API key to basemap tile requests and build configuration ([a9e82d4](https://github.com/cgrady17/custard-tracker/commit/a9e82d4f1697b4ca6aacf4a5f2687ff4463361ec))
+
 ## [1.5.0](https://github.com/cgrady17/custard-tracker/compare/v1.4.1...v1.5.0) (2026-06-23)
 
 
